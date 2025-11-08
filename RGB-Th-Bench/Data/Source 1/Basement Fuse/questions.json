@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image primarily focused on a kitchen appliance setup?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image show an outdoor setting with a natural landscape?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image focused on an electrical control or metering panel?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the image display a whiteboard with some markers?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Are there any visible circuit breaker switches in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a computer monitor present in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there multiple electrical meters visible in the scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there any dials or knobs visible in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "In the image, are the electrical meters rectangular in shape?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the image, are all the electrical fuses made of porcelain?",
+                    "answer": "No"
+                },
+                {
+                    "question": "In the image, are the switches made of a transparent material?",
+                    "answer": "No"
+                },
+                {
+                    "question": "In the image, are all the circuit breakers red?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Are all the electrical meters positioned at the top of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there any circuit breakers located at the bottom right of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are all the old electrical porcelain fuses located on the left side of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a clipboard or folder positioned in the center of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "In the bottom right side of the image, is the electrical meter positioned to the left of the switches?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the clipboard or folder located below the top-most electrical meter?",
+                    "answer": "No"
+                },
+                {
+                    "question": "In the bottom side of the image, are the three old porcelain fuses located to the left of the electrical meter?",
+                    "answer": "No"
+                },
+                {
+                    "question": "In the center of the image, are the two electrical meters surrounded by multiple old porcelain fuses from all sides except left?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there exactly five electrical meters in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there more than four circuit breaker sets visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there fewer than three old porcelain fuses in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there two clipboards or folders present in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Are the wires at the top of the image coming out of the panel?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the image, are the electric meters connected to the switches under the panel?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the image, are the old porcelain fuses interacting with the clipboard or folder?",
+                    "answer": "No"
+                },
+                {
+                    "question": "In the image, are the electric meters directly interacting with any lamp?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number \"345\" below the red point specifically referring to power consumption on a electric meter?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number \"34.5\" below the red point specifically referring to a temperature of the top of a electric meter?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number \"345\" on the clipboard or folder specifically indicating a page number?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement Fuse/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"FLIR\" at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"FLIK\" on the clipboard or folder indicating a safety instruction?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"ELIR\" at the bottom left corner specifically showing the type of equipment?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement Fuse/rgb.jpg",
+                "Basement Fuse/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, orange, yellow, white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, orange, white, yellow?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, blue, orange, yellow, white?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement Fuse/rgb.jpg",
+                "Basement Fuse/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly to the right of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement Fuse/rgb.jpg",
+                "Basement Fuse/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the electric meters in the thermal image showing a higher temperature at the top compared to the bottom?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Among the bottom-left circuit breaker switches, are those that are down showing a higher temperature compared to other switches?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. In the bottom side of the thermal image, are the three old porcelain fuses showing a uniform temperature distribution across their surfaces?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the area above the white panel showing any noticeable temperature variation?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement Fuse/rgb.jpg",
+                "Basement Fuse/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the electric meters showing a higher temperature compared to the circuit breakers in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the old porcelain fuses showing a hotter temperature than the electric meters?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the electric meters at the top displaying a cooler temperature compared to the electric meters at the center?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the area above the white panel showing a higher temperature than the circuit breakers?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement Fuse/rgb.jpg",
+                "Basement Fuse/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the electric meters the hottest areas in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the old porcelain fuses the hottest areas in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the circuit breakers the hottest areas in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the area above the white panel the hottest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement Fuse/rgb.jpg",
+                "Basement Fuse/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the circuit breakers the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the area that is below the white panel the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the clipboard or folder the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the old porcelain fuses the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement Fuse/rgb.jpg",
+                "Basement Fuse/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is any electric meter showing signs of overheating that may indicate an electrical issue or a fire hazard?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the clipboard or folder displaying a heat anomaly that could be a fire risk?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is any old porcelain fuses showing signs of overheating that may indicate an electrical issue or a fire hazard?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Among the bottom-left circuit breaker switches, is any of them up (off) but showing potential that may indicate an electrical issue?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

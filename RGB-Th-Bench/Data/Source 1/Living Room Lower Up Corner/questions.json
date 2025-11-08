@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image taken outdoors?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image show a crowded room with multiple people?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image show a high-ceiling interior space with a minimalist design?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this image upside down?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a hanging light fixture present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a lampshade or light bulb visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a sheer curtain present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there any potted plants visible in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the curtain in the image opaque and non-transparent?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the hanging light base made of wood?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the windows in the image tinted blue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the walls outside painted a dark color?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the large window located at the top of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the hanging light base positioned toward the center of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the curtain placed on the left side of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the potted plant visible at the bottom-left corner of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the hanging light base located above the windows in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the curtain positioned behind the window in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the potted plant located behind the windows?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the curtain positioned in front of a single casement window in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there four visible windows in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two potted plants visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there multiple hanging fixtures visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there more than one curtain panel in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the hanging fixture attached to the curtain?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the wire from the hanging fixture touching the windows?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the curtain block all of the light entering through the window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is sunlight shining through the window onto the wall?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '31.1' above the red point specifically referring to the camera's tilt angle?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '31.1' above the red point specifically referring to a temperature of the window?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '3110' on the window specifically indicating its size?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Lower Up Corner/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLI' on the hanging fixture specifically referring to its brand?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'ELIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Lower Up Corner/rgb.jpg",
+                "Living Room Lower Up Corner/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, blue, orange, yellow?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Lower Up Corner/rgb.jpg",
+                "Living Room Lower Up Corner/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly above and to the left of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Lower Up Corner/rgb.jpg",
+                "Living Room Lower Up Corner/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the curtain showing a uniform cool temperature across the entire surface in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the upper fixed window on the right showing cooler temperature around its edges in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the lower portions of the window frame showing a warmer temperature distribution than the upper portions in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the upper parts of the walls displaying cooler temperature than its lower parts in the thermal image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Lower Up Corner/rgb.jpg",
+                "Living Room Lower Up Corner/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the curtain warmer than the upper-right fixed window in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the upper-right fixed window cooler than the lower one in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the lower-left window frame warmer than the ceiling fixture in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling fixture warmer than the wall in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Lower Up Corner/rgb.jpg",
+                "Living Room Lower Up Corner/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the lower-left window the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the curtain the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling fixture the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Lower Up Corner/rgb.jpg",
+                "Living Room Lower Up Corner/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the upper-right fixed window the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the curtain the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the potted plant the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the lower-right fixed window the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Lower Up Corner/rgb.jpg",
+                "Living Room Lower Up Corner/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the lower-left window in the thermal image potentially a sign of poor insulation allowing excessive heat into the room?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the hanging light base fixture showing signs of overheating that could indicate an electrical issue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the upper-right fixed window in the thermal image potentially a sign of poor insulation allowing cold air infiltration into the room?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is there an anomaly in the temperature distribution around the ceiling line that could indicate a heating leak?",
+                    "answer": "Yes"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image taken in an outdoor place?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does this image depict a crowded shopping mall?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this a photo of an industrial warehouse?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does this image show a residential interior?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a staircase railing visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a chandelier hanging from the ceiling in this image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Can we see a door frame or part of a doorway in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there visible recessed ceiling lights present in this scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Are the walls painted cream?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the staircase railing white in color?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the ceiling have visible wooden beams?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the access panel have a patterned design?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the staircase railing positioned on the right side of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the door frame visible in the lower left corner of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the ceiling lights located at the bottom of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the access panel located at the top of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the staircase railing closer to the left wall than the recessed ceiling lights?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the access panel located behind the doorway in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the ceiling lights located exactly above the staircase railing?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the ceiling lights located between the door frame and the access panel?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there exactly two recessed ceiling lights visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two separate access panels visible on the ceiling?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there only one railing visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there four walls visible in the scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the door frame directly connected to the ceiling?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the railing adjacent to the right walls in the scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the recessed lights on?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the access panel touching the staircase railing?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 2 at the top of the image specifically referring to the floor number?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a visible year written somewhere on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a numerical value showing the height of the ceiling?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "5/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'Exit' near the top of the image referring to an emergency exit?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there any descriptive label near the access panel?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a visible warning sign on one of the walls?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "5/rgb.png",
+                "5/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: blue, purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: purple, blue, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: blue, purple, yellow, orange?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "5/rgb.png",
+                "5/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly matching the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly below the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint cropped from the top-center of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image viewpoint wider than the RGB image viewpoint?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "5/rgb.png",
+                "5/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the recessed light closer to the wall showing higher temperature than the other one in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls showing equal temperature across their surface in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the staircase railing showing equal temperature across its surface in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the access panel showing slightly lower temperature at its edges in the thermal image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "5/rgb.png",
+                "5/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the recessed light closer to the wall showing higher temperature than the ceiling surface?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the staircase railing showing higher temperature than the left wall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling line with the left wall showing cooler temperature intensity than the walls?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the access panel showing higher temperature intensity than the adjacent ceiling surface?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "5/rgb.png",
+                "5/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the recessed light closer to the wall the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the recessed light closer to the access panel the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the staircase railing the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the access panel the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "5/rgb.png",
+                "5/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the staircase railing the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling line with the left wall the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the access panel the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "5/rgb.png",
+                "5/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Is the recessed light closer to the wall showing any sign of electrical issue?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling line with the front wall showing signs of significant poor insulation or air-infiltration?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling line with the left wall showing signs of significant poor insulation or air-infiltration?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the access panel showing signs of significant poor insulation based on the temperature distribution?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

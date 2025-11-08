@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image related to a home entertainment system?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image show an electrical panel?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this a picture of a kitchen appliance?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image feature a vehicle control dashboard?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Are there any visible switches or circuit breakers along with their labels in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a visible window in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there any cable visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there any electrical sockets visible in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Are the electrical sockets in the image circular in shape?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the visible cable in the image red in color?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the circuit breakers in the image made of metal?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the panel in the image primarily white in color?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Are all the electrical sockets located at the top of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are all the cables positioned near the bottom left of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are all the circuit breakers located on the right side of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are some circuit breakers located at the top of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Are the cables closer to the white circuit breakers than the black ones?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the circuit breakers located to the left of the cable?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the yellow note between the electrical sockets and black circuit breakers?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the electrical sockets between the yellow note and black circuit breakers?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there two electrical sockets visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there thirteen black circuit breakers visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there only one cable visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there more than three white circuit breakers visible in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the upper cable connecting the second port from left in the top row to the third port from right in the middle row?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the yellow note for the sockets?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the white circuit breakers connected to the black ones with the cables?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the lower cable connecting the first port from left in the bottom row to the second port from right in the middle row?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '38.4' below the red point specifically referring to power consumption?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '38.4' below the red point specifically referring to a temperature of that point?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '3840' on the white circuit breakers specifically indicating a security code?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Fuse panel 1/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the top right corner specifically referring to the electrical panel brand?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'KIPINA' at the top right corner specifically referring to the electrical panel brand?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Fuse panel 1/rgb.jpg",
+                "Fuse panel 1/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, blue, purple, orange, yellow, white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, blue, purple, orange, white, yellow?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, purple, blue, orange, yellow, white?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Fuse panel 1/rgb.jpg",
+                "Fuse panel 1/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint a slightly below and to the right of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Fuse panel 1/rgb.jpg",
+                "Fuse panel 1/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the upper cable showing a uniform temperature distribution in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the electrical sockets showing a high temperature at their center?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is any switch in the top-right black circuit breaker set showing a higher temperature than other switches in that same set in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is any switch in the bottom-right circuit breaker set showing a higher temperature than other switches in that same set in the thermal image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Fuse panel 1/rgb.jpg",
+                "Fuse panel 1/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the white circuit breaker set hotter than the cable in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the lower cable warmer than the ports to which it is connected?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the top-right circuit breaker set showing higher temperatures than the electrical sockets?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the bottom-right circuit breaker set showing higher temperatures compared to the white circuit breaker?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Fuse panel 1/rgb.jpg",
+                "Fuse panel 1/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is upper the cable the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the labels of the bottom-right circuit breaker set the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the bottom-right circuit breaker set the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the yellow note the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Fuse panel 1/rgb.jpg",
+                "Fuse panel 1/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the left-most part of the electric panel the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the cables the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the bottom-right circuit breaker set the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the white note with blue text the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Fuse panel 1/rgb.jpg",
+                "Fuse panel 1/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the temperature at the red point on the bottom-right circuit breaker set indicating a potential risk of overheating or electrical issues?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Does the panel on the left side show signs of poor insulation based on the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the electrical sockets showing any significant risk of electrical issues based on their temperature distribution?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the cables showing signs of potential overheating or damage in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

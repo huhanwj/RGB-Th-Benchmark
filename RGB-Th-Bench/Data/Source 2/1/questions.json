@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image primarily showing a residential area with gardens and houses?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the main focus of this image an industrial setting with electrical equipment?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this image focused on a playground with various sports equipment?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does this image show a beach with sand, water, and people swimming?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Are there heavy-duty cables present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a transformer housing visible in this image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there any high-voltage bushings visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there an arrow visible in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the arrow red in color?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the cables black in color?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the transformer housing made of plastic?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the transformer bushings gray in color?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the transformer housing located at the bottom part of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the bushings positioned at the left side of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the large electrical cable bundle located at the top center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the red arrow a on the right of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Are the insulators positioned above the transformer housing?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the cables located in front of the transformer housing?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the red arrow pointing to an object behind the transformer housing?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the cables positioned below the transformer housing?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there exactly eight cables connected to each transformer bushings?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there exactly two visible bushings connected to the transformer in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there more than four bushing-shape insulators in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there exactly two red arrows in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Are the cables in the image bundled together with clamps at the connection point to the transformer bushings?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the insulators at the top of the frame, attached to overhead metal support structures?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the red arrow pointing to a sign on the transformer housing?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the red arrow pointing to the terminal of a transformer bushing?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 5 on the transformer, specifically referring to its voltage?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: the number 100 appears near the bottom of the image, showing transformer capacity?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: a number on the side of the transformer indicates the temperature?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: the visible text on the transformer housing is a warning label?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a company logo with the text indicating 'Sunshine Electrical' on the transformer?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a sign on the transformer housing showing a person holding a half-circle sun",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature unit in the scale bar Fahrenheit, with a temperature range from 59.1\u00b0F to 154.2\u00b0F?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, purple, orange, yellow, white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, orange, purple, yellow, white?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly matching the RGB image viewpoint without any shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint shifted to the left compared to the RGB image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image a zoomed-in crop of the center of the RGB image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image showing a wider field of view than the RGB image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Are the cables showing uniform high temperature across their surface?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the transformer housing showing uniform high temperature across its surface?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the right transformer bushing showing a cooler temperature in the center and hotter temperature near the connections?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the surrounding metal structures showing uniform low temperature across its surface?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Are the cables hotter than the transformer housing?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the transformer housing showing a higher temperature than the left bushing?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the left transformer bushing showing a cooler temperature than the right one?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": " Are the surrounding metal structures cooler than the transformer housing?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the terminal of the right transformer bushing the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the transformer housing the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the center of the right transformer bushing the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the cables the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the transformer housing the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the cable connections the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the cables the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the supportive metal beam structure under the cables the coldest area in this scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Does the temperature of the right transformer bushing indicate a potential overheating risk?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature of the transformer housing a potential overheating or electrical issue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the temperature of the left transformer bushing indicate a potential overheating risk?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the cables a sign of an electrical issue?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

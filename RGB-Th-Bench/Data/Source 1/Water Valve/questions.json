@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image taken outdoors?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image taken in a room with modern design?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image taken in an interior space with a corner in view?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this image upside down?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a wire visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a small window visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a pipe visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a valve visible in the scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Are the walls made of a glossy material?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling constructed from concrete or a similar solid material?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the pipe have a bright color, like red or blue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the left wall made of concrete blocks?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the pipe running across the bottom of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the pipe crossing from the center to the right of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls located at the center of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the valve positioned in the upper-left corner of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the pipe adjacent to the ceiling?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the valve beneath the pipe?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the pipe crossing the unpainted wall vertically?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the pipe crossing the green wall horizontally?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Is there more than one valve visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there two walls present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there three or more pipes in the scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there two valve shown in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is valve attached to the unpainted wall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is valve attached to the green wall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the pipe directly attached to green wall at two points in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the pipe directly attached to ceiling at two points in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '27' above the red point specifically referring to the camera's tilt angle?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '27' above the red point specifically referring to a temperature of the curtain?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '270' on the wall specifically indicating its temperature?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water Valve/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLI' on the valve specifically referring to its brand?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'ELIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water Valve/rgb.jpg",
+                "Water Valve/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: orange, purple, yellow?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water Valve/rgb.jpg",
+                "Water Valve/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly below and to the right of the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water Valve/rgb.jpg",
+                "Water Valve/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the valve showing a cool temperature distribution in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the left wall displaying a hot spot near its center?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the green wall displaying a cooler spot near its center?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling showing cooler temperature at the border line?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water Valve/rgb.jpg",
+                "Water Valve/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the left wall noticeably cooler than the right wall in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the area near the ceiling corner warmer than the green wall bottom in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the wall corner showing a lower temperature than both walls?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the wall corner showing cooler than the ceiling center?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water Valve/rgb.jpg",
+                "Water Valve/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is an area of the ceiling the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is an area of the pipe the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is an area of the green wall the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is an area of the left wall the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water Valve/rgb.jpg",
+                "Water Valve/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling border where the left wall meets the ceiling the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling border where the right wall meets the ceiling the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the pipe the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the wall corner the coldest area in this scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water Valve/rgb.jpg",
+                "Water Valve/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the temperature of the ceiling border a sign of poor insulation, moisture or a leak?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the pipe showing an overheating risk?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the green wall showing signs of poor insulation showing a sign of poor insulation, moisture or a leak?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the wall corner temperature potentially a sign of poor insulation, moisture or a leak?",
+                    "answer": "Yes"
+                }
+            ]
+        }
+    ]
+}

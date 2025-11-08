@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is the image taken outdoors?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image show a room with a large bed in it?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image show a kid room?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the scene captured during the night?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a window visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a bicycle in the scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Can you see a hanging crescent moon in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a television visible in the scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the hanging crescent moon shaped like a star?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the stuffed toy white in color?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the dresser made of wood?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the window curtain red?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the horse and cart toy located at the center right of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the hanging crescent moon positioned at the bottom center of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the window located at the center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the dresser positioned at the top right of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the stuffed toy to top of the dresser?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the hanging crescent moon above the window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the dresser positioned to the right of the window?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the horse-cart toy below the hanging crescent moon?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there two stuffed toys in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there only one hanging crescent moon in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there three windows visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there exactly six drawers visible in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the stuffed toy holding the hanging crescent moon?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the dresser supporting the stuffed toy?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the blinds covering the only one part of the window?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the hanging crescent moon touching the blinds?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '257' below the red point specifically referring to brightness of the sunlight on the window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '25.7' below the red point specifically referring to a temperature of the top of the window?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '257' on the moon specifically indicating its temperature?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Bedroom window/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'EXIT' at the top of the door specifically showing an emergency exit?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'ELIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Bedroom window/rgb.jpg",
+                "Bedroom window/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: orange, yellow, purple?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Bedroom window/rgb.jpg",
+                "Bedroom window/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly below and to the right of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Bedroom window/rgb.jpg",
+                "Bedroom window/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the window in the thermal image showing a warmer center with cooler edges?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the hanging crescent moon showing a high temperature in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the dresser in the thermal image showing a higher temperature closer the window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the stuffed toy showing a high temperature in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Bedroom window/rgb.jpg",
+                "Bedroom window/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the center of the window warmer than the horse-cart toy in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the stuffed toy warmer than the hanging crescent moon in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the area of the window cooler than the ceiling in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the dresser warmer than the blinds in the thermal image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Bedroom window/rgb.jpg",
+                "Bedroom window/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the center of the window the hottest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the stuffed toy the hottest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the hanging crescent moon the hottest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the dresser the hottest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Bedroom window/rgb.jpg",
+                "Bedroom window/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the area at the bottom of the window the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the stuffed toy the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the hanging crescent moon the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the dresser the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Bedroom window/rgb.jpg",
+                "Bedroom window/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the window showing signs of poor insulation only around its bottom, left, and right edges?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the stuffed toy present a risk of overheating?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the dresser indicate a fire hazard due to high temperature?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the blinds showing signs of poor insulation?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

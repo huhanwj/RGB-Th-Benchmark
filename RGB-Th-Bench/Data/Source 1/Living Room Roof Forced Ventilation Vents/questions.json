@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image taken outdoors?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image taken from an elevated point of view?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this image taken in an interior space with a ceiling in view?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this image upside down?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a hanging cord or string in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there an air vent visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a lampshade or light bulb visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a sheer curtain present in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Are all the vents on the ceiling white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling texture rough and uneven?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the vents on the ceiling circular in shape?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the curtain in the image opaque and non-transparent?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the cord hanging at the bottom of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling upper vent positioned on the left side of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the curtain located toward the bottom of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the dark object located near the center of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the hanging cord base positioned between the two air vents on the ceiling?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the dark object located directly above the curtain?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the dark object located at the upper-right corner?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the curtain positioned behind the window in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there two air vents in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there five ceiling fixtures in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there only one curtain in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two cords visible in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the dark object in the corner attached to the ceiling?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the cord in the image touch the curtain?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the air vents connected to the dark object?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the curtain hanging from the cord?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '27.1' above the red point specifically referring to the camera's tilt angle?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '27.1' above the red point specifically referring to a temperature of the curtain?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '271' on the curtain specifically indicating its temperature?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLI' on the air vents specifically referring to its brand?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'ELIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+                "Living Room Roof Forced Ventilation Vents/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, blue, orange, yellow?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+                "Living Room Roof Forced Ventilation Vents/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly below and to the right of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+                "Living Room Roof Forced Ventilation Vents/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the air vents showing a cooler temperature concentrated in their centers in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the cord hanging from the ceiling showing an even temperature distribution without any warm spots?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the curtain showing a cooler temperature around its edges compared to its center?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the dark object at upper-left corner showing a cold temperature spot in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+                "Living Room Roof Forced Ventilation Vents/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the temperature of the air vents lower than that of the dark object in the corner?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the curtain and window area warmer than the ceiling?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the dark object in the corner cooler than the hanging cord?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the air vents warmer than the curtain?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+                "Living Room Roof Forced Ventilation Vents/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the object in the corner of the ceiling the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the cord hanging from the ceiling the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the curtain and window area the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the air vents the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+                "Living Room Roof Forced Ventilation Vents/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the object in the corner of the ceiling the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the area near the curtain the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the air vents the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the main ceiling surface the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Living Room Roof Forced Ventilation Vents/rgb.jpg",
+                "Living Room Roof Forced Ventilation Vents/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Does the temperature of the air vents suggest a possible issue with insulation in that area?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the temperature near the curtain and window area potentially a sign of poor insulation?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Does the temperature of the cord hanging from the ceiling indicate a risk of electrical overheating?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is there an anomaly in the temperature distribution around the ceiling line that could indicate poor insulation?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

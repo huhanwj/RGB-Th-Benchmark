@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is the image showing under the hood of a car?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image depict a large brewery?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the scene focused on a complex mechanical system with pipes and valves?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the image feature a detailed view of kitchen appliances?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Are there visible pipes in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there any visible wires in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the image contain any kind of gauge?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the insulation on some of the pipes covered in foil insulation too?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Are the pipes in the image mostly made of PVC?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the insulation on the pipes wrapped with additional tape?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are all the valves in the image ball valve in type?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the insulation on some of the pipes gray in color?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Are the majority of the pipes located near the bottom of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the valves positioned in the upper half of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the blue gauge located on the left side of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the insulated pipe running across the top of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Are the insulated pipes directly above the uninsulated ones in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the blue gauge located to the right of the Y-globe valve?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the blue ball valves above the Y-globe valve?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the insulated pipes running vertically next to each other?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there five ball valves visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there only three insulated pipes penetrating vertically into the wall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there only four copper pipes running vertically visible in the entire setup?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there nine opening holes in the wall into which pipes penetrate?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the metal framework supporting the insulated pipes in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the ball valves working on the copper pipes?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the Y-globe valve working on the insulated pipes?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the wires connecting to the blue gauge directly?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '44.5' below the red point specifically referring to water flow rate of the insulated pipes?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '44.5' below the red point specifically referring to a temperature of the insulated pipes?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '4450' on the pressure gauge specifically indicating the pressure of the copper pipe?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Water and Heat Ping Management/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the top of the gauge specifically referring to its brand?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'ELIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water and Heat Ping Management/rgb.jpg",
+                "Water and Heat Ping Management/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, blue, purple, orange, yellow, white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, blue, purple, orange, white, yellow?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, purple, blue, orange, yellow, white?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water and Heat Ping Management/rgb.jpg",
+                "Water and Heat Ping Management/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly to the left of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water and Heat Ping Management/rgb.jpg",
+                "Water and Heat Ping Management/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the insulated pipes at the top showing hotter temperature distribution at the penetration point into the opening in the wall in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the uninsulated horizontal copper pipes showing an even temperature distribution throughout in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the vertical pipes on the left showing a gradient from warmer at the top to cooler at the bottom in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the uninsulated pipes at the bottom showing an even temperature distribution throughout in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water and Heat Ping Management/rgb.jpg",
+                "Water and Heat Ping Management/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is Y-globe valve warmer than the blue gauge?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the ball valves cooler than the blue gauge in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the vertical pipes on the left warmer than the valves?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the pipes at the bottom warmer than the copper pipes?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water and Heat Ping Management/rgb.jpg",
+                "Water and Heat Ping Management/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the horizontal pipes at the top the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the blue gauge the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the ball valves the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are copper pipes the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water and Heat Ping Management/rgb.jpg",
+                "Water and Heat Ping Management/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the copper pipes the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the horizontal pipes at the top the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the right-most ball valve the coldest object in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the blue gauge the coldest area in this scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Water and Heat Ping Management/rgb.jpg",
+                "Water and Heat Ping Management/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the temperature of 44.7\u00b0C on the horizontal pipes at the top be considered a risk of heat loss due to insufficient insulation?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the blue gauge indicate a risk of overheating?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the ball valves indicate an anomaly due to leakage?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the copper pipes pose a risk of overheating?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

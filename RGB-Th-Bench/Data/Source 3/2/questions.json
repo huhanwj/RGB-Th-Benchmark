@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image showing a room with furniture?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image depict an outdoor scene with natural elements?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image showing a small unfinished interior space?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does this image show a bustling, crowded space?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a hole in the floor visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there any electrical cable present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there visible carpeting on the floor?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there some spots on the concrete floor?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the floor in this image made of concrete?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls in this image painted in a bright color?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the baseboard in this image made of stone?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the wire black?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the large spot on the floor located at the center of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the exposed wiring located at the top of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the exposed wiring located at the bottom of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the floor located on the left side of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the exposed wiring closer to the wall than the large spot in the floor?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the exposed wiring located on the right wall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the large spot located near the center of the floor?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the large spot located at the edge of the floor?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Is there only one spot visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there exactly three visible wires in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there exactly two visible wires in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a total of five visible walls in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the exposed wiring connected to a power outlet in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the large spot on the floor touch the baseboard?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the baseboard directly attached to the wall in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the wiring hanging from the ceiling?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 1 written on the wall?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a number referring to a measurement on the floor?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 2 written near the wiring?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a label on the wall referring to construction details?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a safety warning visible on the baseboard?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is an instruction text on the floor explaining installation?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, red, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, blue, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, yellow, orange, red?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the viewpoint of the thermal image exactly the same as the RGB image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image showing a wider view compared to the RGB image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly to the right of the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint a slightly smaller cropped view of the RGB image viewpoint?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the floor showing a uniform temperature distribution in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the wall in the thermal image showing a hotspot at its center?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the wiring on the right showing significant temperature variation along its length?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the baseboard showing a uniform temperature distribution around the floor?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Does the area below the left baseboard have a lower temperature than the surrounding floor area?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature of the wiring higher than that of the large spot on the floor?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature of the front baseboard higher than the left wall in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the area below the left baseboard have a lower temperature than wall corner?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the right edge of the floor the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the area under the left baseboard the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the left wall the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the large spot on the floor the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the area under the left baseboard the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the large spot on the floor the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the wall on the left side the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the baseboard along the right wall the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Is the temperature of the area under the left baseboard an indication of potential poor insulation?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature distribution on the center of the floor an indication of a heating problem?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the front wall an indication of potential overheating?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there any sign of electrical issue on the wiring on the right?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

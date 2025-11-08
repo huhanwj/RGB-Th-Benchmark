@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image taken in a large, spacious living room?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does this image show a well-organized kitchen with lots of cooking space?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the image capturing a laundry room with a washer and dryer?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the room in the image an outdoor patio area?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a paper towel holder in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a trash bin in the scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a washer dryer combo machine present in the room?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a piece of cloth in this image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the washer dryer combo machine in the image white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the trash bin in the image cylindrical in shape?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the tiles on the floor square-shaped?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the paper towel holder made of metal?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the washer dryer combo machine located on the right side of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the trash bin positioned at the center of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the cabinets located in the bottom part of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the paper towel holder placed at the center of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the trash bin in front of the cabinets?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the paper towel holder placed above the washing machine?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the sink next to the washer dryer combo machine?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the washing machine located under the countertop?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there two washers visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there three cabinet doors with handle in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there two bottles visible on the countertop?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there four pieces of fabric or towels hanging in the scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the lamp above sink on?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the trash bin touching the washing machine?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the cabinet door holding a piece of fabric?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the detergent drawer open?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number \"269\" above the red point specifically referring to power consumption of the washer and dryer combo machine?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number \"26.9\" above the red point specifically referring to a temperature of the top of the wall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number \"26.9\" on the trash bin specifically indicating its temperature?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Downstairs laundry room/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"FLIR\" at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"FLIR\" at the top of the washer and dryer combo machine specifically referring to its brand?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"ELIR\" at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Downstairs laundry room/rgb.jpg",
+                "Downstairs laundry room/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, blue, orange, yellow?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Downstairs laundry room/rgb.jpg",
+                "Downstairs laundry room/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly to the left of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Downstairs laundry room/rgb.jpg",
+                "Downstairs laundry room/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the cabinets in the thermal image showing a mostly uniform temperature distribution?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the trash bin in the thermal image showing a warmer center compared to its edges?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the dryer machine in the thermal image showing a gradual temperature gradient from warm to cold?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the piece of fabric hanging on the cabinet in the thermal image showing a cold spot concentrated on its top?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Downstairs laundry room/rgb.jpg",
+                "Downstairs laundry room/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the trash bin in the thermal image hotter than the countertop?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the cabinets in the thermal image colder than the washing machine?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the sink area in the thermal image warmer than the stacked dryer?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the towel hanging from the cabinet showing a lower temperature than the trash bin?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Downstairs laundry room/rgb.jpg",
+                "Downstairs laundry room/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the trash bin the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the door the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the washer and dryer the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the floor drain the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Downstairs laundry room/rgb.jpg",
+                "Downstairs laundry room/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the floor drain the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the cabinets the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the area under cabinets the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the washing machine the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Downstairs laundry room/rgb.jpg",
+                "Downstairs laundry room/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the stacked dryer showing signs of a thermal anomaly that suggests overheating?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Can the cold area under the cabinets be a sign of water ingress?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the paper towel holder showing a temperature anomaly that suggests fire risk?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the trash bin showing signs of a thermal anomaly that suggests overheating?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

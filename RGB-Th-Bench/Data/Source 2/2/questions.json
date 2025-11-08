@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this an image of an outdoor setting with natural scenery?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image mainly show a circuit panel or electrical setup?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this image focused on communication system?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image depict a stove?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a red arrow present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there multiple cables visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a visible knob?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a visible circuit breaker in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the arrow in the image colored red?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the thick heavy-duty cables visible in the image white?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the big circuit breaker panel metallic?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the backplate of the panel have a perforated design?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the arrow pointing at the center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the circuit breaker located at the bottom of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the white cables positioned on the left side of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the visible knob located at the bottom of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the red arrow positioned above the cable lugs or terminal connections?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the white cables located above the knob in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the large circuit breaker above and to the left of the red arrow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the knob positioned in front of the heavy-duty cables?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there four cable lugs or terminal connections visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there only one red arrow visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there three cable lugs or terminal connections visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there just one knob component in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the red arrow pointing towards one of the cable lugs or terminal connections?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the red arrow pointing away from the circuit breaker panel?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the white cables bundles together?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the heavy duty cables connecting the component with the knob to the circuit breaker panel?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible and legible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 220 visible in the image, representing voltage?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the number 2 visible, representing the number of connected cables?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: the number shown in the image is 440, related to current?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "2/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: Based on the text on the circuit breaker, it is ON?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: the text in the image indicates a warning message at the bottom of the panel?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: the non-numerical text in the image states 'High Voltage' near the circuit breaker?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature unit displayed in Fahrenheit with a range from 109.8\u00b0F to 244.3\u00b0F?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, orange, yellow, white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, yellow, white, orange?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly matching the RGB image viewpoint without any shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image slightly shifted to the right compared to the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image a zoomed-in crop from the center viewpoint of the RGB image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image shifted to the top-left compared to the RGB image viewpoint?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the central terminal connection showing a high-temperature spot in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is central heavy cable showing an even temperature distribution along its entire length?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are white cables showing an even cool temperature along their entire length?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the perforated backplate surface showing a consistent low-temperature reading across all areas?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the central terminal connection hotter than the surrounding terminal connections?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the central heavy-duty cables hotter than the central terminal connection?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the circuit breaker panel colder than the white cables?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the heavy-duty cables cooler than the perforated backplate?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the central terminal connection the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the central heavy-duty cable the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the circuit breaker the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the knob the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Are the perforated backplate and white cables the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the central terminal connection the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the heavy-duty cables the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the knob the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "2/rgb.png",
+                "2/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Is the high temperature at the central terminal connection a potential risk for overheating or electrical failure?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature of the background area any significant risk?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the left most terminal connections a critical risk factor in this setup?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the central heavy-duty cable considered an anomaly that may indicate electrical issues?",
+                    "answer": "Yes"
+                }
+            ]
+        }
+    ]
+}

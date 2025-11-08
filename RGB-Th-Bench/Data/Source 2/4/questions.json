@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this an image of a garden with plants and trees?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this an image of an electrical control panel",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this an image showing a communication system?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this an image of a sports stadium with seats and a field?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a fuse holder present in this image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a cartridge fuse present in this image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a screwdriver present in this image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a wire or cable visible in this image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Are all the fuses the same color?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are all the fuses the same size and shape?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the fuse holders made of black plastic?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Do the clip and caps of each fuse have the same color?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the arrow pointing a fuse located at the center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the empty fuse holder located at the bottom right corner of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the arrow pointing away from the top right of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": " Is the empty fuse holder located at the left of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the silver fuse to the left of the golden fuse with same size?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the silver fuse to the left of the bronze fuse?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the large fuse to the right of the small golden fuse?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": " Is the empty holder located to the left of all other objects?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there three small fuse holders with fuse visible in this image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there five fuses present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two wires connected to the top terminal of the silver fuse?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there exactly eight wires on top and four wires at the bottom of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the red arrow pointing to the silver fuse?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the red arrow pointing to an empty fuse holder?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the red arrow pointing to a screw holding a wire?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the red arrow indicating a broken wire?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible and legible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 168 on the label on top of the right-most fuse holder?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact legible number 10 printed on the highlighted fuse?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 5 located on the lower left corner of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible and legible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'OFF' on the highlighted fuse indicating a status?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FU' above empty fuse holders indicating their label or function?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FU' above silver and golden fuses indicating their label or function?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature unit shown in the scale bar in Fahrenheit (F) with a temperature range from 73.2\u00b0F to 110.0\u00b0F?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, purple, orange, yellow, white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, purple, yellow, orange, white?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly matching the RGB image viewpoint without any shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image slightly shifted to the left compared to the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image a zoomed-in crop from the center viewpoint of the RGB image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the thermal image have a wider viewpoint of the RGB image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the silver fuse showing higher temperature below its upper cap?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the bronze fuse showing uniform temperature distribution with no hot spots?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the small golden fuse showing higher temperature near its caps?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the empty fuse holder showing a uniform temperature distribution?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the silver fuse significantly hotter than the adjacent fuses?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the large golden fuse hotter than the small golden fuse?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are all fuse caps cooler than the fuse bodies?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the two wires of the silver fuse warmer than their terminal?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the silver fuse the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the small golden fuse the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": " Are the two wires of the silver fuse the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the background around the fuses the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Are the caps of the large golden fuse the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the silver fuse the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the empty fuse holder the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the lower terminal of the bronze fuse the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Is the temperature at the silver fuse indicating potential improper connection between the fuse and holder?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature at the bronze fuse indicating potential improper connection between the fuse and holder?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature at the silver fuse indicating potential poor insulation in the panel?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the caps of the large golden fuse a sign of electrical issue?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

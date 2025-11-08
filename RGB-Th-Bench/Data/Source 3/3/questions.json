@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this an image of a busy furnished office space?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this an image of a kitchen with multiple appliances visible?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this an image of an outdoor park with trees and pathways?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this an image of an empty room with minimal furnishings?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a door visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a window present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a chair visible in the room?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a lamp visible in the room?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the wall in the room painted white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the floor covered with tiles?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the door made of glass?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the window covered by blinds?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the door located on the left side of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the window positioned at the top of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the outlet visible at the bottom center of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the grass area visible on the right side of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the door to the left of the window?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the outlet to the bottom-right of the door?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the pole closer to window than the grass area?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the outlet closer to the baseboard than the switch?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Is there only one door visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there four window panes visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two electrical outlets visible?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two poles in the room?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the window open?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the door holding a mirror?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the two electrical outlets side by side?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the switch connected to a ceiling fan through wire?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a number 5 on the wall indicating room number?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a measurement number displayed near the window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: a number is visible indicating the electrical voltage?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a 'Welcome' sign on the door?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a safety label near the outlet?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a 'Push' label on the door handle?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: yellow, orange, purple?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: red, yellow, green?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Does the thermal image viewpoint exactly matches the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly to the left of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly above the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image showing a wider view than the RGB image viewpoint?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the door showing uniform warmth across its surface in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the floor showing cool spots along its edges in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the walls in the thermal image completely uniform without any cool spots?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the area near the door handle significantly cooler than the rest of the door?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the wall cooler than the floor in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the door handle warmer than the surrounding door surface in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the switch cooler than the rest of the wall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the wall corner significantly cooler than the central wall areas?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the floor the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the wall near the electrical outlets the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the door handle the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the switch the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the area near the electrical outlets the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the door handle the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the switch the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the wall corner the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Is the temperature of the electrical switch an indication of electrical issue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the floor temperature suggest an overheating issue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the electrical outlets an indication of electrical issue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the wall corner show signs of a possible poor insulation or air-infiltration?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

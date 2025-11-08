@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image mainly depicting an outdoor scene with plants and trees?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image focused on a kitchen?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image showing a staircase area with minimal decor?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does this image capture a furnished interior space?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a ceiling light present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a large sofa visible in this image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the image contain a visible window?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a bookshelf present in this room?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the wall color predominantly white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are window frames made of a dark metallic material?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the staircase railing painted in a white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling light emitting a dim and warm glow?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the ceiling light positioned near the top center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the smaller window located on the bottom of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the staircase railing shown at the bottom-center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the larger window positioned on the right side of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the smaller window positioned on the same wall as the larger window and to the left of the larger window?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling light located below the windows?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the staircase railing to the left of the smaller window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the reflective rectangular object on the wall to the right of the larger window?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there three window panes visible in this image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two ceiling lights in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there four walls visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there only one reflective rectangular object visible in this image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the light from the ceiling illuminating the entire room evenly?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the staircase railing directly connected to the smaller window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the larger window partially obstructed by a piece of furniture?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling light partially covered by a curtain?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 5 at the bottom right corner specifically referring to a measurement?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a number indicating the room temperature near the smaller window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a floor number visible in the top left corner of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "4/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the word 'EXIT' at the top of the larger window?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a visible label indicating 'DO NOT ENTER' on the wall?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a directional sign near the staircase railing?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: blue, purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, blue, orange, yellow?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: orange, yellow, purple, blue?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Does the thermal image viewpoint exactly matches the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image viewpoint to the left of the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly above the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image showing a wider view than the RGB image viewpoint?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Are the walls showing a uneven temperature distribution with cool root-shape streaks areas in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the larger window showing lower temperature around its frame than its pane?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling showing a cold spot in its center?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the staircase railing showing a uniform temperature distribution on its surface in the thermal image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the smaller window cooler than the larger one?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling warmer than the walls overall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls warmer than the ceiling light area?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the window higher than the temperature of the reflective rectangular object?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the ceiling light the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the smaller window the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the staircase railing the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Are the window panes the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling corner the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the staircase railing the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "4/rgb.png",
+                "4/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Could the root-shape streaks on the wall indicate potential moisture or insulation issues?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling light showing a sign of overheating risk in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Could the temperature around the window frames indicate poor insulation or air infiltration?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there signs of potential electrical issues in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

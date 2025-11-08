@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image showing a kitchen area?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image taken in a bathroom?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does this image depict a living room setup?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this an image of a bedroom?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a toilet present in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a trash can in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a bathtub present in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a children potty in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the toilet predominantly blue in color?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the tiles on the floor gray?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the toilet brush colorful?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the wall tiles in the image decorated with floral patterns?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the trash can located at the bottom-left of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the drain visible at the top-right of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the toilet paper positioned at the center-left of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the toilet positioned in the top-center of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the trash can located to the left of the toilet?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the toilet brush located to the left of the trash can?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the drain positioned directly in front of the toilet?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the toilet paper directly above the toilet brush?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there two trash cans visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there only one toilet paper in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two floor drains visible?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there only one toilet brush?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the toilet directly connected to the drain?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the trash can separate from the toilet?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the toilet brush touching the wall tile?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the trash can separate from toilet brush?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '25.8' below the white point specifically referring to humidity of the bathroom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '25.8' below the white point specifically referring to the temperature of the center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '258' below the white point specifically referring to the temperature of the center of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Upstairs bathroom/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the center of the image specifically referring to the toilet brand?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'ELIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Upstairs bathroom/rgb.jpg",
+                "Upstairs bathroom/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: purple, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: orange, yellow, purple?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Upstairs bathroom/rgb.jpg",
+                "Upstairs bathroom/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly above and to the left of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Upstairs bathroom/rgb.jpg",
+                "Upstairs bathroom/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the toilet seat showing an even temperature distribution in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the trash can showing a temperature hotspot at the center in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the toilet tank displaying a cooler temperature at its center area in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the floor area directly in front of the toilet warmer than the rest of the floor?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Upstairs bathroom/rgb.jpg",
+                "Upstairs bathroom/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the toilet tank cooler than the floor tiles in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the toilet brush warmer than the trash can?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the toilet seat warmer than the wall tiles directly next to it?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the drain on the floor cooler than the surrounding floor tiles?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Upstairs bathroom/rgb.jpg",
+                "Upstairs bathroom/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the toilet tank the warmest area in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the toilet brush the warmest area in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the toilet seat the warmest area in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the floor area directly in front of the toilet the warmest area in the thermal image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Upstairs bathroom/rgb.jpg",
+                "Upstairs bathroom/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the toilet tank the coldest area in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the toilet brush the coldest area in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the toilet seat the coldest area in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the floor area directly in front of the toilet the coldest area in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Upstairs bathroom/rgb.jpg",
+                "Upstairs bathroom/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Is the relatively low temperature of the toilet tank an indicator of a possible leak or insulation issue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Could the temperature of the floor tiles indicate potential leakage or poor insulation?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the wall tiles an indicator of poor insulation?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Could the warmer spot in front of the toilet seat indicate an electrical or overheating issue?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

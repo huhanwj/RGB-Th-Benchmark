@@ -1,0 +1,429 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this a bustling marketplace scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image showing an empty indoor space with minimal decor?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the image show an outdoor garden with various plants?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image of a furnished living room?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a window visible in the scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a chair present in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a radiator visible in the scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a hanging ceiling light visible in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the radiator white in color?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the floor covered with carpet?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the light bulb encased in a fixture?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the walls painted blue?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the window located in the top center of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the radiator located in the bottom of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the light bulb visible at the top-right of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the dormer area situated on the far left side of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the radiator positioned directly below the window?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the light bulb positioned to the right of the dormer area?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the window positioned inside the dormer area?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the radiator closer to the hanging ceiling light than the window?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there two windows visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there exactly one radiator visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two light bulbs in the room?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the window have two glass panes?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the radiator touching the window frame?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the light bulb hanging from the ceiling?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the radiator placed on top of a table?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the window covered with blinds?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a number '10' showing the room temperature?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a number '25' indicating a floor level?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a number '100' visible on the radiator?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "6/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a warning label on the radiator?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is text describing light bulb wattage?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is a sign indicating the room name on the wall?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "6/rgb.png",
+                "6/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: blue, purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: purple, blue, orange, yellow?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly represent temperature distribution from low to high: blue, purple, yellow, orange?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "6/rgb.png",
+                "6/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly aligned with the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint above the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint a large crop from the bottom-left of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image viewpoint wider than the RGB image viewpoint?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "6/rgb.png",
+                "6/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the window showing a cooler temperature on its edges than its window panes?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the radiator displaying an equal temperature across its entire surface in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the slanted ceiling area displaying an equal temperature across its entire surface?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the right wall inside the dormer area showing a warm spot in its center?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "6/rgb.png",
+                "6/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the slanted ceiling area warmer than the central part of the wall in the room?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the right wall inside the dormer area showing higher temperature than the window pane?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the radiator warmer than its surrounding wall in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the ceiling cooler than the window in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the window frame cooler than the floor?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "6/rgb.png",
+                "6/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the wall surrounding the window the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the window itself the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the radiator the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the slanted ceiling the warmest area in this scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "6/rgb.png",
+                "6/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Are the window panes the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the radiator the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the floor the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the window top edge the coldest area in this scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "6/rgb.png",
+                "6/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Are the dormer area walls showing signs of heat loss  and poor insulation?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there an anomaly with the radiator indicating it is overheating in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling area showing potential insulation issues?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the window edges showing potential insulation issues?",
+                    "answer": "Yes"
+                }
+            ]
+        }
+    ]
+}

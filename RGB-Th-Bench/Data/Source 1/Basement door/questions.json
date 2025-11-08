@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Does this image depict a well-lit, welcoming entrance to a family home?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this location likely intended as a high-security access point to a restricted area?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this a recreational area designed for relaxation and comfort?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this an outdoor public walkway with scenic surroundings?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a door visible in the scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there any visible text or logo on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a window present in the scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a visible ceiling with lighting in the scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the door in the scene a solid, dark color?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls in the scene are painted white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the ceiling have a rough, unfinished texture?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the floor have a carpet covering?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the door located at the center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the light source positioned at the top of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls primarily located on the right side of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the floor visible at the bottom of the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the door located below the light source?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the walls positioned on both sides of the door?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the circular feature on the door located above the door handle?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the ceiling positioned above the walls?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Is there only one door in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there three walls visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there only one circular feature visible on the door?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there two light sources visible in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the circular feature on the door designed to provide ventilation through the door?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the circular feature on the door designed to serve as a decorative feature?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the light source physically attached to the door?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the door handle connect to the ceiling for support?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Do you see the exact number \"25\u00b0\" specifically referring to the temperature of the top right corner where the red point is?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Do you see the exact number \"25\" specifically indicating a door model or room number?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Do you see the exact number \"2.5\" specifically referring to the temperature of the top right corner where the red point is?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Basement door/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"FLIR\" at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"EXIT\" at the top of the door specifically showing an emergency exit?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text \"ELIR\" at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement door/rgb.jpg",
+                "Basement door/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the following sequence of colors correctly represent the temperature distribution from low to high: purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Does the following sequence of colors correctly represent the temperature distribution from low to high: red, blue, green?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the following sequence of colors correctly represent the temperature distribution from low to high: yellow, purple, red?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement door/rgb.jpg",
+                "Basement door/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly to the right of the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement door/rgb.jpg",
+                "Basement door/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the door in the thermal image showing a cooler temperature concentrated towards the bottom?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the walls in the thermal image showing a gradual increase in temperature from the edges to the center?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the circular feature on the door in the thermal image displaying a consistent, low-temperature distribution?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling in the thermal image showing a high-temperature concentration at the center?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement door/rgb.jpg",
+                "Basement door/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the door warmer than the surrounding walls in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the area near the circular feature on the door cooler than the rest of the door in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the walls in the thermal image warmer than the ceiling?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the door handle showing a higher temperature than the door itself in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement door/rgb.jpg",
+                "Basement door/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling light the hottest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the ceiling tiles the hottest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the door jamb the hottest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the gaps and cracks on the walls the hottest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement door/rgb.jpg",
+                "Basement door/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the circular feature on the door the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Are the gaps and cracks on the walls the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the ceiling tile the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the lid line the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Basement door/rgb.jpg",
+                "Basement door/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the cooler area near the air vent on the door in the thermal image an indication of a potential insulation problem?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Does the warmer temperature of the walls in the thermal image indicate an electrical or fire hazard?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the door handle\u2019s thermal state in the image an indication of overheating and potential risk?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in thermal image should be shifted slightly downward to align with the edges of the objects. Is the temperature distribution on the ceiling in the thermal image a sign of insulation failure?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image showing an outdoor garden scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does this image depict a residential kitchen?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does this image show a sports facility?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this a photograph of industrial heating equipment or a boiler system?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a visible pipe system in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the insulation tube on some of the pipes covered in foil insulation too?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there any cylindrical tanks in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a pressure gauge present in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Are the visible pipes without any insulation made of copper material?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the tank on the floor red in color?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the surface of the red object smooth?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the insulation tube layer of the pipes gray in color?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the red tank located near the center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the large gray tank positioned at the top of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a visible pipe with insulation tube running across the center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a visible pipe with insulation tube running across the top of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Are the copper pipes below the large white and green tank?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the gray tank in front of the tube-insulated pipes?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the black piping above the large white and green tank?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a pressure gauge to the right of the large white and green tank?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there only three large tanks visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there at least one electric motor in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there more than one pressure gauge visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there at least four visible uninsulated pipes in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the red tank connected to the gray tank?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the gray tank connected to the large white and green tank through the pipe at the bottom of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the copper pipes directly connected to the foil-insulated pipes?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the gray tank the only tank that does not have an attached pressure gauge?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '48.9' below the red point specifically referring to power consumption of the left tank?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '48.9' below the red point specifically referring to a temperature of the top of the left tank?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact number '4890' on the pressure gauge specifically indicating the pressure of the tank?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": "Geothermic heat system 2/rgb.jpg",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'FLIR' at the top of the tank specifically referring to the tank brand?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact text 'ELIR' at the bottom left corner specifically referring to a thermal imaging brand?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Geothermic heat system 2/rgb.jpg",
+                "Geothermic heat system 2/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, blue, purple, orange, yellow, white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, blue, purple, orange, white, yellow?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, purple, blue, orange, yellow, white?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Geothermic heat system 2/rgb.jpg",
+                "Geothermic heat system 2/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint without any noticeable shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint slightly to the left of the RGB image viewpoint?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be shifted downward to correctly match the positions of black edges of the objects?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "In the thermal image, should the heatmap be zoomed out to correctly match the positions of black edges of the objects?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Geothermic heat system 2/rgb.jpg",
+                "Geothermic heat system 2/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the tube-insulated pipes showing a high temperature intensity in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the top green circular section of the large white and green tank showing a high-temperature concentration?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the bottom portion of the red tank the warmest part of the tank?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the bottom portion of the gray tank the warmest part of the tank?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Geothermic heat system 2/rgb.jpg",
+                "Geothermic heat system 2/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the copper pipes showing higher temperature intensity than the red tank in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the gray tank showing higher temperature than the tube-insulated pipes in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the white green tank hotter overall than both the red and gray tanks?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the pressure gauge of the left tank cooler than the pressure gauge of the red tank?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Geothermic heat system 2/rgb.jpg",
+                "Geothermic heat system 2/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the copper uninsulated pipes the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the gray tank the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the tube-insulated pipes the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the top green circular section of the white tank the warmest area in this scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Geothermic heat system 2/rgb.jpg",
+                "Geothermic heat system 2/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the gray tank the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the section of the wall below the tube-insulated pipes the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Is the red tank the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Are the black pipes the coldest area in this scene?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 1",
+            "data_id": [
+                "Geothermic heat system 2/rgb.jpg",
+                "Geothermic heat system 2/thermal.jpg"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the temperature of the tube-insulated pipes indicate a risk of overheating or poor insulation?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the temperature of the section of the wall below the tube-insulated pipes suggest a risk of water ingress from outside?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the red tank's thermal signature indicate a leakage issue?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Consider the fact that the heatmap in the thermal image should be shifted slightly downward to align with the edges of the objects. Could the temperature of the green circular section on top of the large white tank suggest a risk of overheating or poor insulation?",
+                    "answer": "Yes"
+                }
+            ]
+        }
+    ]
+}

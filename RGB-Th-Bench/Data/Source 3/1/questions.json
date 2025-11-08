@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image showing a single-story commercial building?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does this image depict a two-story residential building with additional dormers on the roof level?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this an image of a busy street filled with multiple vehicles and people?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image showing an industrial warehouse with large machinery?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a visible garage in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a tree in front of the building?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the sky visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a visible swimming pool in the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Is the roof of the building dark gray in color?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the windows framed in black?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the car blue in color?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the main color of the building's exterior a bright blue?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Is the garage located on the left side of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the dormer windows positioned at the bottom of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the main entrance located at the bottom-right of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the downspout located on the right side of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Is the car position with respect to the garage the same as that of the portico with respect to the facade of the building?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the dormer windows positioned above and to the right of the downspout?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the portico placed to the left of the garage?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the red bricks located at the center of the building's facade?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there exactly two dormer windows visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there exactly five windows visible on the entire building?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there three columns supporting the entrance portico?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there more than one downspout visible on the building?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the downspout connected to the roof?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the garage door open for the car?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the sunlight shining onto the dormer windows?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the columns supporting the garage roof?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a visible number on the building indicating the house address?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there any number displayed on the garage door?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the building display a number indicating its height in meters?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": "1/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible non-numerical text on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there a visible label on the building showing its name?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there any warning text displayed near the garage?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there any signage on the building indicating it's a commercial property?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color-to-temperature scale bar on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, purple, orange, yellow?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, purple, yellow, orange?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, orange, purple, yellow?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly the same as the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint above the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint to the right of the RGB image viewpoint?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint a slightly smaller cropped view of the RGB image viewpoint?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Are the window frames showing higher temperature intensity along their borders in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the garage roof showing the highest temperature intensity in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the side wall of the building showing higher temperature at the wall apex and in line with first and second floor joists compared to other areas of the wall?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the garage roof showing uniform temperature distribution in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the temperature intensity higher on the window frames than on the main building walls in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the downspout warmer than the main building walls in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the dormer windows on the roof cooler than the main wall surfaces in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the brick accents warmer than the main wall surfaces in the thermal image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Are the window frames the warmest areas in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the garage roof the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the main entrance door the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the top edge of the roof the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Ignoring the sky, is the garage roof the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Ignoring the sky, is the side wall of the building the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Ignoring the sky, are the window panels the coldest areas in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Ignoring the sky, is the front entrance area the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 3",
+            "data_id": [
+                "1/rgb.png",
+                "1/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Is the temperature along the window frames a potential indicator of poor insulation?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature in line with first and second floor joists a potential indicator of poor insulation batts?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature at the side wall apex suggesting higher local heat loss?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature of the front entrance area a potential indicator of poor insulation?",
+                    "answer": "Yes"
+                }
+            ]
+        }
+    ]
+}

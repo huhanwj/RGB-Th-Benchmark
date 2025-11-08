@@ -1,0 +1,425 @@
+{
+    "data": [
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Scene Understanding",
+            "QAs": [
+                {
+                    "question": "Is this image likely part of a kitchen appliance setup?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image part of a high-voltage electrical system?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is this image a piece of automotive machinery?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this image related to plumbing components?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Detailed Object Presence",
+            "QAs": [
+                {
+                    "question": "Is there a bolt visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a visible metal plate in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there any thick high-current cables visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there any thin low-current cables visible in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Attributes",
+            "QAs": [
+                {
+                    "question": "Are the all cables in the image black?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the arrows red?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the bolts in the image made of plastic?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are all the low-current cables green in color?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Location w.r.t. Image",
+            "QAs": [
+                {
+                    "question": "Are the thick cables located at the top of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the low-current cables located at the bottom of the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the all bolts positioned near the center of the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the busbar assembly located on the left side of the image?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Spatial Relation",
+            "QAs": [
+                {
+                    "question": "Are all the bolts positioned above the busbar assembly?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the thick cable with a red mark on it positioned in the middle of the cables?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the bolts located behind the red part in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the low-current cables positioned to the left of the high-current ones?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Counting",
+            "QAs": [
+                {
+                    "question": "Are there only three thick high-current cables visible in the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are there exactly two bolts visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are there exactly two low-current cables visible in the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is there exactly one metal bar connector visible in the image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Instance Interaction",
+            "QAs": [
+                {
+                    "question": "Is the left high-current cable loosely connected to its terminal with visible conductor?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the middle high-current cable loosely connected to its terminal with visible conductor?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the left arrow pointing to the left connection point?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the right high-current cable loosely connected to its terminal with visible conductor?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible and legible number on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 120 at the top left specifically referring to voltage?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 50 on the right side referring to cable capacity?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the exact number 5 in the center of the image showing amperage?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": "3/rgb.png",
+            "data_type": "Single RGB Image",
+            "skill_type": "Non-Numerical Text Reference Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any visible and legible non-numerical text on the image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the text 'high voltage' at the top center of the image indicating a warning?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the text 'ground' on the right side showing a connection point?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is this correct: there is the text 'live' in the bottom left indicating active circuitry?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Temperature to Color Mapping Understanding",
+            "QAs": [
+                {
+                    "question": "Is there any color to temperature scale bar on the image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the temperature scale in Fahrenheit with a range of 74.9\u00b0F to 133.2\u00b0F?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, blue, purple, orange, yellow, white?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the following sequence of colors correctly representing temperature distribution from low to high: black, blue, purple, yellow, orange, white?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "RGB-Thermal-Heatmap Alignment",
+            "QAs": [
+                {
+                    "question": "Is the thermal image viewpoint exactly matching the RGB image viewpoint without any shift or zoom?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint shifted to the left compared to the RGB image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the thermal image viewpoint zoomed-in compared to the RGB image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Does the thermal image have a wider viewpoint and shifted to the top compared to the RGB image?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Instance Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Are the bolts showing high temperature intensity at their center in the thermal image?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the high-current cables showing a uniform temperature distribution in the thermal image?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the metal bar component displaying a uniform cold temperature distribution?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the low-current cables showing a uniform cold temperature distribution?",
+                    "answer": "Yes"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Relative Thermal Attribute",
+            "QAs": [
+                {
+                    "question": "Is the middle high-current cable cooler than the other two?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Are the thin cables cooler than the black cables?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the middle black cable hotter than the metal bar component?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the left terminal bolt hotter than its cable?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Warmest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Are the bolts the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the middle high-current cable the warmest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the right high-current cable the warmest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the background area surrounding the cables the warmest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Coldest Areas Detection",
+            "QAs": [
+                {
+                    "question": "Is the background area surrounding the cables the coldest area in this scene?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is the middle black cable the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the middle black cable the coldest area in this scene?",
+                    "answer": "No"
+                },
+                {
+                    "question": "Are the bolts the coldest area in this scene?",
+                    "answer": "No"
+                }
+            ]
+        },
+        {
+            "version": "v1",
+            "data_source": "Source 2",
+            "data_id": [
+                "3/rgb.png",
+                "3/thermal.png"
+            ],
+            "data_type": "RGB-Thermal Pair",
+            "skill_type": "Risk and Anomaly Detection",
+            "QAs": [
+                {
+                    "question": "Is there a risk of overheating or loose connection at the terminal Bx2?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a risk of overheating or loose connection at the terminal Bx1?",
+                    "answer": "Yes"
+                },
+                {
+                    "question": "Is there a risk of overheating or loose connection at the terminal Sp1",
+                    "answer": "No"
+                },
+                {
+                    "question": "Is the temperature of the background area a significant safety concern?",
+                    "answer": "No"
+                }
+            ]
+        }
+    ]
+}
