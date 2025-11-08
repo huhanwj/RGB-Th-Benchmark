@@ -77,50 +77,50 @@ DATASET_ROOT = Path("RGB-Th-Bench/Data")
 
 # Define the models you want to test
 MODELS_TO_TEST = [
-    {
-        "provider": "gemini",
-        "model_name": "gemini-2.5-flash",
-        # "api_key_env": "GEMINI_API_KEY" # Automatically inferred
-    },
-    {
-        "provider": "gemini",
-        "model_name": "gemini-2.5-pro",
-        # "api_key_env": "GEMINI_API_KEY" # Automatically inferred
-    },
-    {
-        "provider": "openai",
-        "model_name": "gpt-5",
-        "base_url": "https://api.openai.com/v1",
-        # "api_key_env": "OPENAI_API_KEY" # Automatically inferred
-    },
-    {
-        "provider": "volcengine",
-        "model_name": "doubao-seed-1-6-vision-250815",  # <-- Doubao-Seed-1.6-Vision
-        # "base_url": "https://api.volcengine.com/v1/chat/completions", #
-        # "api_key_env": "VOLCENGINE_API_KEY" # Automatically inferred
-    },
+    # {
+    #     "provider": "gemini",
+    #     "model_name": "gemini-2.5-flash",
+    #     # "api_key_env": "GEMINI_API_KEY" # Automatically inferred
+    # },
+    # {
+    #     "provider": "gemini",
+    #     "model_name": "gemini-2.5-pro",
+    #     # "api_key_env": "GEMINI_API_KEY" # Automatically inferred
+    # },
+    # {
+    #     "provider": "openai",
+    #     "model_name": "gpt-5",
+    #     "base_url": "https://api.openai.com/v1",
+    #     # "api_key_env": "OPENAI_API_KEY" # Automatically inferred
+    # },
+    # {
+    #     "provider": "ark",
+    #     "model_name": "doubao-seed-1-6-vision-250815",  # <-- Doubao-Seed-1.6-Vision
+    #     "base_url": "https://ark.cn-beijing.volces.com/api/v3", #
+    #     "api_key_env": "ARK_API_KEY" # Automatically inferred
+    # },
     {
         "provider": "siliconflow",
-        "model_name": "Qwen/Qwen3-VL-235B-A22B-Thinking", # <-- Qwen3-VL-235B-A22B-Thinking
-        "base_url": "https://api.siliconflow.com/v1", # <-- TODO: VERIFY URL
+        "model_name": "Qwen/Qwen3-VL-235B-A22B-Instruct", # <-- Qwen3-VL-235B-A22B-Thinking
+        "base_url": "https://api.siliconflow.cn/v1", # <-- TODO: VERIFY URL
         "api_key_env": "SILICONFLOW_API_KEY"
     },
     {
         "provider": "siliconflow",
-        "model_name": "Qwen/Qwen3-VL-30B-A3B-Thinking", # <-- Qwen-3-VL-30B-A3B-Thinking
-        "base_url": "https://api.siliconflow.com/v1", # <-- TODO: VERIFY URL
+        "model_name": "Qwen/Qwen3-VL-30B-A3B-Instruct", # <-- Qwen-3-VL-30B-A3B-Thinking
+        "base_url": "https://api.siliconflow.cn/v1", # <-- TODO: VERIFY URL
         "api_key_env": "SILICONFLOW_API_KEY"
     },
     {
         "provider": "siliconflow",
-        "model_name": "Qwen/Qwen3-VL-8B-Thinking", # <-- Qwen3-VL-8B-Thinking
-        "base_url": "https://api.siliconflow.com/v1", # <-- TODO: VERIFY URL
+        "model_name": "Qwen/Qwen3-VL-8B-Instruct", # <-- Qwen3-VL-8B-Thinking
+        "base_url": "https://api.siliconflow.cn/v1", # <-- TODO: VERIFY URL
         "api_key_env": "SILICONFLOW_API_KEY"
     },
     {
         "provider": "siliconflow",
         "model_name": "zai-org/GLM-4.5V", # GLM-4.5V
-        "base_url": "https://api.siliconflow.com/v1", # <-- TODO: VERIFY URL
+        "base_url": "https://api.siliconflow.cn/v1", # <-- TODO: VERIFY URL
         "api_key_env": "SILICONFLOW_API_KEY"
     },
     # Add more models as needed...
@@ -148,7 +148,7 @@ def call_gemini_api(api_key, model_name, prompt, pil_images):
         response = model.generate_content(
             content,
             generation_config=genai.types.GenerationConfig(
-                temperature=0.0,
+                temperature=0.5,
                 max_output_tokens=50 # "Yes" or "No" should be small
             )
         )
@@ -164,13 +164,13 @@ def call_ark_api(api_key, model_name, prompt, pil_images):
         client = Ark(api_key=os.environ.get("ARK_API_KEY"))
         
         # Build the message content
-        content = [{"type": "text", "text": prompt}]
+        content = [{"text": prompt, "type": "text" }]
         for img in pil_images:
             content.append({
-                "type": "image_url",
                 "image_url": {
                     "url": f"data:image/jpeg;base64,{image_to_base64(img)}"
-                }
+                },
+                "type": "image_url"                
             })
         
         messages = [
@@ -183,7 +183,7 @@ def call_ark_api(api_key, model_name, prompt, pil_images):
         response = client.chat.completions.create(
             model=model_name,
             messages=messages,
-            temperature=0.0,
+            temperature=0.5,
             max_tokens=50
         )
         return response.choices[0].message.content
@@ -196,6 +196,7 @@ def call_openai_compatible_api(api_key, base_url, model_name, prompt, pil_images
     Calls any OpenAI-compatible API (OpenAI, Volcengine, SiliconFlow).
     """
     try:
+        wait_time = 5.0  # wait time between requests to avoid rate limits
         client = OpenAI(api_key=api_key, base_url=base_url)
         
         # Build the message content
@@ -218,9 +219,10 @@ def call_openai_compatible_api(api_key, base_url, model_name, prompt, pil_images
         response = client.chat.completions.create(
             model=model_name,
             messages=messages,
-            temperature=0.0,
+            temperature=0.7,
             max_tokens=50
         )
+        time.sleep(wait_time)
         return response.choices[0].message.content
     except Exception as e:
         print(f"  [!] OpenAI-Compatible API Error ({base_url}): {e}")
@@ -397,9 +399,9 @@ def main():
                     try:
                         if provider == 'gemini':
                             response_text = call_gemini_api(api_key, model_name, full_prompt, pil_images)
-                        elif provider == 'volcengine':
-                            # For Volcengine Ark
-                            response_text = call_ark_api(api_key, model_name, full_prompt, pil_images)
+                        # elif provider == 'volcengine':
+                        #     # For Volcengine Ark
+                        #     response_text = call_ark_api(api_key, model_name, full_prompt, pil_images)
                         else:
                             # For OpenAI, SiliconFlow
                             response_text = call_openai_compatible_api(
