@@ -26,8 +26,8 @@ SETUP:
     # For Volcengine Ark
     export ARK_API_KEY="YOUR_VOLCENGINE_API_KEY"
     
-    # For SiliconFlow (or other OpenAI-compatible)
-    export SILICONFLOW_API_KEY="YOUR_SILICONFLOW_API_KEY"
+    # For ALIYUN (or other OpenAI-compatible)
+    export ALIYUN_API_KEY="YOUR_ALIYUN_API_KEY"
 
 3.  Configure Models:
     Edit the `MODELS_TO_TEST` list below to match the model names and 
@@ -66,9 +66,7 @@ from tqdm import tqdm
 import time
 
 # Import API Clients
-import google.genai as genai
-from google.genai import types
-from google.api_core import exceptions as google_exceptions
+import google.generativeai as genai
 from openai import OpenAI, APIError, APITimeoutError
 from volcenginesdkarkruntime import Ark
 # --- 1. CONFIGURE YOUR MODELS HERE ---
@@ -89,30 +87,42 @@ MODELS_TO_TEST = [
     #     "model_name": "gemini-2.5-pro",
     #     # "api_key_env": "GEMINI_API_KEY" # Automatically inferred
     # },
-    {
-        "provider": "openai",
-        "model_name": "gpt-5",
-        "base_url": "https://api.openai.com/v1",
-        # "api_key_env": "OPENAI_API_KEY" # Automatically inferred
-    },
+    # {
+    #     "provider": "openai",
+    #     "model_name": "gpt-5",
+    #     "base_url": "https://api.openai.com/v1",
+    #     # "api_key_env": "OPENAI_API_KEY" # Automatically inferred
+    # },
     # {
     #     "provider": "ark",
     #     "model_name": "doubao-seed-1-6-vision-250815",  # <-- Doubao-Seed-1.6-Vision
     #     "base_url": "https://ark.cn-beijing.volces.com/api/v3", #
     #     "api_key_env": "ARK_API_KEY" # Automatically inferred
     # },
-    # {
-    #     "provider": "siliconflow",
-    #     "model_name": "Qwen/Qwen3-VL-235B-A22B-Instruct", # <-- Qwen3-VL-235B-A22B-Thinking
-    #     "base_url": "https://api.siliconflow.cn/v1", # <-- TODO: VERIFY URL
-    #     "api_key_env": "SILICONFLOW_API_KEY"
-    # },
-    # {
-    #     "provider": "siliconflow",
-    #     "model_name": "Qwen/Qwen3-VL-30B-A3B-Instruct", # <-- Qwen-3-VL-30B-A3B-Thinking
-    #     "base_url": "https://api.siliconflow.cn/v1", # <-- TODO: VERIFY URL
-    #     "api_key_env": "SILICONFLOW_API_KEY"
-    # },
+    {
+        "provider": "aliyun",
+        "model_name": "qwen3-vl-plus", # <-- Qwen3-VL-235B-A22B-Thinking
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1", # <-- TODO: VERIFY URL
+        "api_key_env": "ALIYUN_API_KEY"
+    },
+    {
+        "provider": "aliyun",
+        "model_name": "qwen3-vl-flash", # <-- Qwen-3-VL-30B-A3B-Thinking
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1", # <-- TODO: VERIFY URL
+        "api_key_env": "ALIYUN_API_KEY"
+    },
+        {
+        "provider": "aliyun",
+        "model_name": "qwen3-vl-235b-a22b-thinking", # <-- Qwen-3-VL-30B-A3B-Thinking
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1", # <-- TODO: VERIFY URL
+        "api_key_env": "ALIYUN_API_KEY"
+    },
+    {
+        "provider": "aliyun",
+        "model_name": "qwen3-vl-30b-a3b-thinking", # <-- Qwen-3-VL-30B-A3B-Thinking
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1", # <-- TODO: VERIFY URL
+        "api_key_env": "ALIYUN_API_KEY"
+    },
     # {
     #     "provider": "siliconflow",
     #     "model_name": "Qwen/Qwen3-VL-8B-Instruct", # <-- Qwen3-VL-8B-Thinking
@@ -141,24 +151,18 @@ def call_gemini_api(api_key, model_name, prompt, pil_images):
     Calls the Gemini API with a prompt and a list of PIL Images.
     """
     try:
-        client = genai.Client()
-        if model_name == "gemini-2.5-pro":
-            gen_config = genai.types.GenerateContentConfig(
-                temperature=0.7,
-                # maxOutputTokens=50 
-            )
-        else:
-            gen_config = genai.types.GenerateContentConfig(
-                    temperature=0.7,
-                    thinking_config=types.ThinkingConfig(thinking_budget=0) # Disables thinking
-                    # maxOutputTokens=50 
-                )
+        genai.configure(api_key=api_key)
+        model = genai.GenerativeModel(model_name)
+        
         # Build the content list [prompt, image1, image2, ...]
         content = [prompt] + pil_images
-        response = client.models.generate_content(
-            model=model_name,
-            contents = content,
-            config = gen_config
+        
+        response = model.generate_content(
+            content,
+            generation_config=genai.types.GenerationConfig(
+                temperature=0.5,
+                max_output_tokens=50 # "Yes" or "No" should be small
+            )
         )
         return response.text
     except Exception as e:
@@ -169,7 +173,7 @@ def call_ark_api(api_key, base_url, model_name, prompt, pil_images):
     Calls the Volcengine Ark API with a prompt and a list of PIL Images.
     """
     try:
-        # wait_time = 2.0  # wait time between requests to avoid rate limits
+        wait_time = 2.0  # wait time between requests to avoid rate limits
         client = Ark(api_key=api_key, base_url=base_url)
         
         # Build the message content
@@ -194,12 +198,13 @@ def call_ark_api(api_key, base_url, model_name, prompt, pil_images):
             messages=messages,
             temperature=0.7,
             thinking={
-                    # "type": "disabled", # 不使用深度思考能力
-                    "type": "enabled", # 使用深度思考能力
+                    "type": "disabled", # 不使用深度思考能力
+                    # "type": "enabled", # 使用深度思考能力
                     # "type": "auto", # 模型自行判断是否使用深度思考能力
                 },
+            max_tokens=50
         )
-        # time.sleep(wait_time)
+        time.sleep(wait_time)
         return response.choices[0].message.content
     except Exception as e:
         print(f"  [!] Volcengine Ark API Error: {e}")
@@ -207,11 +212,11 @@ def call_ark_api(api_key, base_url, model_name, prompt, pil_images):
     
 def call_openai_compatible_api(api_key, base_url, model_name, prompt, pil_images):
     """
-    Calls any OpenAI-compatible API (OpenAI, Volcengine, SiliconFlow).
+    Calls any OpenAI-compatible API (OpenAI, Volcengine, ALIYUN).
     """
     try:
-        # wait_time = 2.0  # wait time between requests to avoid rate limits
-        client = OpenAI()
+        # wait_time = 1.0  # wait time between requests to avoid rate limits
+        client = OpenAI(api_key=api_key, base_url=base_url)
         
         # Build the message content
         content = [{"type": "text", "text": prompt}]
@@ -234,7 +239,8 @@ def call_openai_compatible_api(api_key, base_url, model_name, prompt, pil_images
             model=model_name,
             messages=messages,
             # temperature=0.7,
-            # max_tokens=50
+            extra_body={
+            'enable_thinking': True},
         )
         # time.sleep(wait_time)
         return response.choices[0].message.content
@@ -417,7 +423,7 @@ def main():
                             # For Volcengine Ark
                             response_text = call_ark_api(api_key, model_config['base_url'], model_name, full_prompt, pil_images)
                         else:
-                            # For OpenAI, SiliconFlow
+                            # For OpenAI, ALIYUN
                             response_text = call_openai_compatible_api(
                                 api_key,
                                 model_config['base_url'],
@@ -467,7 +473,7 @@ def main():
             print("--------------------------------" + "-" * len(model_name))
 
     # Save all results to a JSON file
-    output_file = "benchmark_results_doubao1_6_think.json"
+    output_file = "benchmark_results_aliyun_thinking.json"
     with open(output_file, 'w') as f:
         json.dump(all_results, f, indent=2)
 
