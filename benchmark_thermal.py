@@ -45,19 +45,19 @@ from volcenginesdkarkruntime import Ark
 DATASET_ROOT = Path("RGB-Th-Bench/Data")
 
 MODELS_TO_TEST = [
-    {
-        "provider": "gemini",
-        "model_name": "gemini-2.5-flash",
-    },
     # {
     #     "provider": "gemini",
-    #     "model_name": "gemini-2.5-pro",
+    #     "model_name": "gemini-2.5-flash",
     # },
     # {
-    #     "provider": "openai",
-    #     "model_name": "gpt-5", # Assuming this is gpt-4o or similar
-    #     "base_url": "https://api.openai.com/v1",
+    #    "provider": "gemini",
+    #     "model_name": "gemini-2.5-pro",
     # },
+    {
+        "provider": "openai",
+        "model_name": "gpt-5", # Assuming this is gpt-4o or similar
+        "base_url": "https://api.openai.com/v1",
+    },
     # {
     #     "provider": "ark",
     #     "model_name": "doubao-seed-1-6-vision-250815",
@@ -70,24 +70,24 @@ MODELS_TO_TEST = [
     #     "base_url": "https://api.siliconflow.cn/v1",
     #     "api_key_env": "SILICONFLOW_API_KEY"
     # },
-    {
-        "provider": "local",
-        "model_name": "unsloth/Qwen3-VL-30B-A3B-Thinking-GGUF:Q5_K_M", 
-        "base_url": "http://192.168.77.38:8000/v1",
-        "api_key_env": "LOCAL_API_KEY"
-    },
-    {
-        "provider": "local",
-        "model_name": "unsloth/Qwen3-VL-8B-Thinking-GGUF:Q8_0", 
-        "base_url": "http://192.168.77.42:8000/v1",
-        "api_key_env": "LOCAL_API_KEY"
-    },
-    {
-        "provider": "local",
-        "model_name": "unsloth/Qwen3-VL-8B-Instruct-GGUF:Q8_0", 
-        "base_url": "http://192.168.66.116:8000/v1",
-        "api_key_env": "LOCAL_API_KEY"
-    },
+    # {
+    #     "provider": "local",
+    #     "model_name": "unsloth/gemma-3-27b-it-GGUF:Q8_0", 
+    #     "base_url": "http://192.168.77.38:8000/v1",
+    #     "api_key_env": "LOCAL_API_KEY"
+    # },
+    # {
+    #     "provider": "local",
+    #     "model_name": "unsloth/Qwen3-VL-8B-Thinking-GGUF:Q8_0", 
+    #     "base_url": "http://192.168.77.42:8000/v1",
+    #     "api_key_env": "LOCAL_API_KEY"
+    # },
+    # {
+    #     "provider": "local",
+    #     "model_name": "unsloth/Qwen3-VL-4B-Instruct-GGUF:Q8_0", 
+    #     "base_url": "http://192.168.66.116:8000/v1",
+    #     "api_key_env": "LOCAL_API_KEY"
+    # },
 ]
 
 # --- 2. API CLIENT FUNCTIONS (WITH RETRY LOGIC) ---
@@ -111,7 +111,7 @@ def call_gemini_api(api_key, model_name, prompt, pil_images):
             # Use 0.0 temp for reproducible results, disable thinking for Yes/No
             gen_config = genai.types.GenerateContentConfig(
                 temperature=0.0, 
-                thinking_config=types.ThinkingConfig(thinking_budget=0)
+                # thinking_config=types.ThinkingConfig(thinking_budget=0)
             )
             
             content = pil_images + [prompt] # Use simple PIL list

@@ -250,18 +250,27 @@ def load_images_for_item(item, base_dir):
     """
     MODIFIED (Thermal-Only Hard Mode):
     This function will IGNORE the 'data_type' and 'data_id' fields
-    and *only* load 'thermal.jpg' for *all* questions.
+    and *only* load 'thermal.jpg' or 'thermal.png' for *all* questions.
     """
     pil_images = []
-    thermal_img_path = base_dir / "thermal.jpg"
+    thermal_img_path_jpg = base_dir / "thermal.jpg"
+    thermal_img_path_png = base_dir / "thermal.png"
     
-    if thermal_img_path.exists():
+    thermal_img_path_to_load = None
+
+    if thermal_img_path_jpg.exists():
+        thermal_img_path_to_load = thermal_img_path_jpg
+    elif thermal_img_path_png.exists():
+        thermal_img_path_to_load = thermal_img_path_png
+    
+    if thermal_img_path_to_load:
         try:
-            pil_images.append(Image.open(thermal_img_path))
+            # Always append the thermal image
+            pil_images.append(Image.open(thermal_img_path_to_load))
         except Exception as e:
-            tqdm.write(f"Warning: Failed to load thermal image {thermal_img_path}: {e}")
+            tqdm.write(f"Warning: Failed to load thermal image {thermal_img_path_to_load}: {e}")
     else:
-        tqdm.write(f"Warning: Thermal image not found {thermal_img_path}, skipping item.")
+        tqdm.write(f"Warning: Thermal image not found (checked .jpg and .png) in {base_dir}, skipping item.")
             
     return pil_images
 

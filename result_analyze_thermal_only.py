@@ -3,6 +3,7 @@
 """
 ================================================================================
 RGB-Th-Bench Benchmark Analysis Script
+*** THERMAL-ONLY COMPARISON MODE ***
 ================================================================================
 ... (script header) ...
 MODIFICATION: Now also saves summary tables and skill matrices to CSV files.
@@ -17,7 +18,6 @@ import seaborn as sns
 from pathlib import Path
 
 # --- Configuration: Skill Mappings ---
-
 SKILL_ABBREVIATIONS = {
     'Scene Understanding': 'Scene',
     'Detailed Object Presence': 'ObjPr',
@@ -50,15 +50,17 @@ RGB_TH_TXT_SKILLS = [
 
 
 def load_all_results() -> pd.DataFrame:
-    """Finds and loads all benchmark_results_*.json files."""
+    """Finds and loads ONLY thermal_only benchmark_results_*.json files."""
     all_results = []
-    # Use glob to find all matching files
-    json_files = glob.glob('benchmark_results_*.json')
+    
+    # This glob pattern now ONLY finds files ending in _thermal_only.json
+    json_files = glob.glob('benchmark_results_*_thermal_only.json')
+    
     if not json_files:
-        print("Error: No 'benchmark_results_*.json' files found.")
+        print("Error: No 'benchmark_results_*_thermal_only.json' files found.")
         return pd.DataFrame()
 
-    print(f"Found {len(json_files)} result files: {json_files}")
+    print(f"Found {len(json_files)} thermal-only result files: {json_files}")
     
     for f in json_files:
         with open(f, 'r') as file:
@@ -74,17 +76,12 @@ def load_all_results() -> pd.DataFrame:
 
     df = pd.DataFrame(all_results)
     
-    # Handle the 'thermal-only' runs by checking for 'data_type_original'
     if 'data_type_original' in df.columns:
-        # Use the *original* data type for skill categorization
         df['data_type'] = df['data_type_original']
-        # Rename the 'model' to include a suffix to avoid collisions
-        df['model'] = df.apply(
-            lambda row: row['model'] + '_thermal_only' if pd.notna(row['data_type_original']) else row['model'],
-            axis=1
-        )
+    else:
+        print("Warning: 'data_type_original' column not found. Skill categorization may be incorrect.")
         
-    print(f"Loaded {len(df)} total results from {df['model'].nunique()} models/runs.")
+    print(f"Loaded {len(df)} total results from {df['model'].nunique()} models.")
     return df
 
 
@@ -130,13 +127,13 @@ def calculate_metrics(df: pd.DataFrame):
         'SAcc (RGB-Th-Txt)': sacc_rgb_th,
     }).sort_values('SAcc (Overall)', ascending=False)
     
-    print("\n--- Model Performance Summary ---")
+    print("\n--- Model Performance Summary (Thermal-Only) ---")
     print(summary_df.to_string(float_format="%.2f%%"))
-    print("---------------------------------\n")
-
+    print("--------------------------------------------------\n")
+    
     # --- START OF MODIFICATION ---
     # Save the summary dataframe to CSV
-    summary_filename = "benchmark_summary_all.csv"
+    summary_filename = "benchmark_summary_thermal_only.csv"
     summary_df.to_csv(summary_filename, float_format="%.4f")
     print(f"Saved summary table to {summary_filename}")
     # --- END OF MODIFICATION ---
@@ -170,8 +167,8 @@ def plot_heatmaps(qacc_matrix, sacc_matrix):
 
     # --- START OF MODIFICATION ---
     # Save the heatmap matrices to CSV
-    qacc_matrix_filename = "qacc_matrix_all.csv"
-    sacc_matrix_filename = "sacc_matrix_all.csv"
+    qacc_matrix_filename = "qacc_matrix_thermal_only.csv"
+    sacc_matrix_filename = "sacc_matrix_thermal_only.csv"
     qacc_matrix_plt.to_csv(qacc_matrix_filename, float_format="%.4f")
     print(f"Saved QAcc matrix data to {qacc_matrix_filename}")
     sacc_matrix_plt.to_csv(sacc_matrix_filename, float_format="%.4f")
@@ -192,13 +189,13 @@ def plot_heatmaps(qacc_matrix, sacc_matrix):
         vmax=100,
         cbar_kws={'label': 'QAcc (%)'}
     )
-    plt.title('QAcc (Question-level Accuracy) by Model and Skill', fontsize=16)
+    plt.title('QAcc (Question-level Accuracy) by Model and Skill [Thermal-Only]', fontsize=16)
     plt.ylabel('Model (Run)')
     plt.xlabel('Skill Dimension')
     plt.xticks(rotation=45, ha="right")
     plt.yticks(rotation=0)
     plt.tight_layout()
-    qacc_filename = 'qacc_heatmap.png'
+    qacc_filename = 'qacc_heatmap_thermal_only.png'
     plt.savefig(qacc_filename, dpi=300)
     print(f"Saved QAcc heatmap to {qacc_filename}")
     plt.close()
@@ -216,13 +213,13 @@ def plot_heatmaps(qacc_matrix, sacc_matrix):
         vmax=100,
         cbar_kws={'label': 'SAcc (%)'}
     )
-    plt.title('SAcc (Skill-level Accuracy) by Model and Skill', fontsize=16)
+    plt.title('SAcc (Skill-level Accuracy) by Model and Skill [Thermal-Only]', fontsize=16)
     plt.ylabel('Model (Run)')
     plt.xlabel('Skill Dimension')
     plt.xticks(rotation=45, ha="right")
     plt.yticks(rotation=0)
     plt.tight_layout()
-    sacc_filename = 'sacc_heatmap.png'
+    sacc_filename = 'sacc_heatmap_thermal_only.png'
     plt.savefig(sacc_filename, dpi=300)
     print(f"Saved SAcc heatmap to {sacc_filename}")
     plt.close()

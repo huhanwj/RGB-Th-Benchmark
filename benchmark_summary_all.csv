@@ -1,0 +1,18 @@
+model,QAcc (Overall),SAcc (Overall),QAcc (RGB-Txt),SAcc (RGB-Txt),QAcc (RGB-Th-Txt),SAcc (RGB-Th-Txt)
+gemini-2.5-pro,78.9332,43.1034,82.1429,47.2906,72.5369,39.8467
+zai-org/GLM-4.5V,76.7780,40.0862,81.8966,48.7685,67.6108,33.3333
+doubao-seed-1-6-vision-250815,75.5927,39.2241,83.1281,53.6946,63.6700,27.9693
+qwen3-vl-plus-non-thinking,77.3168,38.7931,82.6355,50.2463,68.3498,29.8851
+doubao-seed-1-6-vision-250815-non-thinking,74.8922,38.1466,80.7882,47.7833,63.9163,30.6513
+gemini-2.5-flash,77.2091,37.5000,82.0197,50.2463,67.7340,27.5862
+gpt-5_thermal_only,72.1049,33.7130,69.5596,29.3532,73.0650,37.3950
+gemini-2.5-pro_thermal_only,70.7614,31.4351,67.8756,26.8657,71.6718,35.2941
+qwen3-vl-plus_thermal_only,68.0102,28.4738,65.0259,20.3980,68.1115,35.2941
+qwen3-vl-flash-non-thinking,69.7737,28.4483,76.2315,42.8571,58.7438,17.2414
+unsloth/Qwen3-VL-8B-Thinking-GGUF:Q8_0_thermal_only,66.9226,27.5626,64.5078,21.3930,66.2539,32.7731
+unsloth/Qwen3-VL-30B-A3B-Thinking-GGUF:Q5_K_M_thermal_only,66.4107,27.1071,62.6943,18.9055,66.7183,34.0336
+gemini-2.5-flash_thermal_only,67.1785,26.1959,63.6010,21.8905,67.6471,29.8319
+qwen3-vl-flash_thermal_only,63.8516,22.3235,60.4922,14.4279,63.6223,28.9916
+unsloth/gemma-3-27b-it-GGUF:Q8_0_thermal_only,60.4607,21.4123,61.3990,19.4030,55.5728,23.1092
+unsloth/Qwen3-VL-8B-Instruct-GGUF:Q8_0_thermal_only,62.4440,20.9567,56.7358,12.9353,64.5511,27.7311
+ggml-org/SmolVLM2-2.2B-Instruct-GGUF:F16,55.0647,7.7586,52.4631,3.9409,56.4039,10.7280

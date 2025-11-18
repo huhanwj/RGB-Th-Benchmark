@@ -12,7 +12,7 @@ across multiple VLM API providers.
 SETUP:
 --------------------------------------------------------------------------------
 1.  Install necessary libraries:
-    pip install google-generativeai openai volcengine-python-sdk pillow tqdm
+    pip install google-genai openai volcengine-python-sdk pillow tqdm
 
 2.  Set Environment Variables:
     You MUST set API keys for the providers you want to test.
@@ -68,7 +68,7 @@ import time
 # Import API Clients
 import google.genai as genai
 from google.genai import types
-from google.api_core import exceptions as google_exceptions
+# from google.api_core import exceptions as google_exceptions
 from openai import OpenAI, APIError, APITimeoutError
 from volcenginesdkarkruntime import Ark
 # --- 1. CONFIGURE YOUR MODELS HERE ---
@@ -89,12 +89,12 @@ MODELS_TO_TEST = [
     #     "model_name": "gemini-2.5-pro",
     #     # "api_key_env": "GEMINI_API_KEY" # Automatically inferred
     # },
-    {
-        "provider": "openai",
-        "model_name": "gpt-5",
-        "base_url": "https://api.openai.com/v1",
-        # "api_key_env": "OPENAI_API_KEY" # Automatically inferred
-    },
+    # {
+    #     "provider": "openai",
+    #     "model_name": "gpt-5",
+    #     "base_url": "https://api.openai.com/v1",
+    #     # "api_key_env": "OPENAI_API_KEY" # Automatically inferred
+    # },
     # {
     #     "provider": "ark",
     #     "model_name": "doubao-seed-1-6-vision-250815",  # <-- Doubao-Seed-1.6-Vision
@@ -125,6 +125,12 @@ MODELS_TO_TEST = [
     #     "base_url": "https://api.siliconflow.cn/v1", # <-- TODO: VERIFY URL
     #     "api_key_env": "SILICONFLOW_API_KEY"
     # },
+    {
+        "provider": "local",
+        "model_name": "unsloth/Qwen3-VL-30B-A3B-Thinking-GGUF:Q5_K_M", # GLM-4.5V
+        "base_url": "http://192.168.77.38:8000/v1", # <-- TODO: VERIFY URL
+        "api_key_env": "LOCAL_API_KEY"
+    },
     # # Add more models as needed...
 ]
 
@@ -211,7 +217,7 @@ def call_openai_compatible_api(api_key, base_url, model_name, prompt, pil_images
     """
     try:
         # wait_time = 2.0  # wait time between requests to avoid rate limits
-        client = OpenAI()
+        client = OpenAI(api_key="", base_url=base_url)
         
         # Build the message content
         content = [{"type": "text", "text": prompt}]
@@ -357,9 +363,12 @@ def main():
         key_env_var = model_config.get("api_key_env", f"{provider.upper()}_API_KEY")
         api_key = os.getenv(key_env_var)
         
-        if not api_key:
-            print(f"Warning: API key for {provider} ({key_env_var}) not found. Skipping.")
-            continue
+        if provider != "local":
+            if not api_key:
+                print(f"Warning: API key for {provider} ({key_env_var}) not found. Skipping.")
+                continue
+        else:
+            print(f"Warning: API key for {provider} ({key_env_var}) is empty. Local run.")
             
         print(f"\n--- Testing Model: {model_name} (Provider: {provider}) ---")
         
@@ -467,7 +476,7 @@ def main():
             print("--------------------------------" + "-" * len(model_name))
 
     # Save all results to a JSON file
-    output_file = "benchmark_results_doubao1_6_think.json"
+    output_file = "benchmark_results_qwen3_VL_30B_A3B_Thinking_Q5KM.json"
     with open(output_file, 'w') as f:
         json.dump(all_results, f, indent=2)
 
