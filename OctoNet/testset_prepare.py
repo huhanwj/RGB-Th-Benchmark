@@ -7,15 +7,15 @@ from datetime import datetime
 # --- 1. 配置 ---
 
 # 输入：你原始的 'data' 文件夹
-INPUT_BASE_PATH = r"D:\OctoNet-upload\node_3\seekThermal"
+INPUT_BASE_PATH = r"C:\Users\huhan\Documents\OctoNet-upload\node_3\seekThermal"
 
 # 输出：一个新的、干净的、处理后的数据集文件夹
-OUTPUT_BASE_PATH = r"D:\OctoNet\processed_thermal_dataset"
+OUTPUT_BASE_PATH = r"C:\Users\huhan\Documents\OctoNet\Thermal"
 OUTPUT_VIDEO_DIR = os.path.join(OUTPUT_BASE_PATH, "videos")
 OUTPUT_JSON_FILE = os.path.join(OUTPUT_BASE_PATH, "video_qa_set.json")
 
 # 视频设置
-FPS = 30  # 你希望合成的视频的帧率
+FPS = 10  # 你希望合成的视频的帧率
 
 # --- 2. [复用] 时间戳解析函数 ---
 
