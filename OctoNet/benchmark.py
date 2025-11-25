@@ -2,84 +2,65 @@ import json
 import os
 import time
 import base64
-import math
-import cv2
 import pandas as pd
 from tqdm import tqdm
 from abc import ABC, abstractmethod
 
 # ==========================================
-# 0. 配置与 API Key (请在此处填入你的Key)
+# 0. 配置与 API Key
 # ==========================================
 
 # 输入输出文件配置
-INPUT_JSON = 'video_qa_set.json'
+# 指向 testset_prepare_v2.py 生成的 JSON
+INPUT_JSON = r'F:\OctoNet\node_3\seekThermal_v2\video_qa_set.json'
 OUTPUT_CSV = 'benchmark_results_raw_gemini.csv'
 
 # API KEYS
-# 建议使用环境变量，或者直接替换下方的字符串
 DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "sk-your-qwen-key")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "your-gemini-key")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-your-openai-key")
 
-# Qwen Base URL (阿里云百炼)
+# Qwen Base URL
 QWEN_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 
 # ==========================================
-# 1. 视频处理工具 (Video Utilities)
+# 1. 图像处理工具 (Image Utilities)
 # ==========================================
 
-def encode_video_base64(video_path):
+def load_sampled_frames(video_relative_path, base_dir):
     """
-    [Qwen专用] 读取整个视频文件并转为 Base64 字符串
+    根据 video_path (e.g. 'videos/session_001.mp4')
+    加载对应的采样帧 (e.g. 'sampled_frames/session_001/*.jpg')
+    返回 Base64 编码的图像列表
     """
-    if not os.path.exists(video_path):
-        return None
-    with open(video_path, "rb") as video_file:
-        return base64.b64encode(video_file.read()).decode("utf-8")
-
-def extract_frames_1fps(video_path):
-    """
-    [GPT-4o专用] 按 1fps (每秒一帧) 抽取关键帧并转为 Base64
-    """
-    if not os.path.exists(video_path):
-        return None
-
-    cap = cv2.VideoCapture(video_path)
+    # 1. 获取视频文件名（无扩展名）
+    video_filename = os.path.basename(video_relative_path)
+    video_name_no_ext = os.path.splitext(video_filename)[0]
     
-    # 获取视频原始帧率
-    fps = cap.get(cv2.CAP_PROP_FPS)
-    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+    # 2. 构造采样帧目录路径
+    # 假设目录结构:
+    # root/
+    #   videos/
+    #   sampled_frames/
+    #     session_001/
+    #       frame_00.jpg
+    #       ...
+    frames_dir = os.path.join(base_dir, "sampled_frames", video_name_no_ext)
     
-    if total_frames <= 0 or fps <= 0:
-        cap.release()
-        return None
-
-    # 计算步长：保证每秒抽1帧
-    step = int(math.ceil(fps))
+    if not os.path.exists(frames_dir):
+        print(f"Warning: Frames dir not found: {frames_dir}")
+        return []
+    
+    # 3. 读取所有jpg并按文件名排序
+    frame_files = sorted([f for f in os.listdir(frames_dir) if f.endswith('.jpg')])
     
     encoded_frames = []
-    for frame_idx in range(0, total_frames, step):
-        cap.set(cv2.CAP_PROP_POS_FRAMES, frame_idx)
-        ret, frame = cap.read()
-        if ret:
-            # 可选：缩放以节省 Token (320x240其实可以不缩放)
-            # frame = cv2.resize(frame, (320, 240)) 
-            _, buffer = cv2.imencode('.jpg', frame)
-            base64_image = base64.b64encode(buffer).decode('utf-8')
-            encoded_frames.append(base64_image)
+    for f in frame_files:
+        file_path = os.path.join(frames_dir, f)
+        with open(file_path, "rb") as img_file:
+            b64_str = base64.b64encode(img_file.read()).decode('utf-8')
+            encoded_frames.append(b64_str)
             
-    cap.release()
-    
-    # 兜底：如果视频极短，至少取第一帧
-    if not encoded_frames and total_frames > 0:
-        cap = cv2.VideoCapture(video_path)
-        ret, frame = cap.read()
-        if ret:
-            _, buffer = cv2.imencode('.jpg', frame)
-            encoded_frames.append(base64.b64encode(buffer).decode('utf-8'))
-        cap.release()
-
     return encoded_frames
 
 # ==========================================
@@ -88,7 +69,7 @@ def extract_frames_1fps(video_path):
 
 class BaseVLM(ABC):
     @abstractmethod
-    def generate_response(self, video_path, prompt):
+    def generate_response(self, video_path, prompt, base_dir):
         pass
 
 # --- Model A: Qwen (Qwen3-VL-Plus/Max) ---
@@ -99,92 +80,64 @@ class QwenVLM(BaseVLM):
         self.model_name = model_name
         print(f"Initialized Qwen VLM: {model_name}")
 
-    def generate_response(self, video_path, prompt):
-        b64_video = encode_video_base64(video_path)
-        if not b64_video: return "ERROR: Video file missing"
+    def generate_response(self, video_path, prompt, base_dir):
+        frames = load_sampled_frames(video_path, base_dir)
+        if not frames: return "ERROR: No frames found"
+
+        # 构造多图输入
+        content = []
+        for b64_img in frames:
+            content.append({
+                "type": "image_url",
+                "image_url": {"url": f"data:image/jpeg;base64,{b64_img}"}
+            })
+        content.append({"type": "text", "text": prompt})
 
         completion = self.client.chat.completions.create(
             model=self.model_name,
             messages=[
                 {
                     "role": "user",
-                    "content": [
-                        {
-                            "type": "video_url",
-                            "video_url": {"url": f"data:video/mp4;base64,{b64_video}"},
-                        },
-                        {"type": "text", "text": prompt},
-                    ],
+                    "content": content,
                 }
             ],
-            temperature=0.01,
+            # temperature=0.01, # Removed as requested
         )
         return completion.choices[0].message.content
 
-# --- Model B: Gemini (Gemini-1.5/3.0 - New SDK) ---
+# --- Model B: Gemini (Gemini-1.5/3.0) ---
 class GeminiVLM(BaseVLM):
     def __init__(self, model_name="gemini-1.5-pro", api_key=None):
         from google import genai
         self.client = genai.Client(api_key=api_key)
         self.model_name = model_name
-        print(f"Initialized Gemini VLM (Inline): {model_name}")
+        print(f"Initialized Gemini VLM (Multi-Image): {model_name}")
 
-    def generate_response(self, video_path, prompt):
+    def generate_response(self, video_path, prompt, base_dir):
         from google.genai import types
         
-        if not os.path.exists(video_path): return "ERROR: Video file missing"
+        frames = load_sampled_frames(video_path, base_dir)
+        if not frames: return "ERROR: No frames found"
         
-        # 读取二进制数据
-        with open(video_path, 'rb') as f:
-            video_bytes = f.read()
+        # 构造内容: 多个 Image Blob + 文本
+        parts = []
+        for b64_img in frames:
+            parts.append(
+                types.Part(
+                    inline_data=types.Blob(
+                        data=base64.b64decode(b64_img), 
+                        mime_type='image/jpeg'
+                    )
+                )
+            )
+        parts.append(types.Part(text=prompt))
 
-        # 使用最新的 inline data 方式 (v1.0+ SDK style)
         response = self.client.models.generate_content(
             model=self.model_name,
-            contents=[
-                types.Content(
-                    parts=[
-                        types.Part(
-                            inline_data=types.Blob(
-                                data=video_bytes, 
-                                mime_type='video/mp4'
-                            )
-                        ),
-                        types.Part(text=prompt)
-                    ]
-                )
-            ]
+            contents=[types.Content(parts=parts)],
+            # config=types.GenerateContentConfig(temperature=0.0) # Removed
         )
         return response.text
-
-# --- Model C: OpenAI (GPT-4o / GPT-5) ---
-class GPTVLM(BaseVLM):
-    def __init__(self, model_name="gpt-5.1", api_key=None):
-        from openai import OpenAI
-        self.client = OpenAI(api_key=api_key)
-        self.model_name = model_name
-        print(f"Initialized GPT VLM (1fps mode): {model_name}")
-
-    def generate_response(self, video_path, prompt):
-        frames = extract_frames_1fps(video_path)
-        if not frames: return "ERROR: Extraction failed"
-
-        content_payload = [{"type": "text", "text": prompt}]
-        for f in frames:
-            content_payload.append({
-                "type": "image_url",
-                "image_url": {
-                    "url": f"data:image/jpeg;base64,{f}",
-                    "detail": "low" # 强制低细节模式节省 Token
-                }
-            })
-
-        response = self.client.chat.completions.create(
-            model=self.model_name,
-            messages=[{"role": "user", "content": content_payload}],
-            temperature=0.0
-        )
-        return response.choices[0].message.content
 
 # ==========================================
 # 3. 主程序 (Main Execution)
@@ -196,57 +149,54 @@ def main():
         print(f"Error: {INPUT_JSON} not found.")
         return
 
+    # 获取数据集根目录 (假设 JSON 在根目录下)
+    DATASET_ROOT = os.path.dirname(INPUT_JSON)
+
     with open(INPUT_JSON, 'r', encoding='utf-8') as f:
         full_data = json.load(f)
     
-    # 修复路径分隔符 (Windows "\" -> Linux "/")
+    # 修复路径分隔符
     for item in full_data:
         item['video_path'] = item['video_path'].replace('\\', '/')
 
     print(f"Loaded {len(full_data)} videos from {INPUT_JSON}")
+    print(f"Dataset Root: {DATASET_ROOT}")
 
     # ==========================================
-    # 2. 模型选择 (请在此处 取消注释 你要测试的模型)
+    # 2. 模型选择
     # ==========================================
     
-    # 选项 A: Qwen (阿里云)
-    runner = QwenVLM(model_name="qwen3-vl-plus", api_key=DASHSCOPE_API_KEY, base_url=QWEN_BASE_URL)
+    # 选项 A: Qwen
+    # runner = QwenVLM(model_name="qwen3-vl-plus", api_key=DASHSCOPE_API_KEY, base_url=QWEN_BASE_URL)
     
-    # 选项 B: Gemini (Google) - 使用最新的 gemini-2.0-flash 或 1.5-pro
-    # 注意：如果你的账号有 gemini-3-pro-preview 权限，直接改 model_name 即可
-    # runner = GeminiVLM(model_name="gemini-3-pro-preview", api_key=GEMINI_API_KEY)
+    # 选项 B: Gemini
+    runner = GeminiVLM(model_name="gemini-2.5-pro", api_key=GEMINI_API_KEY)
     
-    # 选项 C: GPT (OpenAI)
-    # runner = GPTVLM(model_name="gpt-4o", api_key=OPENAI_API_KEY)
-
     # ==========================================
     
     # 3. 开始测试
     results = []
     
-    # Prompt: 专注于动作描述，简短有力
     prompt = (
-        "Watch this thermal video carefully. Describe the single main human action shown in the video. "
+        "Watch this thermal video sequence carefully. Describe the single main human action shown. "
         "Use a short phrase (e.g., 'walking', 'falling down', 'sitting', 'yawning'). "
         "Do not describe the background or temperature colors."
     )
 
     print(f"Starting inference using {runner.model_name}...")
     
-    # 可以在这里用 full_data[:10] 先测前10个
     for item in tqdm(full_data, desc="Processing"):
         video_path = item['video_path']
         gt_action = item['action']
         
         try:
-            # 简单的重试机制
             response_text = ""
             for attempt in range(3):
                 try:
-                    response_text = runner.generate_response(video_path, prompt)
+                    # 传入 DATASET_ROOT 以便找到 sampled_frames
+                    response_text = runner.generate_response(video_path, prompt, DATASET_ROOT)
                     break
                 except Exception as e:
-                    # 打印错误但继续重试
                     print(f"Retry {attempt+1} for {video_path}: {e}")
                     time.sleep(2)
             
@@ -259,7 +209,6 @@ def main():
                 "vlm_raw_response": response_text
             })
             
-            # 速率限制保护
             time.sleep(0.5)
 
         except Exception as e:

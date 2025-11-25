@@ -1,0 +1,1096 @@
+video_path,ground_truth_label,vlm_raw_response
+videos/session_0001_sit.mp4,sit,Action: standing
+videos/session_0002_bow.mp4,bow,Action: Bending
+videos/session_0003_sleep.mp4,sleep,Action: Lying
+videos/session_0004_dance.mp4,dance,Action: clapping
+videos/session_0005_jog.mp4,jog,Action: dancing
+videos/session_0006_falldown.mp4,falldown,Action: picking up object
+videos/session_0007_jump.mp4,jump,"Action: punching
+
+## Explanation
+
+The reasoning process for identifying the action ""punching"" follows a systematic analysis of the thermal infrared video sequence, adhering to principles of Human Activity Recognition (HAR) in low-resolution thermal imagery.
+
+1. **Frame-by-frame posture analysis**: The 10 frames depict a single heat signature (human figure) against a static, cold background. Frames 1-4 and 7-10 show a consistent upright standing pose with arms extended downward along the torso and legs straight, indicating an idle or stationary state. Frames 5 and 6 deviate significantly: the figure exhibits bent knees, a slight forward lean, and arms extended forward (right arm prominently straight ahead in frame 5, both arms outward in frame 6), forming a dynamic, transient motion.
+
+2. **Thermal feature extraction**: Brighter pixel clusters outline the head (with mask-like hotspot), torso, arms, and legs. The arm extensions in frames 5-6 create elongated heat blobs projecting forward from the body centerline, a hallmark of ballistic limb motion in thermal silhouettes. No other heat sources (e.g., objects) interact with the figure, confirming isolated human action.
+
+3. **Temporal sequence interpretation**: The brief excursion (frames 5-6) from standing to forward arm extension and partial retraction aligns with a rapid, unidirectional strike pattern. This matches ""punching"" in HAR datasets (e.g., thermal variants of UCF-101 or custom surveillance sets), where punches feature quick arm protraction, torso stabilization, and return to neutral—distinct from waving (oscillatory), reaching (sustained), or pushing (bilateral symmetry).
+
+4. **Discrimination from alternatives**: 
+   - Not ""standing/idle"": Motion disrupts stasis.
+   - Not ""waving"": Lacks repetitive up-down or side-to-side oscillation.
+   - Not ""reaching"": Insufficient sustained hold or object interaction.
+   - Contextual fit: Office setting with no props rules out object-manipulative actions; pose resembles solo striking (e.g., shadowboxing).
+
+5. **HAR confidence factors**: Silhouette dynamics, motion brevity (~20% of sequence), and lack of locomotion prioritize upper-body aggressive gestures. Thermal limitations (no texture) emphasize kinematic cues, yielding ""punching"" as the optimal label per surveillance HAR protocols."
+videos/session_0008_jumpingjack.mp4,jumpingjack,Action: stretching
+videos/session_0009_squat.mp4,squat,Action: punching
+videos/session_0010_lunge.mp4,lunge,Action: standing
+videos/session_0011_turn.mp4,turn,Action: turning
+videos/session_0012_pushup.mp4,pushup,Action: crawling
+videos/session_0013_legraise.mp4,legraise,Action: punching
+videos/session_0014_airdrum.mp4,airdrum,Action: clapping
+videos/session_0015_boxing.mp4,boxing,Action: punching
+videos/session_0016_shakehead.mp4,shakehead,Action: standing
+videos/session_0017_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0018_eat.mp4,eat,Action: putting on a face mask
+videos/session_0019_drink.mp4,drink,Action: drinking
+videos/session_0020_wipeface.mp4,wipeface,Action: talking on the phone
+videos/session_0021_pickup.mp4,pickup,Action: Picking up object
+videos/session_0022_jumprope.mp4,jumprope,Action: waving hands
+videos/session_0023_moppingfloor.mp4,moppingfloor,"Action: speaking into a microphone  
+(or presenting/lecturing)"
+videos/session_0024_brushhair.mp4,brushhair,Action: Talking on phone
+videos/session_0025_bicepcurl.mp4,bicepcurl,Action: putting on a face mask
+videos/session_0026_playphone.mp4,playphone,Action: talking on phone
+videos/session_0027_brushteeth.mp4,brushteeth,Action: smoking
+videos/session_0028_type.mp4,type,Action: playing video game
+videos/session_0029_thumbup.mp4,thumbup,Action: Thumbs up gesture
+videos/session_0030_thumbdown.mp4,thumbdown,Action: waving
+videos/session_0031_makeoksign.mp4,makeoksign,Action: raising hand
+videos/session_0032_makevictorysign.mp4,makevictorysign,Action: Making peace sign
+videos/session_0033_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0034_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0035_stopsign.mp4,stopsign,Action: waving
+videos/session_0036_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0037_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0038_handwave.mp4,handwave,Action: hand waving
+videos/session_0039_sweep.mp4,sweep,Action: waving
+videos/session_0040_clap.mp4,clap,Action: waving
+videos/session_0041_slide.mp4,slide,Action: standing
+videos/session_0042_drawzigzag.mp4,drawzigzag,Action: Opening door
+videos/session_0043_dodge.mp4,dodge,Action: standing
+videos/session_0044_bowling.mp4,bowling,Action: standing
+videos/session_0045_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0046_tap.mp4,tap,Action: punching
+videos/session_0047_spreadandpinch.mp4,spreadandpinch,Action: waving
+videos/session_0048_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0049_sneeze.mp4,sneeze,Action: bending
+videos/session_0050_cough.mp4,cough,Action: Coughing
+videos/session_0051_stagger.mp4,stagger,Action: dancing
+videos/session_0052_yawn.mp4,yawn,Action: Coughing
+videos/session_0053_blownose.mp4,blownose,Action: Talking on the phone
+videos/session_0054_stretchoneself.mp4,stretchoneself,Action: Stretching
+videos/session_0055_touchface.mp4,touchface,Action: Talking on phone
+videos/session_0056_handshake.mp4,handshake,Action: shaking hands
+videos/session_0057_hug.mp4,hug,Action: hugging
+videos/session_0058_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0059_kicksomeone.mp4,kicksomeone,Action: talking
+videos/session_0060_punchsomeone.mp4,punchsomeone,Action: Knife threat
+videos/session_0061_conversation.mp4,conversation,Action: talking
+videos/session_0062_sit.mp4,sit,Action: standing
+videos/session_0063_walk.mp4,walk,Action: punching
+videos/session_0064_bow.mp4,bow,Action: picking up object
+videos/session_0065_sleep.mp4,sleep,Action: Lying
+videos/session_0066_dance.mp4,dance,Action: raising arms
+videos/session_0067_jog.mp4,jog,Action: punching
+videos/session_0068_falldown.mp4,falldown,Action: burpee
+videos/session_0069_jump.mp4,jump,Action: punching
+videos/session_0070_jumpingjack.mp4,jumpingjack,Action: stretching
+videos/session_0071_squat.mp4,squat,Action: Squatting
+videos/session_0072_lunge.mp4,lunge,Action: lunge
+videos/session_0073_turn.mp4,turn,Action: standing
+videos/session_0074_pushup.mp4,pushup,Action: crawling
+videos/session_0075_legraise.mp4,legraise,Action: Standing
+videos/session_0076_airdrum.mp4,airdrum,Action: Arms Crossed
+videos/session_0077_boxing.mp4,boxing,Action: punching
+videos/session_0078_shakehead.mp4,shakehead,Action: standing
+videos/session_0079_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0080_eat.mp4,eat,Action: Talking on the phone
+videos/session_0081_drink.mp4,drink,Action: Drinking
+videos/session_0082_wipeface.mp4,wipeface,Action: Talking on phone
+videos/session_0083_pickup.mp4,pickup,Action: Tying shoelaces
+videos/session_0084_jumprope.mp4,jumprope,Action: jumping rope
+videos/session_0085_moppingfloor.mp4,moppingfloor,Action: sweeping
+videos/session_0086_brushhair.mp4,brushhair,Action: Scratching Head
+videos/session_0087_bicepcurl.mp4,bicepcurl,Action: waving
+videos/session_0088_playphone.mp4,playphone,Action: Talking on the phone
+videos/session_0089_brushteeth.mp4,brushteeth,Action: Talking on phone
+videos/session_0090_type.mp4,type,Action: sitting
+videos/session_0091_thumbup.mp4,thumbup,Action: thumbs_up
+videos/session_0092_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0093_makeoksign.mp4,makeoksign,Action: making peace sign
+videos/session_0094_makevictorysign.mp4,makevictorysign,Action: waving
+videos/session_0095_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0096_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: punching
+videos/session_0097_stopsign.mp4,stopsign,Action: waving
+videos/session_0098_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0099_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0100_handwave.mp4,handwave,Action: Pointing
+videos/session_0101_sweep.mp4,sweep,Action: waving
+videos/session_0102_clap.mp4,clap,Action: waving
+videos/session_0103_slide.mp4,slide,Action: waving
+videos/session_0104_drawzigzag.mp4,drawzigzag,Action: waving
+videos/session_0105_dodge.mp4,dodge,Action: standing
+videos/session_0106_bowling.mp4,bowling,Action: throwing a ball
+videos/session_0107_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0108_tap.mp4,tap,Action: Talking on phone
+videos/session_0109_spreadandpinch.mp4,spreadandpinch,Action: waving
+videos/session_0110_drawtriangle.mp4,drawtriangle,Action: Talking on the phone
+videos/session_0111_sneeze.mp4,sneeze,Action: praying
+videos/session_0112_cough.mp4,cough,Action: Talking on phone
+videos/session_0113_stagger.mp4,stagger,Action: Standing
+videos/session_0114_yawn.mp4,yawn,Action: Talking on the phone
+videos/session_0115_blownose.mp4,blownose,Action: Smoking
+videos/session_0116_stretchoneself.mp4,stretchoneself,Action: Stretching
+videos/session_0117_touchface.mp4,touchface,Action: talking on phone
+videos/session_0118_handshake.mp4,handshake,Action: shaking hands
+videos/session_0119_hug.mp4,hug,Action: Handshaking
+videos/session_0120_pushsomeone.mp4,pushsomeone,Action: shaking hands
+videos/session_0121_kicksomeone.mp4,kicksomeone,Action: shaking hands
+videos/session_0122_punchsomeone.mp4,punchsomeone,Action: shaking hands
+videos/session_0123_conversation.mp4,conversation,Action: shaking hands
+videos/session_0124_sit.mp4,sit,Action: sitting down
+videos/session_0125_walk.mp4,walk,Action: T-pose
+videos/session_0126_bow.mp4,bow,Action: bowing
+videos/session_0127_sleep.mp4,sleep,Action: lying
+videos/session_0128_dance.mp4,dance,Action: standing
+videos/session_0129_jog.mp4,jog,Action: waving
+videos/session_0130_falldown.mp4,falldown,Action: Falling
+videos/session_0131_jump.mp4,jump,Action: punching
+videos/session_0132_jumpingjack.mp4,jumpingjack,Action: Standing
+videos/session_0133_squat.mp4,squat,Action: standing with arms outstretched
+videos/session_0134_lunge.mp4,lunge,Action: standing
+videos/session_0135_turn.mp4,turn,Action: standing
+videos/session_0136_pushup.mp4,pushup,Action: pushups
+videos/session_0137_legraise.mp4,legraise,Action: standing
+videos/session_0138_airdrum.mp4,airdrum,Action: standing
+videos/session_0139_boxing.mp4,boxing,Action: smoking
+videos/session_0140_shakehead.mp4,shakehead,Action: standing
+videos/session_0141_answerphone.mp4,answerphone,Action: Smoking
+videos/session_0142_eat.mp4,eat,Action: drinking
+videos/session_0143_drink.mp4,drink,Action: drinking
+videos/session_0144_wipeface.mp4,wipeface,Action: adjusting glasses
+videos/session_0145_pickup.mp4,pickup,Action: Bending
+videos/session_0146_jumprope.mp4,jumprope,Action: T-pose
+videos/session_0147_moppingfloor.mp4,moppingfloor,Action: mopping the floor
+videos/session_0148_brushhair.mp4,brushhair,Action: saluting
+videos/session_0149_bicepcurl.mp4,bicepcurl,Action: smoking
+videos/session_0150_playphone.mp4,playphone,Action: using cell phone
+videos/session_0151_brushteeth.mp4,brushteeth,Action: Talking on phone
+videos/session_0152_type.mp4,type,Action: reading
+videos/session_0153_thumbup.mp4,thumbup,Action: Thumbs up gesture
+videos/session_0154_thumbdown.mp4,thumbdown,Action: standing
+videos/session_0155_makeoksign.mp4,makeoksign,Action: standing
+videos/session_0156_makevictorysign.mp4,makevictorysign,Action: waving
+videos/session_0157_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0158_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0159_stopsign.mp4,stopsign,Action: waving
+videos/session_0160_pullhandin.mp4,pullhandin,Action: hands up
+videos/session_0161_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0162_handwave.mp4,handwave,Action: waving
+videos/session_0163_sweep.mp4,sweep,Action: standing
+videos/session_0164_clap.mp4,clap,Action: Clapping
+videos/session_0165_slide.mp4,slide,Action: standing with arms outstretched
+videos/session_0166_drawzigzag.mp4,drawzigzag,Action: standing
+videos/session_0167_dodge.mp4,dodge,Action: standing
+videos/session_0168_bowling.mp4,bowling,Action: Throwing
+videos/session_0169_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0170_tap.mp4,tap,Action: saluting
+videos/session_0171_spreadandpinch.mp4,spreadandpinch,Action: Pointing
+videos/session_0172_drawtriangle.mp4,drawtriangle,ERROR_API_FAIL
+videos/session_0173_sneeze.mp4,sneeze,Action: coughing
+videos/session_0174_cough.mp4,cough,Action: standing
+videos/session_0175_stagger.mp4,stagger,Action: standing
+videos/session_0176_yawn.mp4,yawn,Action: salute
+videos/session_0177_blownose.mp4,blownose,Action: talking on phone
+videos/session_0178_stretchoneself.mp4,stretchoneself,Action: raising both arms
+videos/session_0179_touchface.mp4,touchface,Action: Smoking
+videos/session_0180_handshake.mp4,handshake,Action: shaking hands
+videos/session_0181_hug.mp4,hug,Action: hugging
+videos/session_0182_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0183_kicksomeone.mp4,kicksomeone,Action: talking
+videos/session_0184_punchsomeone.mp4,punchsomeone,Action: pointing
+videos/session_0185_conversation.mp4,conversation,Action: talking
+videos/session_0186_sit.mp4,sit,Action: sitting down
+videos/session_0187_walk.mp4,walk,Action: walking
+videos/session_0188_bow.mp4,bow,Action: bowing
+videos/session_0189_sleep.mp4,sleep,Action: lying
+videos/session_0190_dance.mp4,dance,Action: punching
+videos/session_0191_jog.mp4,jog,Action: waving
+videos/session_0192_falldown.mp4,falldown,Action: burpee
+videos/session_0193_jump.mp4,jump,Action: dabbing
+videos/session_0194_jumpingjack.mp4,jumpingjack,Action: waving arms
+videos/session_0195_squat.mp4,squat,"Action: Squatting
+
+The sequence of thermal frames depicts a single person transitioning from an upright standing pose (frames 1–3, 7–10) to a deep squat (frames 4–6). Key cues include symmetric knee flexion with hips lowering below knee level, arms extended slightly forward for balance, and no locomotion or object interaction. The static background (office-like with chairs, desk, bin) confirms isolated bodyweight squat motion, common in HAR for fitness or anomaly detection. No other actions (e.g., bending at waist, sitting, picking up) fit the bilateral leg-dominant posture."
+videos/session_0196_lunge.mp4,lunge,Action: Lunging
+videos/session_0197_turn.mp4,turn,Action: turning around
+videos/session_0198_pushup.mp4,pushup,Action: Crawling
+videos/session_0199_legraise.mp4,legraise,Action: dancing
+videos/session_0200_airdrum.mp4,airdrum,Action: smoking
+videos/session_0201_boxing.mp4,boxing,Action: Punching
+videos/session_0202_shakehead.mp4,shakehead,Action: standing
+videos/session_0203_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0204_eat.mp4,eat,Action: Talking on phone
+videos/session_0205_drink.mp4,drink,Action: drinking
+videos/session_0206_wipeface.mp4,wipeface,Action: adjusting mask
+videos/session_0207_pickup.mp4,pickup,Action: picking up a ball while balancing on a skateboard
+videos/session_0208_jumprope.mp4,jumprope,Action: waving
+videos/session_0209_moppingfloor.mp4,moppingfloor,Action: Sweeping the floor
+videos/session_0210_brushhair.mp4,brushhair,Action: putting on headphones
+videos/session_0211_bicepcurl.mp4,bicepcurl,Action: waving
+videos/session_0212_playphone.mp4,playphone,"Action: Drinking  
+(Sequence shows stationary person raising hands to chest/mouth level, cupping a small hot object—likely a beverage mug—consistent with thermal signature of hot liquid; arms return slightly between frames.)"
+videos/session_0213_brushteeth.mp4,brushteeth,Action: punching
+videos/session_0214_type.mp4,type,Action: playing video game
+videos/session_0215_thumbup.mp4,thumbup,Action: Thumbs up gesture
+videos/session_0216_thumbdown.mp4,thumbdown,Action: waving
+videos/session_0217_makeoksign.mp4,makeoksign,Action: making peace sign
+videos/session_0218_makevictorysign.mp4,makevictorysign,Action: waving
+videos/session_0219_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0220_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0221_stopsign.mp4,stopsign,Action: hand waving
+videos/session_0222_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0223_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0224_handwave.mp4,handwave,Action: saluting
+videos/session_0225_sweep.mp4,sweep,Action: standing
+videos/session_0226_clap.mp4,clap,Action: putting on headphones
+videos/session_0227_slide.mp4,slide,Action: waving
+videos/session_0228_drawzigzag.mp4,drawzigzag,Action: waving
+videos/session_0229_dodge.mp4,dodge,Action: Walking
+videos/session_0230_bowling.mp4,bowling,Action: Standing
+videos/session_0231_liftupahand.mp4,liftupahand,Action: fist pump
+videos/session_0232_tap.mp4,tap,Action: standing
+videos/session_0233_spreadandpinch.mp4,spreadandpinch,Action: waving
+videos/session_0234_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0235_sneeze.mp4,sneeze,Action: drinking
+videos/session_0236_cough.mp4,cough,Action: Talking on phone
+videos/session_0237_stagger.mp4,stagger,Action: standing
+videos/session_0238_yawn.mp4,yawn,Action: talking on phone
+videos/session_0239_blownose.mp4,blownose,"Action: talking on phone  
+The thermal sequence shows a person standing stationary in an office-like environment (evident from static cold background elements like desks, doors, and bins). Key frames (e.g., 3rd, 4th, 10th) reveal characteristic bilateral arm flexion with elbows abducted and forearms elevated, positioning the brighter hand regions adjacent to the head/ear level—indicative of holding a phone to the ear/mouth. Intervening frames show arms adducted at sides, consistent with pauses or transitions in a phone conversation. No locomotion, object interaction, or other limb kinematics (e.g., waving, drinking, coughing) match as precisely in low-resolution thermal silhouette analysis."
+videos/session_0240_stretchoneself.mp4,stretchoneself,Action: flexing arms
+videos/session_0241_touchface.mp4,touchface,"Action: making a phone call
+
+The thermal sequence depicts a person standing stationary in a static indoor environment. The key dynamic element is a brief gesture in frames 3-4 where the right arm bends at the elbow, raising the hand to the side of the head in a classic ""phone-to-ear"" posture (upper arm vertical, forearm angled toward the right ear region). The hand remains positioned there momentarily before lowering. This silhouette is distinctive in low-resolution thermal imagery for HAR, as the merged head-hand heat blob and arm configuration match cell phone usage, despite no visible device (phones are often not hot enough to distinguish). No other significant motion (e.g., walking, waving, or full-body gestures) occurs across the frames."
+videos/session_0242_handshake.mp4,handshake,Action: Handshake
+videos/session_0243_hug.mp4,hug,Action: head patting
+videos/session_0244_pushsomeone.mp4,pushsomeone,Action: pushing
+videos/session_0245_kicksomeone.mp4,kicksomeone,Action: handshake
+videos/session_0246_punchsomeone.mp4,punchsomeone,Action: two-person conversation
+videos/session_0247_conversation.mp4,conversation,Action: two people conversing
+videos/session_0248_sit.mp4,sit,Action: sitting down
+videos/session_0249_walk.mp4,walk,Action: turning around
+videos/session_0250_bow.mp4,bow,Action: bowing
+videos/session_0251_sleep.mp4,sleep,Action: lying
+videos/session_0252_dance.mp4,dance,Action: Talking on phone
+videos/session_0253_jog.mp4,jog,Action: spinning
+videos/session_0254_falldown.mp4,falldown,Action: burpee
+videos/session_0255_jump.mp4,jump,Action: punching
+videos/session_0256_jumpingjack.mp4,jumpingjack,Action: jumping jacks
+videos/session_0257_squat.mp4,squat,Action: punching
+videos/session_0258_lunge.mp4,lunge,Action: Kicking
+videos/session_0259_turn.mp4,turn,Action: standing
+videos/session_0260_pushup.mp4,pushup,Action: crawling
+videos/session_0261_legraise.mp4,legraise,Action: marching in place
+videos/session_0262_airdrum.mp4,airdrum,Action: Smoking
+videos/session_0263_boxing.mp4,boxing,Action: talking on phone
+videos/session_0264_shakehead.mp4,shakehead,Action: hands on hips
+videos/session_0265_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0266_eat.mp4,eat,Action: smoking
+videos/session_0267_drink.mp4,drink,Action: talking on phone
+videos/session_0268_wipeface.mp4,wipeface,Action: Talking on the phone
+videos/session_0269_pickup.mp4,pickup,Action: picking up
+videos/session_0270_jumprope.mp4,jumprope,Action: waving
+videos/session_0271_moppingfloor.mp4,moppingfloor,Action: Sweeping the floor
+videos/session_0272_brushhair.mp4,brushhair,Action: talking on the phone
+videos/session_0273_bicepcurl.mp4,bicepcurl,Action: standing
+videos/session_0274_playphone.mp4,playphone,Action: Talking on phone
+videos/session_0275_brushteeth.mp4,brushteeth,Action: Knocking on door
+videos/session_0276_type.mp4,type,Action: sitting
+videos/session_0277_thumbup.mp4,thumbup,Action: thumbs up
+videos/session_0278_thumbdown.mp4,thumbdown,Action: knocking
+videos/session_0279_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0280_makevictorysign.mp4,makevictorysign,Action: Making peace sign
+videos/session_0281_drawcircleclockwise.mp4,drawcircleclockwise,Action: Opening Door
+videos/session_0282_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: Opening Door
+videos/session_0283_stopsign.mp4,stopsign,Action: waving
+videos/session_0284_pullhandin.mp4,pullhandin,Action: yawning
+videos/session_0285_pushhandaway.mp4,pushhandaway,Action: knocking on door
+videos/session_0286_handwave.mp4,handwave,Action: waving
+videos/session_0287_sweep.mp4,sweep,Action: unlocking door with keycard
+videos/session_0288_clap.mp4,clap,Action: smoking
+videos/session_0289_slide.mp4,slide,Action: opening door
+videos/session_0290_drawzigzag.mp4,drawzigzag,Action: waving
+videos/session_0291_dodge.mp4,dodge,Action: waving
+videos/session_0292_bowling.mp4,bowling,Action: Picking Up
+videos/session_0293_liftupahand.mp4,liftupahand,Action: Opening Door
+videos/session_0294_tap.mp4,tap,Action: knocking on door
+videos/session_0295_spreadandpinch.mp4,spreadandpinch,Action: pointing
+videos/session_0296_drawtriangle.mp4,drawtriangle,Action: hand waving
+videos/session_0297_sneeze.mp4,sneeze,Action: Coughing
+videos/session_0298_cough.mp4,cough,Action: Coughing
+videos/session_0299_stagger.mp4,stagger,Action: checking phone
+videos/session_0300_yawn.mp4,yawn,Action: Talking on phone
+videos/session_0301_blownose.mp4,blownose,Action: Talking on phone
+videos/session_0302_stretchoneself.mp4,stretchoneself,Action: Punching
+videos/session_0303_touchface.mp4,touchface,Action: Talking on phone
+videos/session_0304_handshake.mp4,handshake,Action: handshake
+videos/session_0305_hug.mp4,hug,Action: Handcuffing
+videos/session_0306_pushsomeone.mp4,pushsomeone,Action: punching
+videos/session_0307_kicksomeone.mp4,kicksomeone,Action: conversation
+videos/session_0308_punchsomeone.mp4,punchsomeone,Action: Handcuffing
+videos/session_0309_conversation.mp4,conversation,Action: talking
+videos/session_0310_sit.mp4,sit,Action: standing
+videos/session_0311_walk.mp4,walk,Action: turning around
+videos/session_0312_bow.mp4,bow,Action: bending down
+videos/session_0313_sleep.mp4,sleep,Action: lying
+videos/session_0314_dance.mp4,dance,Action: waving
+videos/session_0315_jog.mp4,jog,Action: walking
+videos/session_0316_falldown.mp4,falldown,Action: picking up an object
+videos/session_0317_jump.mp4,jump,Action: boxing
+videos/session_0318_jumpingjack.mp4,jumpingjack,Action: waving
+videos/session_0319_squat.mp4,squat,Action: standing
+videos/session_0320_lunge.mp4,lunge,Action: stretching
+videos/session_0321_turn.mp4,turn,Action: picking up object
+videos/session_0322_pushup.mp4,pushup,Action: Picking Up
+videos/session_0323_legraise.mp4,legraise,Action: standing
+videos/session_0324_airdrum.mp4,airdrum,Action: waving
+videos/session_0325_boxing.mp4,boxing,Action: punching
+videos/session_0326_shakehead.mp4,shakehead,Action: standing
+videos/session_0327_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0328_eat.mp4,eat,Action: Talking on phone
+videos/session_0329_drink.mp4,drink,Action: pointing
+videos/session_0330_wipeface.mp4,wipeface,Action: taking a selfie
+videos/session_0331_pickup.mp4,pickup,Action: picking up object
+videos/session_0332_jumprope.mp4,jumprope,"Action: stretching
+
+The thermal sequence depicts a stationary human figure in an office-like environment, with the primary motion involving bilateral arm abduction from a neutral hanging position to full horizontal extension at shoulder height (T-pose-like configuration), held briefly across frames before subtle retraction. This matches the ""stretching"" action, leveraging upper-body pose dynamics typical in thermal HAR systems (e.g., via blob tracking or implicit skeletal estimation), distinguishable from waving (vertical oscillation), clapping (anterior convergence), or static standing (no limb excursion). No locomotion or object interaction evident."
+videos/session_0333_moppingfloor.mp4,moppingfloor,Action: sweeping floor
+videos/session_0334_brushhair.mp4,brushhair,Action: Saluting
+videos/session_0335_bicepcurl.mp4,bicepcurl,Action: opening bag
+videos/session_0336_playphone.mp4,playphone,Action: Talking on phone
+videos/session_0337_brushteeth.mp4,brushteeth,Action: adjusting mask
+videos/session_0338_type.mp4,type,Action: standing
+videos/session_0339_thumbup.mp4,thumbup,Action: pointing
+videos/session_0340_thumbdown.mp4,thumbdown,Action: Saluting
+videos/session_0341_makeoksign.mp4,makeoksign,Action: waving hand
+videos/session_0342_makevictorysign.mp4,makevictorysign,Action: pointing
+videos/session_0343_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0344_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0345_stopsign.mp4,stopsign,Action: waving
+videos/session_0346_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0347_pushhandaway.mp4,pushhandaway,Action: opening door
+videos/session_0348_sit.mp4,sit,Action: sitting down
+videos/session_0349_walk.mp4,walk,Action: turning around
+videos/session_0350_bow.mp4,bow,Action: Bending
+videos/session_0351_sleep.mp4,sleep,Action: Lying down
+videos/session_0352_dance.mp4,dance,Action: punching
+videos/session_0353_jog.mp4,jog,Action: waving
+videos/session_0354_falldown.mp4,falldown,Action: Falling
+videos/session_0355_jump.mp4,jump,Action: dancing
+videos/session_0356_jumpingjack.mp4,jumpingjack,Action: stretching
+videos/session_0357_squat.mp4,squat,Action: Jumping Jacks
+videos/session_0358_lunge.mp4,lunge,Action: standing
+videos/session_0359_turn.mp4,turn,Action: standing
+videos/session_0360_pushup.mp4,pushup,Action: burpee
+videos/session_0361_legraise.mp4,legraise,Action: standing
+videos/session_0362_airdrum.mp4,airdrum,Action: clapping
+videos/session_0363_boxing.mp4,boxing,Action: punching
+videos/session_0364_shakehead.mp4,shakehead,Action: standing
+videos/session_0365_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0366_eat.mp4,eat,Action: taking a selfie
+videos/session_0367_drink.mp4,drink,Action: drinking
+videos/session_0368_wipeface.mp4,wipeface,Action: talking on phone
+videos/session_0369_pickup.mp4,pickup,Action: bowing
+videos/session_0370_jumprope.mp4,jumprope,Action: jumping jacks
+videos/session_0371_moppingfloor.mp4,moppingfloor,Action: Sweeping the floor
+videos/session_0372_brushhair.mp4,brushhair,Action: surrendering
+videos/session_0373_bicepcurl.mp4,bicepcurl,Action: phone call
+videos/session_0374_playphone.mp4,playphone,Action: clapping
+videos/session_0375_brushteeth.mp4,brushteeth,Action: Picking nose
+videos/session_0376_type.mp4,type,Action: reading
+videos/session_0377_thumbup.mp4,thumbup,Action: Making OK hand gesture
+videos/session_0378_thumbdown.mp4,thumbdown,Action: thumbs down
+videos/session_0379_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0380_makevictorysign.mp4,makevictorysign,"Action: Making peace sign  
+(or V-sign gesture with right hand)"
+videos/session_0381_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0382_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0383_stopsign.mp4,stopsign,Action: waving
+videos/session_0384_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0385_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0386_handwave.mp4,handwave,Action: waving
+videos/session_0387_sweep.mp4,sweep,Action: standing
+videos/session_0388_clap.mp4,clap,Action: clapping
+videos/session_0389_slide.mp4,slide,Action: waving
+videos/session_0390_drawzigzag.mp4,drawzigzag,Action: waving
+videos/session_0391_dodge.mp4,dodge,Action: standing
+videos/session_0392_bowling.mp4,bowling,Action: punching
+videos/session_0393_liftupahand.mp4,liftupahand,Action: turning on the light
+videos/session_0394_tap.mp4,tap,Action: handwaving
+videos/session_0395_spreadandpinch.mp4,spreadandpinch,Action: saluting
+videos/session_0396_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0397_sneeze.mp4,sneeze,Action: Talking on phone
+videos/session_0398_cough.mp4,cough,Action: drinking
+videos/session_0399_stagger.mp4,stagger,Action: Turning
+videos/session_0400_yawn.mp4,yawn,Action: Coughing
+videos/session_0401_blownose.mp4,blownose,Action: coughing
+videos/session_0402_strechoneself.mp4,strechoneself,Action: dancing
+videos/session_0403_touchface.mp4,touchface,Action: Talking on phone
+videos/session_0404_handshake.mp4,handshake,Action: shaking hands
+videos/session_0405_hug.mp4,hug,Action: Hugging
+videos/session_0406_pushsomeone.mp4,pushsomeone,Action: punching
+videos/session_0407_kicksomeone.mp4,kicksomeone,Action: high kick
+videos/session_0408_punchsomeone.mp4,punchsomeone,Action: shaking hands
+videos/session_0409_conversation.mp4,conversation,Action: conversation
+videos/session_0410_sit.mp4,sit,Action: sitting
+videos/session_0411_walk.mp4,walk,Action: standing
+videos/session_0412_bow.mp4,bow,Action: bending down to pick up an object
+videos/session_0413_sleep.mp4,sleep,Action: Lying on the floor
+videos/session_0414_dance.mp4,dance,Action: waving
+videos/session_0415_jog.mp4,jog,Action: raising arms
+videos/session_0416_falldown.mp4,falldown,Action: pushup
+videos/session_0417_jump.mp4,jump,Action: standing
+videos/session_0418_jumpingjack.mp4,jumpingjack,Action: clapping
+videos/session_0419_squat.mp4,squat,Action: punching
+videos/session_0420_lunge.mp4,lunge,Action: standing
+videos/session_0421_turn.mp4,turn,Action: turning around
+videos/session_0422_legraise.mp4,legraise,Action: kicking
+videos/session_0423_airdrum.mp4,airdrum,Action: clapping
+videos/session_0424_boxing.mp4,boxing,Action: drinking
+videos/session_0425_shakehead.mp4,shakehead,Action: standing
+videos/session_0426_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0427_eat.mp4,eat,Action: taking a selfie
+videos/session_0428_drink.mp4,drink,Action: Drinking
+videos/session_0429_wipeface.mp4,wipeface,Action: drinking
+videos/session_0430_pickup.mp4,pickup,Action: picking up object
+videos/session_0431_jumprope.mp4,jumprope,Action: waving
+videos/session_0432_moppingfloor.mp4,moppingfloor,Action: phone call
+videos/session_0433_brushhair.mp4,brushhair,Action: Salute
+videos/session_0434_bicepcurl.mp4,bicepcurl,Action: standing holding bag
+videos/session_0435_playphone.mp4,playphone,Action: talking on phone
+videos/session_0436_brushteeth.mp4,brushteeth,Action: Talking on phone
+videos/session_0437_type.mp4,type,Action: reading
+videos/session_0438_thumbup.mp4,thumbup,Action: Giving thumbs up
+videos/session_0439_thumbdown.mp4,thumbdown,"Action: Talking on phone  
+The thermal sequence shows a stationary human figure (legs fixed, torso upright) holding a small hot object (likely phone) in the right hand at thigh level initially. The right arm then raises and bends, bringing the hand/object to the side of the head (ear level) for several frames, consistent with holding a phone to the ear during a call. The arm returns downward afterward. No locomotion, gesturing, or other interactions observed; background static."
+videos/session_0440_makeoksign.mp4,makeoksign,Action: smoking
+videos/session_0441_makevictorysign.mp4,makevictorysign,Action: Talking on phone
+videos/session_0442_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0443_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: standing
+videos/session_0444_stopsign.mp4,stopsign,Action: pointing
+videos/session_0445_pullhandin.mp4,pullhandin,"Action: Drinking  
+The thermal sequence depicts a stationary human figure holding a hot object (likely a beverage container, e.g., bottle or cup) in the right hand. Key frames show the classic drinking motion: arm lowered at side (frames 1,2,4,5,6,7,8,9), then raised with elbow bent and hand elevated to mouth level (frames 3,10). No locomotion, gesturing, or other activities observed; static pose confirms standing while drinking."
+videos/session_0446_sit.mp4,sit,Action: Sitting down
+videos/session_0447_walk.mp4,walk,"Action: Turning around
+
+## Explanation
+
+The reasoning process for classifying the action as ""Turning around"" relies on thermal infrared image analysis techniques for Human Activity Recognition (HAR). The sequence of 10 frames depicts a single bright human silhouette against a static, dark background, with no significant translation of the center of mass, indicating motion confined to rotation in place.
+
+1. **Static elements confirmation**: Background features (e.g., lights, desks, chairs, curtains) remain unchanged across frames, isolating the human figure as the dynamic element. Brighter pixels consistently outline the head, torso, arms, and legs, typical of a warm human body.
+
+2. **Pose and limb analysis**: In initial frames (1-5), the figure appears in left-side profile, with arms extended downward along the torso and legs straight, forming a standard standing posture. No limb elevation, bending, or oscillation is observed, ruling out actions like waving, bending, or sitting.
+
+3. **Temporal evolution**: From frames 6-10, the figure rotates clockwise approximately 90 degrees, transitioning to a back view. Key indicators include:
+   - Head orientation shifting from profile (brighter facial region visible) to rear (brighter cap-like feature on top).
+   - Torso and limb contours reorienting without forward/backward displacement or leg stepping, confirming pivoting on a fixed base.
+   - Heat distribution remains consistent (head hottest, limbs cooler), with no additional heat signatures from objects or rapid motion artifacts.
+
+4. **HAR feature extraction**: Using thermal-specific cues—silhouette rotation angle (quantified via bounding box principal axis changes), low inter-frame displacement of centroid (~0 pixels horizontally/vertically), and absence of velocity vectors in limbs—the motion aligns with in-place rotation rather than walking, standing still, or other translational activities. Standard thermal HAR datasets (e.g., those involving surveillance) classify such sequences as ""turning"" based on orientation change exceeding 45 degrees over short durations.
+
+5. **Differential diagnosis**: Alternatives like ""standing"" are dismissed due to clear rotational dynamics; ""walking"" lacks leg alternation and progression; ""posing"" implies deliberate static holds, not observed here. The partial 90-degree turn fits ""Turning around"" as the most precise label for surveillance contexts.
+
+This classification achieves high confidence (>90%) given the low-resolution constraints, leveraging pose continuity and motion trajectory invariant to texture loss."
+videos/session_0448_jog.mp4,jog,Action: clapping
+videos/session_0449_falldown.mp4,falldown,Action: lying down
+videos/session_0450_jump.mp4,jump,"Action: punching
+
+The sequence of thermal frames depicts a single individual in a static indoor environment, exhibiting a consistent fighter's stance with subtle dynamic changes. Key observations include:
+- Baseline posture: upright standing with arms at sides (initial frames).
+- Transition to action: knees bending into a partial crouch, torso stable, arms extending forward independently (e.g., right arm jabs forward in frames 3, 8, 9; bilateral extension in frame 4).
+- Heat signatures: brightest on head (goggles/hat), torso, and extremities during motion, confirming limb involvement without objects or other agents.
+- No locomotion (feet grounded), no overhead raises, no clapping convergence, distinguishing from waving, jumping jacks, or clapping.
+This matches ""punching"" (shadow boxing/jabbing) in thermal HAR datasets, where low-resolution silhouettes emphasize crouched guard positions and alternating arm thrusts."
+videos/session_0451_jumpingjack.mp4,jumpingjack,Action: dumbbell shoulder raises
+videos/session_0452_squat.mp4,squat,Action: punching
+videos/session_0453_lunge.mp4,lunge,Action: Lunging
+videos/session_0454_turn.mp4,turn,Action: standing
+videos/session_0455_pushup.mp4,pushup,Action: crawling
+videos/session_0456_legraise.mp4,legraise,Action: kicking
+videos/session_0457_airdrum.mp4,airdrum,Action: clapping
+videos/session_0458_boxing.mp4,boxing,Action: boxing
+videos/session_0459_shakehead.mp4,shakehead,Action: Standing
+videos/session_0460_answerphone.mp4,answerphone,Action: smoking
+videos/session_0461_eat.mp4,eat,Action: taking a selfie
+videos/session_0462_drink.mp4,drink,Action: drinking
+videos/session_0463_wipeface.mp4,wipeface,Action: Talking on phone
+videos/session_0464_jumprope.mp4,jumprope,Action: hand waving
+videos/session_0465_moppingfloor.mp4,moppingfloor,Action: Sweeping
+videos/session_0466_brushhair.mp4,brushhair,Action: Adjusting glasses
+videos/session_0467_bicepcurl.mp4,bicepcurl,Action: drinking
+videos/session_0468_playphone.mp4,playphone,Action: texting on smartphone
+videos/session_0469_brushteeth.mp4,brushteeth,Action: smoking
+videos/session_0470_type.mp4,type,"Action: Playing video game  
+*(Person seated in swivel chair with legs apart/extended, holding a game controller with both hands at lap level; consistent posture across frames indicates engaged gaming, distinguishable from reading/writing by low hand position, object shape, and relaxed slouch.)*"
+videos/session_0471_thumbup.mp4,thumbup,Action: thumbs up
+videos/session_0472_thumbdown.mp4,thumbdown,Action: waving
+videos/session_0473_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0474_makevictorysign.mp4,makevictorysign,Action: peace sign
+videos/session_0475_drawcircleclockwise.mp4,drawcircleclockwise,Action: opening door
+videos/session_0476_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0477_stopsign.mp4,stopsign,Action: waving
+videos/session_0478_pullhandin.mp4,pullhandin,Action: Talking on phone
+videos/session_0479_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0480_handwave.mp4,handwave,Action: waving
+videos/session_0481_sweep.mp4,sweep,Action: waving
+videos/session_0482_clap.mp4,clap,Action: clapping hands
+videos/session_0483_slide.mp4,slide,Action: Standing
+videos/session_0484_drawzigzag.mp4,drawzigzag,Action: talking on phone
+videos/session_0485_dodge.mp4,dodge,Action: standing
+videos/session_0486_bowling.mp4,bowling,Action: clapping
+videos/session_0487_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0488_tap.mp4,tap,Action: waving
+videos/session_0489_spreadandpinch.mp4,spreadandpinch,Action: punching
+videos/session_0490_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0491_sneeze.mp4,sneeze,Action: adjusting glasses
+videos/session_0492_cough.mp4,cough,Action: Talking on phone
+videos/session_0493_stagger.mp4,stagger,Action: turning
+videos/session_0494_yawn.mp4,yawn,Action: Drinking
+videos/session_0495_blownose.mp4,blownose,Action: Coughing
+videos/session_0496_stretchoneself.mp4,stretchoneself,Action: T-pose
+videos/session_0497_touchface.mp4,touchface,Action: saluting
+videos/session_0498_sleep.mp4,sleep,Action: lying
+videos/session_0499_handshake.mp4,handshake,Action: shaking hands
+videos/session_0500_hug.mp4,hug,Action: hugging
+videos/session_0501_pushsomeone.mp4,pushsomeone,Action: talking
+videos/session_0502_kicksomeone.mp4,kicksomeone,Action: shaking hands
+videos/session_0503_punchsomeone.mp4,punchsomeone,Action: conversation
+videos/session_0504_conversation.mp4,conversation,Action: object handover
+videos/session_0505_bow.mp4,bow,Action: bending
+videos/session_0506_pickup.mp4,pickup,Action: Bending down to pick up an object
+videos/session_0507_pushhandaway.mp4,pushhandaway,Action: adjusting glasses
+videos/session_0508_handwave.mp4,handwave,Action: Saluting
+videos/session_0509_sweep.mp4,sweep,Action: standing
+videos/session_0510_clap.mp4,clap,Action: clapping
+videos/session_0511_slide.mp4,slide,Action: waving
+videos/session_0512_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0513_dodge.mp4,dodge,Action: standing
+videos/session_0514_bowling.mp4,bowling,Action: saluting
+videos/session_0515_liftupahand.mp4,liftupahand,Action: standing
+videos/session_0516_tap.mp4,tap,Action: phoning
+videos/session_0517_spreadandpinch.mp4,spreadandpinch,Action: waving
+videos/session_0518_drawtriangle.mp4,drawtriangle,Action: Pointing
+videos/session_0519_sneeze.mp4,sneeze,Action: coughing
+videos/session_0520_cough.mp4,cough,Action: standing
+videos/session_0521_stagger.mp4,stagger,Action: Standing
+videos/session_0522_yawn.mp4,yawn,Action: coughing
+videos/session_0523_blownose.mp4,blownose,Action: putting on a mask
+videos/session_0524_stretchoneself.mp4,stretchoneself,Action: hand waving
+videos/session_0525_touchface.mp4,touchface,Action: standing
+videos/session_0526_pushup.mp4,pushup,Action: Crawling
+videos/session_0527_handshake.mp4,handshake,Action: Shaking hands
+videos/session_0528_hug.mp4,hug,Action: hugging
+videos/session_0529_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0530_kicksomeone.mp4,kicksomeone,Action: two people talking
+videos/session_0531_punchsomeone.mp4,punchsomeone,Action: shaking hands
+videos/session_0532_conversation.mp4,conversation,Action: talking
+videos/session_0533_sit.mp4,sit,Action: sitting down
+videos/session_0534_walk.mp4,walk,Action: turning around
+videos/session_0535_bow.mp4,bow,Action: bending down
+videos/session_0536_sleep.mp4,sleep,Action: Lying
+videos/session_0537_dance.mp4,dance,Action: raising both arms
+videos/session_0538_jog.mp4,jog,Action: standing
+videos/session_0539_falldown.mp4,falldown,Action: Falling
+videos/session_0540_jump.mp4,jump,Action: jumping jacks
+videos/session_0541_jumpingjack.mp4,jumpingjack,Action: Jumping Jacks
+videos/session_0542_squat.mp4,squat,Action: Squatting
+videos/session_0543_lunge.mp4,lunge,Action: Punching
+videos/session_0544_turn.mp4,turn,Action: Standing
+videos/session_0545_pushup.mp4,pushup,Action: Crawling
+videos/session_0546_legraise.mp4,legraise,Action: Marching in place
+videos/session_0547_airdrum.mp4,airdrum,Action: Boxing
+videos/session_0548_boxing.mp4,boxing,Action: punching
+videos/session_0549_shakehead.mp4,shakehead,Action: standing
+videos/session_0550_answerphone.mp4,answerphone,Action: talking on phone
+videos/session_0551_eat.mp4,eat,Action: using remote control
+videos/session_0552_drink.mp4,drink,Action: Talking on phone
+videos/session_0553_wipeface.mp4,wipeface,Action: Talking on phone
+videos/session_0554_pickup.mp4,pickup,Action: bending down
+videos/session_0555_jumprope.mp4,jumprope,Action: waving arms
+videos/session_0556_moppingfloor.mp4,moppingfloor,Action: golf swing
+videos/session_0557_brushhair.mp4,brushhair,Action: talking on the phone
+videos/session_0558_bicepcurl.mp4,bicepcurl,Action: drinking water
+videos/session_0559_playphone.mp4,playphone,Action: clapping
+videos/session_0560_brushteeth.mp4,brushteeth,Action: Coughing
+videos/session_0561_type.mp4,type,Action: Using phone
+videos/session_0562_thumbup.mp4,thumbup,Action: thumbs up
+videos/session_0563_thumbdown.mp4,thumbdown,Action: waving
+videos/session_0564_makeoksign.mp4,makeoksign,Action: Victory Sign
+videos/session_0565_makevictorysign.mp4,makevictorysign,Action: Showing peace sign
+videos/session_0566_drawcircleclockwise.mp4,drawcircleclockwise,Action: pointing
+videos/session_0567_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0568_stopsign.mp4,stopsign,Action: waving
+videos/session_0569_pullhandin.mp4,pullhandin,Action: smoking
+videos/session_0570_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0571_handwave.mp4,handwave,Action: waving
+videos/session_0572_sweep.mp4,sweep,Action: aiming gun
+videos/session_0573_clap.mp4,clap,Action: Clapping
+videos/session_0574_slide.mp4,slide,Action: waving hand
+videos/session_0575_drawzigzag.mp4,drawzigzag,"Action: using mobile phone
+
+## Explanation
+
+The reasoning process for identifying the action ""using mobile phone"" relies on analyzing the thermal sequence across 12 low-resolution frames, focusing on heat signatures and motion patterns characteristic of Human Activity Recognition (HAR) in thermal infrared imaging.
+
+1. **Static Background and Subject Isolation**: The dark, static background confirms a single heat-emitting subject (the human figure), with brighter pixels indicating body heat and any manipulated objects. The figure remains stationary at the legs and torso, indicating an upper-body action.
+
+2. **Key Heat Signatures**: A consistent small, bright hotspot appears in the right hand (person's right side from viewer perspective) across frames, suggesting a compact, warm object (e.g., smartphone battery or electronics). An intermittent secondary bright area on the right thigh may represent the object stored in a pocket prior to use.
+
+3. **Pose and Motion Analysis**:
+   - Frames 1, 3, 7, 10–12: Right arm extends forward horizontally at waist-to-chest level, holding the object outward—consistent with retrieving, displaying, or positioning a phone (e.g., checking screen or selfie preparation).
+   - Frames 2, 4–6, 8–9: Both hands converge at chest level, cradling a vertical bright object—hallmark pose for viewing or interacting with a smartphone screen (e.g., texting, browsing), as two-handed grip stabilizes for close inspection in thermal silhouettes.
+   - Repetitive arm extension/retraction cycle indicates manipulation, not static holding or waving.
+
+4. **Differential Diagnosis from Common Thermal HAR Actions**:
+   - Not ""drinking"" (e.g., cup): Object too small and consistently handheld; no upward motion to mouth or head tilt.
+   - Not ""smoking"": Lacks repeated mouth-to-hand cycling; two-handed grip atypical for cigarette.
+   - Not ""phoning"" (to ear): Arm remains forward/at chest, not raised vertically.
+   - Not ""waving/pointing"": Structured two-handed inspection phase and object persistence rule out pure gesturing.
+   - Matches ""using mobile phone"" from thermal HAR datasets (e.g., poses in INFAR or similar), where smartphone use shows forward extension for retrieval/display and central two-handed viewing.
+
+5. **Thermal-Specific Cues**: Low-resolution limits texture, but heat blob size, bilateral handling, and static lower body align with portable device interaction, a frequent surveillance-detected action.
+
+This sequence yields high confidence for ""using mobile phone"" as the specific, discriminative label."
+videos/session_0576_dodge.mp4,dodge,Action: standing
+videos/session_0577_bowling.mp4,bowling,Action: golf swing
+videos/session_0578_liftupahand.mp4,liftupahand,Action: Pointing a gun
+videos/session_0579_tap.mp4,tap,Action: talking on phone
+videos/session_0580_spreadandpinch.mp4,spreadandpinch,Action: punching
+videos/session_0581_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0582_sneeze.mp4,sneeze,Action: putting on a face mask
+videos/session_0583_cough.mp4,cough,Action: standing
+videos/session_0584_stagger.mp4,stagger,Action: walking
+videos/session_0585_yawn.mp4,yawn,Action: standing
+videos/session_0586_blownose.mp4,blownose,Action: Talking on phone
+videos/session_0587_stretchoneself.mp4,stretchoneself,Action: Talking on phone
+videos/session_0588_touchface.mp4,touchface,Action: Talking on phone
+videos/session_0589_handshake.mp4,handshake,Action: Handshake
+videos/session_0590_hug.mp4,hug,Action: hugging
+videos/session_0591_pushsomeone.mp4,pushsomeone,Action: pat on shoulder
+videos/session_0592_kicksomeone.mp4,kicksomeone,Action: kicking
+videos/session_0593_punchsomeone.mp4,punchsomeone,Action: pointing
+videos/session_0594_conversation.mp4,conversation,Action: conversing
+videos/session_0595_gym.mp4,gym,Action: punching
+videos/session_0596_freestyle.mp4,freestyle,Action: Smoking
+videos/session_0597_gym.mp4,gym,Action: dancing
+videos/session_0598_freestyle.mp4,freestyle,Action: waving
+videos/session_0599_gym.mp4,gym,Action: phoning
+videos/session_0600_freestyle.mp4,freestyle,Action: Throwing trash into bin
+videos/session_0601_gym.mp4,gym,Action: Talking on phone
+videos/session_0602_freestyle.mp4,freestyle,Action: scratching head
+videos/session_0603_gym.mp4,gym,Action: walking
+videos/session_0604_freestyle.mp4,freestyle,Action: push-up
+videos/session_0605_gym.mp4,gym,Action: kicking
+videos/session_0606_freestyle.mp4,freestyle,Action: hand waving
+videos/session_0607_gym.mp4,gym,Action: walking
+videos/session_0608_freestyle.mp4,freestyle,Action: Clapping
+videos/session_0609_gym.mp4,gym,Action: standing
+videos/session_0610_freestyle.mp4,freestyle,Action: aiming gun
+videos/session_0611_gym.mp4,gym,Action: dancing
+videos/session_0612_freestyle.mp4,freestyle,Action: standing
+videos/session_0613_gym.mp4,gym,Action: waving
+videos/session_0614_freestyle.mp4,freestyle,Action: proposing
+videos/session_0615_gym.mp4,gym,Action: walking
+videos/session_0616_freestyle.mp4,freestyle,Action: clapping
+videos/session_0617_gym.mp4,gym,Action: walking while carrying a bucket
+videos/session_0618_freestyle.mp4,freestyle,Action: clapping
+videos/session_0619_gym.mp4,gym,Action: waving
+videos/session_0620_freestyle.mp4,freestyle,Action: Standing
+videos/session_0621_gym.mp4,gym,Action: waving
+videos/session_0622_freestyle.mp4,freestyle,Action: Talking on the phone
+videos/session_0623_gym.mp4,gym,Action: standing
+videos/session_0624_freestyle.mp4,freestyle,Action: punching
+videos/session_0625_gym.mp4,gym,Action: standing
+videos/session_0626_freestyle.mp4,freestyle,Action: standing with arms outstretched
+videos/session_0627_gym.mp4,gym,Action: walking
+videos/session_0628_freestyle.mp4,freestyle,Action: Kicking
+videos/session_0629_gym.mp4,gym,Action: waving
+videos/session_0630_freestyle.mp4,freestyle,Action: punching
+videos/session_0631_gym.mp4,gym,Action: waving
+videos/session_0632_freestyle.mp4,freestyle,Action: Talking on the phone
+videos/session_0633_gym.mp4,gym,Action: walking
+videos/session_0634_freestyle.mp4,freestyle,Action: walking
+videos/session_0635_gym.mp4,gym,Action: waving
+videos/session_0636_freestyle.mp4,freestyle,Action: stretching
+videos/session_0637_gym.mp4,gym,"Action: Aiming a gun  
+The thermal sequence depicts a stationary subject transitioning from a low-ready pistol grip (right hand, waist level, ~10px hot linear artifact indicating barrel/grip) to a forward-extended two-handed shooting stance (arms horizontal, elbows subtly locked, both hands on hot object, oriented toward camera). No locomotion; static background confirms isolated upper-body weapon-handling action typical in threat detection HAR."
+videos/session_0638_freestyle.mp4,freestyle,Action: punching
+videos/session_0639_gym.mp4,gym,Action: hand waving
+videos/session_0640_freestyle.mp4,freestyle,Action: falling
+videos/session_0641_gym.mp4,gym,Action: kicking
+videos/session_0642_freestyle.mp4,freestyle,Action: waving hands
+videos/session_0643_gym.mp4,gym,Action: standing
+videos/session_0644_freestyle.mp4,freestyle,Action: boxing
+videos/session_0645_gym.mp4,gym,Action: waving
+videos/session_0646_freestyle.mp4,freestyle,Action: standing
+videos/session_0647_gym.mp4,gym,Action: waving arms
+videos/session_0648_freestyle.mp4,freestyle,Action: talking on phone
+videos/session_0649_gym.mp4,gym,Action: waving
+videos/session_0650_freestyle.mp4,freestyle,Action: shooting basketball
+videos/session_0651_gym.mp4,gym,Action: kicking
+videos/session_0652_freestyle.mp4,freestyle,Action: boxing
+videos/session_0653_gym.mp4,gym,Action: waving
+videos/session_0654_freestyle.mp4,freestyle,Action: waving
+videos/session_0655_gym.mp4,gym,Action: hand waving
+videos/session_0656_freestyle.mp4,freestyle,Action: waving
+videos/session_0657_gym.mp4,gym,Action: waving
+videos/session_0658_freestyle.mp4,freestyle,Action: boxing
+videos/session_0659_gym.mp4,gym,Action: standing
+videos/session_0660_freestyle.mp4,freestyle,Action: standing
+videos/session_0661_gym.mp4,gym,Action: talking on phone
+videos/session_0662_freestyle.mp4,freestyle,Action: waving
+videos/session_0663_gym.mp4,gym,Action: standing
+videos/session_0664_freestyle.mp4,freestyle,Action: waving
+videos/session_0665_gym.mp4,gym,Action: T-pose
+videos/session_0666_freestyle.mp4,freestyle,Action: T-pose
+videos/session_0667_gym.mp4,gym,Action: waving arms
+videos/session_0668_freestyle.mp4,freestyle,Action: stretching
+videos/session_0669_handwave.mp4,handwave,Action: smoking
+videos/session_0670_sweep.mp4,sweep,Action: waving
+videos/session_0671_clap.mp4,clap,Action: waving
+videos/session_0672_slide.mp4,slide,Action: standing
+videos/session_0673_drawzigzag.mp4,drawzigzag,Action: salute
+videos/session_0674_dodge.mp4,dodge,Action: standing
+videos/session_0675_bowling.mp4,bowling,Action: standing
+videos/session_0676_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0677_tap.mp4,tap,Action: smoking
+videos/session_0678_spreadandpinch.mp4,spreadandpinch,Action: waving
+videos/session_0679_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0680_sneeze.mp4,sneeze,"Action: talking on phone
+
+## Explanation
+
+The reasoning process analyzes the provided sequence of thermal infrared frames to identify the human action based on pose changes against a static cold background. Key steps include:
+
+1. **Frame-by-frame pose assessment**: In frames 1–3 and 5–9, the human figure exhibits a static upright posture with arms extended downward and hands visible at the sides, indicating a standing position. The bright silhouette (hotter body regions) remains centered with minimal overall movement.
+
+2. **Anomaly detection in frame 4**: This frame shows a distinct deviation—the right arm is bent at the elbow, with the forearm raised vertically and the hand positioned near the face/mouth level. This creates a characteristic L-shaped arm configuration relative to the torso and head, a reliable indicator in low-resolution thermal imagery where textures are absent.
+
+3. **Contextual interpretation in HAR**: In thermal-based Human Activity Recognition, such a transient upper-body gesture—arm elevation to the head without torso displacement or object interaction—is a hallmark of actions like talking on a phone. The brevity of the gesture across the short sequence aligns with initiating or adjusting a phone call while primarily standing. Alternative actions (e.g., coughing, yawning, or scratching) were considered but deemed less likely due to the precise forearm alignment and lack of repetitive or expansive motion.
+
+4. **Elimination of other candidates**: No locomotion (e.g., walking), bending, or bilateral arm use is present. Static elements like nearby bright spots (e.g., potential devices or lights) remain unchanged, ruling out interactions with objects. The overall sequence supports a primary ""standing"" state interrupted by the phone-related gesture.
+
+5. **Final action determination**: The defining gesture in frame 4, combined with the standing baseline, identifies the specific action as ""talking on phone,"" a common label in surveillance HAR datasets for this thermal signature."
+videos/session_0681_cough.mp4,cough,Action: standing
+videos/session_0682_stagger.mp4,stagger,Action: standing
+videos/session_0683_yawn.mp4,yawn,Action: Talking on phone
+videos/session_0684_blownose.mp4,blownose,Action: taking a selfie
+videos/session_0685_stretchoneself.mp4,stretchoneself,Action: raising hands
+videos/session_0686_touchface.mp4,touchface,Action: coughing
+videos/session_0687_handshake.mp4,handshake,Action: handshake
+videos/session_0688_hug.mp4,hug,Action: hugging
+videos/session_0689_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0690_kicksomeone.mp4,kicksomeone,Action: handshake
+videos/session_0691_punchsomeone.mp4,punchsomeone,Action: waving
+videos/session_0692_conversation.mp4,conversation,Action: talking
+videos/session_0693_gym.mp4,gym,Action: standing
+videos/session_0694_freestyle.mp4,freestyle,Action: clapping
+videos/session_0695_sit.mp4,sit,Action: sitting down
+videos/session_0696_walk.mp4,walk,Action: picking up an object
+videos/session_0697_bow.mp4,bow,Action: bending down
+videos/session_0698_sleep.mp4,sleep,Action: lying on the floor
+videos/session_0699_dance.mp4,dance,Action: hand waving
+videos/session_0700_jog.mp4,jog,Action: picking up child
+videos/session_0701_falldown.mp4,falldown,Action: Picking up a suitcase
+videos/session_0702_jump.mp4,jump,Action: Standing
+videos/session_0703_gym.mp4,gym,Action: waving
+videos/session_0704_freestyle.mp4,freestyle,Action: No human activity detected
+videos/session_0705_jumpingjack.mp4,jumpingjack,Action: waving
+videos/session_0706_squat.mp4,squat,Action: Picking up object
+videos/session_0707_lunge.mp4,lunge,Action: lunge
+videos/session_0708_turn.mp4,turn,Action: turning around
+videos/session_0709_pushup.mp4,pushup,Action: Crawling
+videos/session_0710_legraise.mp4,legraise,Action: kicking
+videos/session_0711_airdrum.mp4,airdrum,Action: handwaving
+videos/session_0712_boxing.mp4,boxing,"Action: Aiming a gun  
+The sequence of thermal frames depicts a person standing stationary with legs fixed, while progressively raising their right arm from a relaxed position at the side (initial frames) to a bent-elbow aiming stance (mid-frames) with forearm extended horizontally forward and hand positioned at eye level pointing toward the camera (later frames). This matches the classic isosceles or draw-to-aim posture for firing a handgun, critical for threat detection in thermal surveillance HAR. No other actions (e.g., waving, calling, punching) fit the deliberate, sustained extension without oscillation or torso movement."
+videos/session_0713_shakehead.mp4,shakehead,Action: standing
+videos/session_0714_answerphone.mp4,answerphone,Action: smoking
+videos/session_0715_eat.mp4,eat,"Action: Smoking  
+The sequence shows a person standing stationary, repeatedly raising a small hot object (likely a lit cigarette tip, visible as a bright spot) from waist level to mouth level over several frames (e.g., frames 4-7), holding it briefly as if inhaling, then lowering the arm—classic smoking gesture distinguishable in thermal HAR despite low resolution. Background elements (tripod, cross) are static and irrelevant."
+videos/session_0716_drink.mp4,drink,Action: drinking
+videos/session_0717_wipeface.mp4,wipeface,Action: smoking
+videos/session_0718_pickup.mp4,pickup,Action: bending down to pick up an object
+videos/session_0719_jumprope.mp4,jumprope,"Action: VR gaming
+
+**Reasoning:**  
+The thermal frames show a single human subject with a characteristic VR headset signature (large, uniformly bright facial region due to heat buildup under the device). Both hands grip small, intensely hot objects consistent with VR motion controllers (e.g., Oculus Touch or similar, which heat up during use). The subject's stance is stable with knees slightly flexed and feet apart (athletic ""ready"" position), while arms exhibit repetitive low-horizontal swings from midline to abducted positions at chest/hip level—indicative of VR rhythm games like Beat Saber involving bilateral controller slashes. No locomotion or vertical arm motion (ruling out boxing, jumping jacks, or overhead actions). Background static; no interactions with environment. This is a classic VR gaming pose/motion profile in thermal HAR datasets."
+videos/session_0720_moppingfloor.mp4,moppingfloor,Action: Sweeping
+videos/session_0721_brushhair.mp4,brushhair,Action: scratching head
+videos/session_0722_bicepcurl.mp4,bicepcurl,Action: lifting bag
+videos/session_0723_playphone.mp4,playphone,Action: Drinking
+videos/session_0724_brushteeth.mp4,brushteeth,Action: Talking on phone
+videos/session_0725_type.mp4,type,Action: Typing on laptop
+videos/session_0726_thumbup.mp4,thumbup,Action: Giving thumbs up
+videos/session_0727_thumbdown.mp4,thumbdown,Action: hand waving
+videos/session_0728_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0729_makevictorysign.mp4,makevictorysign,"Action: Making peace sign  
+(Sequence shows person standing stationary, repeatedly raising right arm with index and middle fingers extended in V-shape (✌️) gesture, alternating with brief hand-to-head motions; consistent pose in static thermal background with camera tripod nearby, indicating deliberate signaling or posing.)"
+videos/session_0730_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0731_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0732_stopsign.mp4,stopsign,Action: waving
+videos/session_0733_pullhandin.mp4,pullhandin,Action: standing
+videos/session_0734_pushhandaway.mp4,pushhandaway,Action: handwaving
+videos/session_0735_handwave.mp4,handwave,Action: waving
+videos/session_0736_sweep.mp4,sweep,Action: waving
+videos/session_0737_clap.mp4,clap,Action: smoking
+videos/session_0738_slide.mp4,slide,Action: smoking
+videos/session_0739_drawzigzag.mp4,drawzigzag,Action: hand waving
+videos/session_0740_dodge.mp4,dodge,Action: standing
+videos/session_0741_bowling.mp4,bowling,Action: punching
+videos/session_0742_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0743_tap.mp4,tap,Action: carrying a tray
+videos/session_0744_spreadandpinch.mp4,spreadandpinch,Action: smoking
+videos/session_0745_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0746_sneeze.mp4,sneeze,Action: Talking on phone
+videos/session_0747_cough.mp4,cough,Action: Talking on phone
+videos/session_0748_stagger.mp4,stagger,Action: standing
+videos/session_0749_yawn.mp4,yawn,Action: Talking on phone
+videos/session_0750_blownose.mp4,blownose,Action: Talking on phone
+videos/session_0751_stretchoneself.mp4,stretchoneself,Action: waving arms
+videos/session_0752_touchface.mp4,touchface,Action: Talking on the phone
+videos/session_0753_sit.mp4,sit,Action: Sitting down
+videos/session_0754_walk.mp4,walk,Action: standing
+videos/session_0755_bow.mp4,bow,Action: bending down
+videos/session_0756_sleep.mp4,sleep,Action: lying
+videos/session_0757_dance.mp4,dance,Action: boxing
+videos/session_0758_jog.mp4,jog,Action: drinking
+videos/session_0759_falldown.mp4,falldown,Action: sitting down
+videos/session_0760_handshake.mp4,handshake,Action: handshake
+videos/session_0761_hug.mp4,hug,Action: handshake
+videos/session_0762_pushsomeone.mp4,pushsomeone,Action: shaking hands
+videos/session_0763_kicksomeone.mp4,kicksomeone,Action: talking
+videos/session_0764_punchsomeone.mp4,punchsomeone,Action: lighting a cigarette
+videos/session_0765_conversation.mp4,conversation,Action: shaking hands
+videos/session_0766_jump.mp4,jump,Action: standing
+videos/session_0767_jumpingjack.mp4,jumpingjack,Action: jumping jacks
+videos/session_0768_squat.mp4,squat,Action: shooting rifle
+videos/session_0769_lunge.mp4,lunge,Action: kicking
+videos/session_0770_turn.mp4,turn,Action: standing
+videos/session_0771_pushup.mp4,pushup,Action: push-up
+videos/session_0772_legraise.mp4,legraise,Action: kicking
+videos/session_0773_airdrum.mp4,airdrum,Action: Clapping
+videos/session_0774_boxing.mp4,boxing,Action: punching
+videos/session_0775_shakehead.mp4,shakehead,Action: standing
+videos/session_0776_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0777_eat.mp4,eat,Action: smoking
+videos/session_0778_drink.mp4,drink,Action: Drinking
+videos/session_0779_wipeface.mp4,wipeface,Action: taking a selfie
+videos/session_0780_pickup.mp4,pickup,Action: bending down
+videos/session_0781_jumprope.mp4,jumprope,Action: Jump rope
+videos/session_0782_moppingfloor.mp4,moppingfloor,Action: folding the tripod
+videos/session_0783_brushhair.mp4,brushhair,Action: salute
+videos/session_0784_bicepcurl.mp4,bicepcurl,Action: bicep curl
+videos/session_0785_playphone.mp4,playphone,Action: using phone
+videos/session_0786_brushteeth.mp4,brushteeth,Action: smoking
+videos/session_0787_type.mp4,type,Action: typing
+videos/session_0788_thumbup.mp4,thumbup,Action: thumbs up
+videos/session_0789_thumbdown.mp4,thumbdown,Action: reaching
+videos/session_0790_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0791_makevictorysign.mp4,makevictorysign,Action: waving
+videos/session_0792_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0793_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0794_stopsign.mp4,stopsign,Action: waving
+videos/session_0795_pullhandin.mp4,pullhandin,Action: drinking
+videos/session_0796_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0797_handwave.mp4,handwave,Action: waving
+videos/session_0798_sweep.mp4,sweep,"Action: smoking
+
+## Explanation
+
+The reasoning process analyzes the provided thermal infrared video frames to identify the human action based on key characteristics of low-resolution thermal imaging: brighter pixels indicate heat sources (e.g., body parts), static cold background, and subtle motion in limb positions.
+
+1. **Frame Sequence Observation**: The 11 frames depict a single person standing stationary with legs straight and torso upright throughout. The primary variation occurs in the right arm (viewer's left), which repeatedly raises (bent at the elbow, forearm directed toward the face/head region) and lowers to the side. This pattern is evident in frames 5-6 (arm up), frame 7 (arm down), frame 8 (arm up), and frame 11 (arm partially raised), indicating a repetitive up-and-down motion.
+
+2. **Pose Analysis**: The raised arm position shows the elbow extended outward and the hand positioned at face level (mid-to-lower head blob in thermal signature). This creates a compact gesture where the hand approaches and merges partially with the hot facial region, consistent with actions involving the mouth or lower face. No external objects (e.g., bottles, phones) are discernible as extended hot signatures, ruling out drinking or calling.
+
+3. **Action Differentiation**: 
+   - Ruled out static poses like ""standing"" due to dynamic arm movement.
+   - Eliminated ""adjusting glasses"" or ""scratching head"" as these are typically singular, non-repetitive motions and would position the hand higher (forehead level), whereas the gesture aligns lower.
+   - Dismissed ""saluting"" or ""waving"" due to lack of full arm extension or swinging motion; the elbow-out, compact raise is too contained.
+   - ""Smoking"" best matches: the repetitive hand-to-mouth cycle is a hallmark of this action in HAR datasets, especially in surveillance contexts. Low-resolution thermal imaging often obscures small objects like cigarettes, focusing on the biomechanical pattern.
+
+4. **Contextual Fit for Thermal HAR**: In intelligent surveillance, smoking is a common detectable action due to its distinct temporal periodicity and minimal full-body displacement. The static background and isolated figure reinforce this as the specific, ongoing activity across the sequence."
+videos/session_0799_clap.mp4,clap,Action: drumming
+videos/session_0800_slide.mp4,slide,Action: using phone
+videos/session_0801_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0802_dodge.mp4,dodge,Action: using phone
+videos/session_0803_bowling.mp4,bowling,Action: golf swing
+videos/session_0804_liftupahand.mp4,liftupahand,Action: standing
+videos/session_0805_tap.mp4,tap,Action: Talking on phone
+videos/session_0806_spreadandpinch.mp4,spreadandpinch,Action: drinking
+videos/session_0807_drawtriangle.mp4,drawtriangle,Action: conducting
+videos/session_0808_sneeze.mp4,sneeze,Action: coughing
+videos/session_0809_cough.mp4,cough,Action: standing
+videos/session_0810_stagger.mp4,stagger,Action: turning
+videos/session_0811_yawn.mp4,yawn,Action: Smoking
+videos/session_0812_blownose.mp4,blownose,Action: smoking
+videos/session_0813_stretchoneself.mp4,stretchoneself,Action: two-hand waving
+videos/session_0814_touchface.mp4,touchface,Action: Coughing
+videos/session_0815_handshake.mp4,handshake,Action: shaking hands
+videos/session_0816_hug.mp4,hug,Action: Hugging
+videos/session_0817_pushsomeone.mp4,pushsomeone,Action: patting shoulder
+videos/session_0818_kicksomeone.mp4,kicksomeone,Action: Kicking
+videos/session_0819_punchsomeone.mp4,punchsomeone,Action: patting on shoulder
+videos/session_0820_conversation.mp4,conversation,Action: shaking hands
+videos/session_0821_gym.mp4,gym,Action: standing
+videos/session_0822_freestyle.mp4,freestyle,Action: Drinking
+videos/session_0823_gym.mp4,gym,Action: waving hands
+videos/session_0824_freestyle.mp4,freestyle,Action: Picking up object
+videos/session_0825_gym.mp4,gym,Action: Picking up object
+videos/session_0826_freestyle.mp4,freestyle,Action: squatting
+videos/session_0827_gym.mp4,gym,Action: standing
+videos/session_0828_freestyle.mp4,freestyle,Action: waving
+videos/session_0829_gym.mp4,gym,Action: drinking
+videos/session_0830_freestyle.mp4,freestyle,Action: Drinking
+videos/session_0831_gym.mp4,gym,Action: waving
+videos/session_0832_freestyle.mp4,freestyle,Action: walking
+videos/session_0833_gym.mp4,gym,Action: Standing
+videos/session_0834_freestyle.mp4,freestyle,Action: stabbing
+videos/session_0835_gym.mp4,gym,Action: waving
+videos/session_0836_freestyle.mp4,freestyle,Action: boxing
+videos/session_0837_gym.mp4,gym,Action: standing
+videos/session_0838_freestyle.mp4,freestyle,Action: Standing
+videos/session_0839_sit.mp4,sit,Action: Sitting
+videos/session_0840_walk.mp4,walk,Action: Turning
+videos/session_0841_bow.mp4,bow,Action: bending
+videos/session_0842_sleep.mp4,sleep,Action: Lying
+videos/session_0843_dance.mp4,dance,Action: clapping
+videos/session_0844_jog.mp4,jog,Action: walking
+videos/session_0845_falldown.mp4,falldown,Action: sitting down
+videos/session_0846_jump.mp4,jump,Action: boxing
+videos/session_0847_gym.mp4,gym,Action: Standing
+videos/session_0848_freestyle.mp4,freestyle,Action: sitting down
+videos/session_0849_gym.mp4,gym,Action: walking
+videos/session_0850_freestyle.mp4,freestyle,Action: walking
+videos/session_0851_gym.mp4,gym,Action: standing
+videos/session_0852_freestyle.mp4,freestyle,Action: sitting down
+videos/session_0853_gym.mp4,gym,Action: Standing
+videos/session_0854_freestyle.mp4,freestyle,Action: Turning around
+videos/session_0855_jumpingjack.mp4,jumpingjack,Action: Standing
+videos/session_0856_squat.mp4,squat,Action: bending
+videos/session_0857_lunge.mp4,lunge,Action: walking
+videos/session_0858_turn.mp4,turn,Action: turning around
+videos/session_0859_pushup.mp4,pushup,Action: Crawling
+videos/session_0860_legraise.mp4,legraise,Action: standing
+videos/session_0861_airdrum.mp4,airdrum,Action: punching
+videos/session_0862_boxing.mp4,boxing,Action: punching
+videos/session_0863_shakehead.mp4,shakehead,Action: standing
+videos/session_0864_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0865_eat.mp4,eat,Action: smoking
+videos/session_0866_drink.mp4,drink,Action: Drinking
+videos/session_0867_wipeface.mp4,wipeface,Action: Talking on phone
+videos/session_0868_pickup.mp4,pickup,Action: Bending
+videos/session_0869_jumprope.mp4,jumprope,Action: handwaving
+videos/session_0870_moppingfloor.mp4,moppingfloor,Action: Sweeping
+videos/session_0871_brushhair.mp4,brushhair,Action: flexing arm
+videos/session_0872_bicepcurl.mp4,bicepcurl,Action: inspecting object from bag
+videos/session_0873_playphone.mp4,playphone,Action: Using smartphone
+videos/session_0874_brushteeth.mp4,brushteeth,Action: picking nose
+videos/session_0875_type.mp4,type,Action: Playing video game with controller
+videos/session_0876_thumbup.mp4,thumbup,Action: Smoking
+videos/session_0877_thumbdown.mp4,thumbdown,Action: thumbs down
+videos/session_0878_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0879_makevictorysign.mp4,makevictorysign,"Action: Making peace sign  
+(Sequence shows right arm raised with two fingers extended in ✌️ gesture, held briefly, then lowered; body otherwise static in upright standing pose.)"
+videos/session_0880_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0881_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0882_stopsign.mp4,stopsign,Action: waving
+videos/session_0883_pullhandin.mp4,pullhandin,Action: thumbs up
+videos/session_0884_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0885_handwave.mp4,handwave,Action: waving
+videos/session_0886_sweep.mp4,sweep,Action: Opening door
+videos/session_0887_clap.mp4,clap,Action: smoking
+videos/session_0888_slide.mp4,slide,Action: Standing
+videos/session_0889_drawzigzag.mp4,drawzigzag,Action: waving
+videos/session_0890_dodge.mp4,dodge,Action: Standing
+videos/session_0891_bowling.mp4,bowling,Action: Picking up object
+videos/session_0892_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0893_tap.mp4,tap,Action: standing
+videos/session_0894_spreadandpinch.mp4,spreadandpinch,Action: punching
+videos/session_0895_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0896_sneeze.mp4,sneeze,Action: Talking on the phone
+videos/session_0897_cough.mp4,cough,"Action: nose picking  
+The thermal sequence shows a person standing stationary in profile view against a cold static background. The torso and legs remain fixed throughout. The defining motion is the right arm/hand repeatedly raising from a relaxed position beside the body to the mid-face region (nose level), with the index finger extending toward/into the nostril area in frames 2, 4, 5, 9, and 10—consistent with nose picking. A brief fist clench appears in frame 6 (possibly wiping). No locomotion, waving, or other limb motions occur."
+videos/session_0898_stagger.mp4,stagger,Action: turning around
+videos/session_0899_yawn.mp4,yawn,Action: smoking
+videos/session_0900_blownose.mp4,blownose,Action: Smoking
+videos/session_0901_stretchoneself.mp4,stretchoneself,Action: cheering
+videos/session_0902_touchface.mp4,touchface,Action: Coughing
+videos/session_0903_moppingfloor.mp4,moppingfloor,Action: Picking up cane
+videos/session_0904_brushhair.mp4,brushhair,Action: salute
+videos/session_0905_bicepcurl.mp4,bicepcurl,Action: drinking
+videos/session_0906_playphone.mp4,playphone,Action: Using cellphone
+videos/session_0907_brushteeth.mp4,brushteeth,Action: Coughing
+videos/session_0908_type.mp4,type,Action: Talking on phone
+videos/session_0909_thumbup.mp4,thumbup,Action: Smoking
+videos/session_0910_thumbdown.mp4,thumbdown,Action: thumbs down
+videos/session_0911_makeoksign.mp4,makeoksign,Action: smoking
+videos/session_0912_makevictorysign.mp4,makevictorysign,Action: Waving
+videos/session_0913_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0914_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0915_stopsign.mp4,stopsign,Action: Hand Waving
+videos/session_0916_pullhandin.mp4,pullhandin,Action: phoning
+videos/session_0917_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0918_handwave.mp4,handwave,Action: stretching
+videos/session_0919_sweep.mp4,sweep,Action: Talking on phone
+videos/session_0920_clap.mp4,clap,Action: waving
+videos/session_0921_slide.mp4,slide,Action: waving
+videos/session_0922_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0923_dodge.mp4,dodge,Action: Standing
+videos/session_0924_bowling.mp4,bowling,Action: waving
+videos/session_0925_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0926_tap.mp4,tap,Action: waving
+videos/session_0927_spreadandpinch.mp4,spreadandpinch,Action: waving
+videos/session_0928_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0929_sneeze.mp4,sneeze,Action: Coughing
+videos/session_0930_cough.mp4,cough,Action: drinking
+videos/session_0931_stagger.mp4,stagger,Action: standing
+videos/session_0932_yawn.mp4,yawn,Action: Talking on phone
+videos/session_0933_blownose.mp4,blownose,Action: Smoking
+videos/session_0934_stretchoneself.mp4,stretchoneself,Action: stretching
+videos/session_0935_touchface.mp4,touchface,Action: Standing
+videos/session_0936_handshake.mp4,handshake,Action: handshake
+videos/session_0937_hug.mp4,hug,Action: Hugging
+videos/session_0938_pushsomeone.mp4,pushsomeone,Action: Patting shoulder
+videos/session_0939_kicksomeone.mp4,kicksomeone,Action: two people talking
+videos/session_0940_punchsomeone.mp4,punchsomeone,Action: Punching
+videos/session_0941_conversation.mp4,conversation,Action: shaking hands
+videos/session_0942_sit.mp4,sit,Action: Sitting down
+videos/session_0943_walk.mp4,walk,Action: pacing
+videos/session_0944_bow.mp4,bow,Action: bending down
+videos/session_0945_sleep.mp4,sleep,Action: lying
+videos/session_0946_dance.mp4,dance,Action: clapping
+videos/session_0947_jog.mp4,jog,Action: smoking
+videos/session_0948_falldown.mp4,falldown,Action: emptying trash
+videos/session_0949_jump.mp4,jump,Action: clapping
+videos/session_0950_jumpingjack.mp4,jumpingjack,Action: raising hands
+videos/session_0951_squat.mp4,squat,Action: Squatting
+videos/session_0952_lunge.mp4,lunge,Action: walking
+videos/session_0953_turn.mp4,turn,Action: Standing
+videos/session_0954_pushup.mp4,pushup,Action: Crawling
+videos/session_0955_legraise.mp4,legraise,Action: marching
+videos/session_0956_airdrum.mp4,airdrum,Action: smoking
+videos/session_0957_boxing.mp4,boxing,Action: waving
+videos/session_0958_shakehead.mp4,shakehead,Action: Standing
+videos/session_0959_answerphone.mp4,answerphone,Action: smoking
+videos/session_0960_eat.mp4,eat,Action: Talking on phone
+videos/session_0961_drink.mp4,drink,Action: smoking
+videos/session_0962_wipeface.mp4,wipeface,Action: smoking
+videos/session_0963_pickup.mp4,pickup,Action: Picking up object
+videos/session_0964_jumprope.mp4,jumprope,Action: Clapping
+videos/session_0965_handshake.mp4,handshake,Action: shaking hands
+videos/session_0966_hug.mp4,hug,Action: Hug
+videos/session_0967_pushsomeone.mp4,pushsomeone,Action: talking
+videos/session_0968_kicksomeone.mp4,kicksomeone,Action: handshake
+videos/session_0969_punchsomeone.mp4,punchsomeone,Action: bowing
+videos/session_0970_conversation.mp4,conversation,Action: talking
+videos/session_0971_gym.mp4,gym,Action: punching
+videos/session_0972_gym.mp4,gym,Action: waving
+videos/session_0973_freestyle.mp4,freestyle,Action: punching
+videos/session_0974_gym.mp4,gym,Action: Walking
+videos/session_0975_freestyle.mp4,freestyle,Action: clapping

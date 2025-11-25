@@ -1,0 +1,976 @@
+video_path,ground_truth_label,vlm_raw_response
+videos/session_0001_sit.mp4,sit,Action: sitting
+videos/session_0002_bow.mp4,bow,Action: bending
+videos/session_0003_sleep.mp4,sleep,Action: lying down
+videos/session_0004_dance.mp4,dance,Action: wave
+videos/session_0005_jog.mp4,jog,Action: Walking
+videos/session_0006_falldown.mp4,falldown,Action: falling
+videos/session_0007_jump.mp4,jump,Action: Throw
+videos/session_0008_jumpingjack.mp4,jumpingjack,Action: jump_rope
+videos/session_0009_squat.mp4,squat,Action: stretching
+videos/session_0010_lunge.mp4,lunge,Action: dancing
+videos/session_0011_turn.mp4,turn,Action: walking
+videos/session_0012_pushup.mp4,pushup,Action: falling
+videos/session_0013_legraise.mp4,legraise,Action: Walking
+videos/session_0014_airdrum.mp4,airdrum,Action: pointing
+videos/session_0015_boxing.mp4,boxing,Action: clapping
+videos/session_0016_shakehead.mp4,shakehead,Action: Standing
+videos/session_0017_answerphone.mp4,answerphone,Action: drinking
+videos/session_0018_eat.mp4,eat,Action: drink
+videos/session_0019_drink.mp4,drink,Action: drinking
+videos/session_0020_wipeface.mp4,wipeface,Action: talking on phone
+videos/session_0021_pickup.mp4,pickup,Action: bending over
+videos/session_0022_jumprope.mp4,jumprope,Action: jumping
+videos/session_0023_moppingfloor.mp4,moppingfloor,Action: Pointing
+videos/session_0024_brushhair.mp4,brushhair,Action: talking on a phone
+videos/session_0025_bicepcurl.mp4,bicepcurl,Action: waving
+videos/session_0026_playphone.mp4,playphone,Action: Using a mobile phone
+videos/session_0027_brushteeth.mp4,brushteeth,Action: speaking
+videos/session_0028_type.mp4,type,Action: sitting
+videos/session_0029_thumbup.mp4,thumbup,Action: thumbs-up
+videos/session_0030_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0031_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0032_makevictorysign.mp4,makevictorysign,Action: pointing
+videos/session_0033_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0034_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0035_stopsign.mp4,stopsign,Action: take selfie
+videos/session_0036_pullhandin.mp4,pullhandin,Action: Pointing
+videos/session_0037_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0038_handwave.mp4,handwave,Action: waving
+videos/session_0039_sweep.mp4,sweep,Action: waving
+videos/session_0040_clap.mp4,clap,Action: Clapping
+videos/session_0041_slide.mp4,slide,Action: Pointing
+videos/session_0042_drawzigzag.mp4,drawzigzag,Action: Pointing
+videos/session_0043_dodge.mp4,dodge,Action: walking
+videos/session_0044_bowling.mp4,bowling,Action: bending
+videos/session_0045_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0046_tap.mp4,tap,Action: waving
+videos/session_0047_spreadandpinch.mp4,spreadandpinch,Action: pointing
+videos/session_0048_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0049_sneeze.mp4,sneeze,Action: bow
+videos/session_0050_cough.mp4,cough,Action: drinking
+videos/session_0051_stagger.mp4,stagger,Action: walking
+videos/session_0052_yawn.mp4,yawn,Action: Drinking
+videos/session_0053_blownose.mp4,blownose,Action: drinking
+videos/session_0054_stretchoneself.mp4,stretchoneself,Action: raising arms
+videos/session_0055_touchface.mp4,touchface,Action: talking
+videos/session_0056_handshake.mp4,handshake,Action: handshake
+videos/session_0057_hug.mp4,hug,Action: Hugging
+videos/session_0058_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0059_kicksomeone.mp4,kicksomeone,Action: dancing
+videos/session_0060_punchsomeone.mp4,punchsomeone,Action: greeting
+videos/session_0061_conversation.mp4,conversation,Action: pointing
+videos/session_0062_sit.mp4,sit,Action: sitting
+videos/session_0063_walk.mp4,walk,Action: walking
+videos/session_0064_bow.mp4,bow,Action: bowing
+videos/session_0065_sleep.mp4,sleep,Action: lying
+videos/session_0066_dance.mp4,dance,Action: arm raise
+videos/session_0067_jog.mp4,jog,Action: standing
+videos/session_0068_falldown.mp4,falldown,Action: falling
+videos/session_0069_jump.mp4,jump,Action: Jumping
+videos/session_0070_jumpingjack.mp4,jumpingjack,Action: dancing
+videos/session_0071_squat.mp4,squat,Action: punch
+videos/session_0072_lunge.mp4,lunge,Action: Lunge
+videos/session_0073_turn.mp4,turn,Action: looking
+videos/session_0074_pushup.mp4,pushup,Action: bow
+videos/session_0075_legraise.mp4,legraise,Action: standing
+videos/session_0076_airdrum.mp4,airdrum,Action: gesturing
+videos/session_0077_boxing.mp4,boxing,Action: Punching
+videos/session_0078_shakehead.mp4,shakehead,Action: Standing
+videos/session_0079_answerphone.mp4,answerphone,Action: talking on the phone
+videos/session_0080_eat.mp4,eat,Action: taking a photo
+videos/session_0081_drink.mp4,drink,Action: drinking
+videos/session_0082_wipeface.mp4,wipeface,Action: drinking
+videos/session_0083_pickup.mp4,pickup,Action: bowing
+videos/session_0084_jumprope.mp4,jumprope,Action: greet
+videos/session_0085_moppingfloor.mp4,moppingfloor,Action: bending
+videos/session_0086_brushhair.mp4,brushhair,Action: Salute
+videos/session_0087_bicepcurl.mp4,bicepcurl,Action: waving
+videos/session_0088_playphone.mp4,playphone,Action: walking
+videos/session_0089_brushteeth.mp4,brushteeth,Action: drinking
+videos/session_0090_type.mp4,type,Action: Sitting
+videos/session_0091_thumbup.mp4,thumbup,Action: pointing
+videos/session_0092_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0093_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0094_makevictorysign.mp4,makevictorysign,Action: waving
+videos/session_0095_drawcircleclockwise.mp4,drawcircleclockwise,Action: pointing
+videos/session_0096_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0097_stopsign.mp4,stopsign,Action: waving
+videos/session_0098_pullhandin.mp4,pullhandin,Action: gesturing
+videos/session_0099_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0100_handwave.mp4,handwave,Action: pointing
+videos/session_0101_sweep.mp4,sweep,Action: pointing
+videos/session_0102_clap.mp4,clap,Action: waving
+videos/session_0103_slide.mp4,slide,Action: pointing
+videos/session_0104_drawzigzag.mp4,drawzigzag,Action: salute
+videos/session_0105_dodge.mp4,dodge,Action: looking around
+videos/session_0106_bowling.mp4,bowling,Action: throw
+videos/session_0107_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0108_tap.mp4,tap,Action: waving
+videos/session_0109_spreadandpinch.mp4,spreadandpinch,Action: pointing
+videos/session_0110_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0111_sneeze.mp4,sneeze,Action: sneezing
+videos/session_0112_cough.mp4,cough,Action: coughing
+videos/session_0113_stagger.mp4,stagger,Action: walking
+videos/session_0114_yawn.mp4,yawn,Action: Drinking
+videos/session_0115_blownose.mp4,blownose,Action: drinking
+videos/session_0116_stretchoneself.mp4,stretchoneself,Action: stretching
+videos/session_0117_touchface.mp4,touchface,Action: drinking
+videos/session_0118_handshake.mp4,handshake,Action: handshake
+videos/session_0119_hug.mp4,hug,Action: hug
+videos/session_0120_pushsomeone.mp4,pushsomeone,Action: greeting
+videos/session_0121_kicksomeone.mp4,kicksomeone,Action: handshake
+videos/session_0122_punchsomeone.mp4,punchsomeone,Action: shaking hands
+videos/session_0123_conversation.mp4,conversation,Action: Handshake
+videos/session_0124_sit.mp4,sit,Action: sitting
+videos/session_0125_walk.mp4,walk,Action: Walking
+videos/session_0126_bow.mp4,bow,Action: bowing
+videos/session_0127_sleep.mp4,sleep,Action: Lying down
+videos/session_0128_dance.mp4,dance,Action: raising hands
+videos/session_0129_jog.mp4,jog,Action: walking
+videos/session_0130_falldown.mp4,falldown,Action: falling
+videos/session_0131_jump.mp4,jump,Action: throwing
+videos/session_0132_jumpingjack.mp4,jumpingjack,Action: Standing
+videos/session_0133_squat.mp4,squat,Action: Standing
+videos/session_0134_lunge.mp4,lunge,Action: Squatting
+videos/session_0135_turn.mp4,turn,Action: head turn
+videos/session_0136_pushup.mp4,pushup,Action: bowing
+videos/session_0137_legraise.mp4,legraise,Action: dancing
+videos/session_0138_airdrum.mp4,airdrum,Action: gesturing
+videos/session_0139_boxing.mp4,boxing,Action: waving
+videos/session_0140_shakehead.mp4,shakehead,Action: standing
+videos/session_0141_answerphone.mp4,answerphone,Action: drinking
+videos/session_0142_eat.mp4,eat,Action: taking a photo
+videos/session_0143_drink.mp4,drink,Action: Drinking
+videos/session_0144_wipeface.mp4,wipeface,Action: touching face
+videos/session_0145_pickup.mp4,pickup,Action: bending
+videos/session_0146_jumprope.mp4,jumprope,Action: dancing
+videos/session_0147_moppingfloor.mp4,moppingfloor,Action: sweeping
+videos/session_0148_brushhair.mp4,brushhair,Action: waving
+videos/session_0149_bicepcurl.mp4,bicepcurl,Action: pointing
+videos/session_0150_playphone.mp4,playphone,Action: Using a handheld device
+videos/session_0151_brushteeth.mp4,brushteeth,Action: drinking
+videos/session_0152_type.mp4,type,Action: sitting
+videos/session_0153_thumbup.mp4,thumbup,Action: pointing
+videos/session_0154_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0155_makeoksign.mp4,makeoksign,Action: pointing
+videos/session_0156_makevictorysign.mp4,makevictorysign,Action: pointing
+videos/session_0157_drawcircleclockwise.mp4,drawcircleclockwise,Action: pointing
+videos/session_0158_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0159_stopsign.mp4,stopsign,Action: wave
+videos/session_0160_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0161_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0162_handwave.mp4,handwave,Action: waving
+videos/session_0163_sweep.mp4,sweep,Action: waving
+videos/session_0164_clap.mp4,clap,Action: clapping
+videos/session_0165_slide.mp4,slide,Action: waving
+videos/session_0166_drawzigzag.mp4,drawzigzag,Action: standing
+videos/session_0167_dodge.mp4,dodge,Action: looking up
+videos/session_0168_bowling.mp4,bowling,Action: bow
+videos/session_0169_liftupahand.mp4,liftupahand,Action: raising_arm
+videos/session_0170_tap.mp4,tap,Action: waving
+videos/session_0171_spreadandpinch.mp4,spreadandpinch,Action: pointing
+videos/session_0172_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0173_sneeze.mp4,sneeze,Action: Singing
+videos/session_0174_cough.mp4,cough,Action: standing
+videos/session_0175_stagger.mp4,stagger,Action: walking
+videos/session_0176_yawn.mp4,yawn,Action: Drinking
+videos/session_0177_blownose.mp4,blownose,Action: drinking
+videos/session_0178_stretchoneself.mp4,stretchoneself,Action: dancing
+videos/session_0179_touchface.mp4,touchface,Action: touching face
+videos/session_0180_handshake.mp4,handshake,Action: Handshake
+videos/session_0181_hug.mp4,hug,Action: Hug
+videos/session_0182_pushsomeone.mp4,pushsomeone,Action: pointing
+videos/session_0183_kicksomeone.mp4,kicksomeone,Action: kicking
+videos/session_0184_punchsomeone.mp4,punchsomeone,Action: greeting
+videos/session_0185_conversation.mp4,conversation,Action: standing
+videos/session_0186_sit.mp4,sit,Action: Sitting
+videos/session_0187_walk.mp4,walk,Action: walking
+videos/session_0188_bow.mp4,bow,Action: Bending over
+videos/session_0189_sleep.mp4,sleep,Action: lying down
+videos/session_0190_dance.mp4,dance,Action: dancing
+videos/session_0191_jog.mp4,jog,Action: Walking
+videos/session_0192_falldown.mp4,falldown,Action: Yoga
+videos/session_0193_jump.mp4,jump,Action: dancing
+videos/session_0194_jumpingjack.mp4,jumpingjack,Action: dancing
+videos/session_0195_squat.mp4,squat,Action: squat
+videos/session_0196_lunge.mp4,lunge,Action: lunge
+videos/session_0197_turn.mp4,turn,Action: Walking
+videos/session_0198_pushup.mp4,pushup,Action: Picking up
+videos/session_0199_legraise.mp4,legraise,Action: walking
+videos/session_0200_airdrum.mp4,airdrum,Action: waving
+videos/session_0201_boxing.mp4,boxing,Action: pointing
+videos/session_0202_shakehead.mp4,shakehead,Action: Standing
+videos/session_0203_answerphone.mp4,answerphone,Action: talking on the phone
+videos/session_0204_eat.mp4,eat,Action: singing
+videos/session_0205_drink.mp4,drink,Action: Drinking
+videos/session_0206_wipeface.mp4,wipeface,Action: touching face
+videos/session_0207_pickup.mp4,pickup,Action: squat
+videos/session_0208_jumprope.mp4,jumprope,Action: wave
+videos/session_0209_moppingfloor.mp4,moppingfloor,Action: golf swing
+videos/session_0210_brushhair.mp4,brushhair,Action: touching head
+videos/session_0211_bicepcurl.mp4,bicepcurl,Action: waving
+videos/session_0212_playphone.mp4,playphone,Action: using a mobile phone
+videos/session_0213_brushteeth.mp4,brushteeth,Action: drinking
+videos/session_0214_type.mp4,type,Action: eating
+videos/session_0215_thumbup.mp4,thumbup,Action: thumbs_up
+videos/session_0216_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0217_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0218_makevictorysign.mp4,makevictorysign,Action: waving
+videos/session_0219_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0220_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: wave
+videos/session_0221_stopsign.mp4,stopsign,Action: waving
+videos/session_0222_pullhandin.mp4,pullhandin,Action: adjusting mask
+videos/session_0223_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0224_handwave.mp4,handwave,Action: pointing
+videos/session_0225_sweep.mp4,sweep,Action: pointing
+videos/session_0226_clap.mp4,clap,Action: dancing
+videos/session_0227_slide.mp4,slide,Action: waving
+videos/session_0228_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0229_dodge.mp4,dodge,Action: walking
+videos/session_0230_bowling.mp4,bowling,Action: walk
+videos/session_0231_liftupahand.mp4,liftupahand,Action: pointing
+videos/session_0232_tap.mp4,tap,Action: pointing
+videos/session_0233_spreadandpinch.mp4,spreadandpinch,Action: pointing
+videos/session_0234_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0235_sneeze.mp4,sneeze,Action: drinking
+videos/session_0236_cough.mp4,cough,Action: talking
+videos/session_0237_stagger.mp4,stagger,Action: walking
+videos/session_0238_yawn.mp4,yawn,Action: drinking
+videos/session_0239_blownose.mp4,blownose,Action: Singing
+videos/session_0240_stretchoneself.mp4,stretchoneself,Action: dancing
+videos/session_0241_touchface.mp4,touchface,Action: Coughing
+videos/session_0242_handshake.mp4,handshake,Action: handshake
+videos/session_0243_hug.mp4,hug,Action: dancing
+videos/session_0244_pushsomeone.mp4,pushsomeone,Action: greeting
+videos/session_0245_kicksomeone.mp4,kicksomeone,Action: dancing
+videos/session_0246_punchsomeone.mp4,punchsomeone,Action: talking
+videos/session_0247_conversation.mp4,conversation,Action: talking
+videos/session_0248_sit.mp4,sit,Action: bowing
+videos/session_0249_walk.mp4,walk,Action: walking
+videos/session_0250_bow.mp4,bow,Action: bowing
+videos/session_0251_sleep.mp4,sleep,Action: Lying Down
+videos/session_0252_dance.mp4,dance,Action: dancing
+videos/session_0253_jog.mp4,jog,Action: Running
+videos/session_0254_falldown.mp4,falldown,Action: crawling
+videos/session_0255_jump.mp4,jump,Action: walking
+videos/session_0256_jumpingjack.mp4,jumpingjack,Action: arm raise
+videos/session_0257_squat.mp4,squat,Action: throwing
+videos/session_0258_lunge.mp4,lunge,Action: Lunge
+videos/session_0259_turn.mp4,turn,Action: walking
+videos/session_0260_pushup.mp4,pushup,Action: falling
+videos/session_0261_legraise.mp4,legraise,Action: lunge
+videos/session_0262_airdrum.mp4,airdrum,Action: walking
+videos/session_0263_boxing.mp4,boxing,Action: pointing
+videos/session_0264_shakehead.mp4,shakehead,Action: standing
+videos/session_0265_answerphone.mp4,answerphone,Action: Drinking
+videos/session_0266_eat.mp4,eat,Action: waving
+videos/session_0267_drink.mp4,drink,Action: Drinking
+videos/session_0268_wipeface.mp4,wipeface,Action: talking on a mobile phone
+videos/session_0269_pickup.mp4,pickup,Action: bending
+videos/session_0270_jumprope.mp4,jumprope,Action: Dancing
+videos/session_0271_moppingfloor.mp4,moppingfloor,Action: sweeping
+videos/session_0272_brushhair.mp4,brushhair,Action: drinking
+videos/session_0273_bicepcurl.mp4,bicepcurl,Action: touching face
+videos/session_0274_playphone.mp4,playphone,Action: walking
+videos/session_0275_brushteeth.mp4,brushteeth,Action: drinking
+videos/session_0276_type.mp4,type,Action: Sitting
+videos/session_0277_thumbup.mp4,thumbup,Action: pointing
+videos/session_0278_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0279_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0280_makevictorysign.mp4,makevictorysign,Action: waving
+videos/session_0281_drawcircleclockwise.mp4,drawcircleclockwise,Action: pointing
+videos/session_0282_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0283_stopsign.mp4,stopsign,Action: wave
+videos/session_0284_pullhandin.mp4,pullhandin,Action: speaking
+videos/session_0285_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0286_handwave.mp4,handwave,Action: waving
+videos/session_0287_sweep.mp4,sweep,Action: pointing
+videos/session_0288_clap.mp4,clap,Action: waving
+videos/session_0289_slide.mp4,slide,Action: waving
+videos/session_0290_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0291_dodge.mp4,dodge,Action: walking
+videos/session_0292_bowling.mp4,bowling,Action: throw
+videos/session_0293_liftupahand.mp4,liftupahand,Action: opening a door
+videos/session_0294_tap.mp4,tap,Action: pointing
+videos/session_0295_spreadandpinch.mp4,spreadandpinch,Action: pointing
+videos/session_0296_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0297_sneeze.mp4,sneeze,Action: squatting
+videos/session_0298_cough.mp4,cough,Action: Coughing
+videos/session_0299_stagger.mp4,stagger,Action: walking
+videos/session_0300_yawn.mp4,yawn,Action: Drinking
+videos/session_0301_blownose.mp4,blownose,Action: speaking
+videos/session_0302_stretchoneself.mp4,stretchoneself,Action: Throwing
+videos/session_0303_touchface.mp4,touchface,Action: drinking
+videos/session_0304_handshake.mp4,handshake,Action: handshake
+videos/session_0305_hug.mp4,hug,Action: Dancing
+videos/session_0306_pushsomeone.mp4,pushsomeone,Action: throw
+videos/session_0307_kicksomeone.mp4,kicksomeone,Action: pointing
+videos/session_0308_punchsomeone.mp4,punchsomeone,Action: Walking
+videos/session_0309_conversation.mp4,conversation,Action: talking
+videos/session_0310_sit.mp4,sit,Action: sitting
+videos/session_0311_walk.mp4,walk,Action: walking
+videos/session_0312_bow.mp4,bow,Action: bending forward
+videos/session_0313_sleep.mp4,sleep,Action: lying down
+videos/session_0314_dance.mp4,dance,Action: dancing
+videos/session_0315_jog.mp4,jog,Action: walking
+videos/session_0316_falldown.mp4,falldown,Action: push-up
+videos/session_0317_jump.mp4,jump,Action: dancing
+videos/session_0318_jumpingjack.mp4,jumpingjack,Action: jumping
+videos/session_0319_squat.mp4,squat,Action: bow
+videos/session_0320_lunge.mp4,lunge,Action: sitting
+videos/session_0321_turn.mp4,turn,Action: turning
+videos/session_0322_pushup.mp4,pushup,Action: squatting
+videos/session_0323_legraise.mp4,legraise,Action: dancing
+videos/session_0324_airdrum.mp4,airdrum,Action: talking
+videos/session_0325_boxing.mp4,boxing,Action: dancing
+videos/session_0326_shakehead.mp4,shakehead,Action: turning head
+videos/session_0327_answerphone.mp4,answerphone,Action: Pointing
+videos/session_0328_eat.mp4,eat,Action: using a device
+videos/session_0329_drink.mp4,drink,Action: waving
+videos/session_0330_wipeface.mp4,wipeface,Action: drinking
+videos/session_0331_pickup.mp4,pickup,Action: squat
+videos/session_0332_jumprope.mp4,jumprope,Action: dancing
+videos/session_0333_moppingfloor.mp4,moppingfloor,Action: sweeping
+videos/session_0334_brushhair.mp4,brushhair,Action: salute
+videos/session_0335_bicepcurl.mp4,bicepcurl,Action: pouring
+videos/session_0336_playphone.mp4,playphone,Action: touching face
+videos/session_0337_brushteeth.mp4,brushteeth,Action: Drinking
+videos/session_0338_type.mp4,type,Action: standing
+videos/session_0339_thumbup.mp4,thumbup,Action: waving
+videos/session_0340_thumbdown.mp4,thumbdown,Action: saluting
+videos/session_0341_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0342_makevictorysign.mp4,makevictorysign,Action: Waving
+videos/session_0343_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0344_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0345_stopsign.mp4,stopsign,Action: waving
+videos/session_0346_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0347_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0348_sit.mp4,sit,Action: sitting
+videos/session_0349_walk.mp4,walk,Action: walking
+videos/session_0350_bow.mp4,bow,Action: bow
+videos/session_0351_sleep.mp4,sleep,Action: lying down
+videos/session_0352_dance.mp4,dance,Action: Dancing
+videos/session_0353_jog.mp4,jog,Action: jump
+videos/session_0354_falldown.mp4,falldown,Action: sit-up
+videos/session_0355_jump.mp4,jump,Action: dancing
+videos/session_0356_jumpingjack.mp4,jumpingjack,Action: jumping
+videos/session_0357_squat.mp4,squat,Action: dancing
+videos/session_0358_lunge.mp4,lunge,Action: jump
+videos/session_0359_turn.mp4,turn,Action: turning left
+videos/session_0360_pushup.mp4,pushup,Action: squat
+videos/session_0361_legraise.mp4,legraise,Action: dancing
+videos/session_0362_airdrum.mp4,airdrum,Action: waving
+videos/session_0363_boxing.mp4,boxing,Action: dancing
+videos/session_0364_shakehead.mp4,shakehead,Action: standing
+videos/session_0365_answerphone.mp4,answerphone,Action: talking on phone
+videos/session_0366_eat.mp4,eat,Action: Eating
+videos/session_0367_drink.mp4,drink,Action: drinking
+videos/session_0368_wipeface.mp4,wipeface,Action: Drinking
+videos/session_0369_pickup.mp4,pickup,Action: bending
+videos/session_0370_jumprope.mp4,jumprope,Action: jig
+videos/session_0371_moppingfloor.mp4,moppingfloor,Action: sweeping
+videos/session_0372_brushhair.mp4,brushhair,Action: touching head
+videos/session_0373_bicepcurl.mp4,bicepcurl,Action: waving
+videos/session_0374_playphone.mp4,playphone,Action: adjusting mask
+videos/session_0375_brushteeth.mp4,brushteeth,Action: taking a photo
+videos/session_0376_type.mp4,type,Action: sitting
+videos/session_0377_thumbup.mp4,thumbup,Action: thumbs up
+videos/session_0378_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0379_makeoksign.mp4,makeoksign,Action: wave
+videos/session_0380_makevictorysign.mp4,makevictorysign,Action: hand gesture
+videos/session_0381_drawcircleclockwise.mp4,drawcircleclockwise,Action: wave
+videos/session_0382_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: wave
+videos/session_0383_stopsign.mp4,stopsign,Action: pointing
+videos/session_0384_pullhandin.mp4,pullhandin,Action: saluting
+videos/session_0385_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0386_handwave.mp4,handwave,Action: touching face
+videos/session_0387_sweep.mp4,sweep,Action: waving
+videos/session_0388_clap.mp4,clap,Action: Clapping
+videos/session_0389_slide.mp4,slide,Action: wave
+videos/session_0390_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0391_dodge.mp4,dodge,Action: Walking
+videos/session_0392_bowling.mp4,bowling,Action: throw
+videos/session_0393_liftupahand.mp4,liftupahand,Action: pointing
+videos/session_0394_tap.mp4,tap,Action: waving
+videos/session_0395_spreadandpinch.mp4,spreadandpinch,Action: wave
+videos/session_0396_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0397_sneeze.mp4,sneeze,Action: drinking
+videos/session_0398_cough.mp4,cough,Action: hand to face
+videos/session_0399_stagger.mp4,stagger,Action: walking
+videos/session_0400_yawn.mp4,yawn,Action: drinking
+videos/session_0401_blownose.mp4,blownose,Action: Drinking
+videos/session_0402_strechoneself.mp4,strechoneself,Action: waving
+videos/session_0403_touchface.mp4,touchface,Action: talking
+videos/session_0404_handshake.mp4,handshake,Action: handshake
+videos/session_0405_hug.mp4,hug,Action: hug
+videos/session_0406_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0407_kicksomeone.mp4,kicksomeone,Action: kick
+videos/session_0408_punchsomeone.mp4,punchsomeone,Action: greeting
+videos/session_0409_conversation.mp4,conversation,Action: bowing
+videos/session_0410_sit.mp4,sit,Action: Sitting
+videos/session_0411_walk.mp4,walk,Action: Walking
+videos/session_0412_bow.mp4,bow,Action: bending
+videos/session_0413_sleep.mp4,sleep,Action: lying
+videos/session_0414_dance.mp4,dance,Action: dancing
+videos/session_0415_jog.mp4,jog,Action: Walking
+videos/session_0416_falldown.mp4,falldown,Action: push_up
+videos/session_0417_jump.mp4,jump,Action: waving
+videos/session_0418_jumpingjack.mp4,jumpingjack,Action: arm raise
+videos/session_0419_squat.mp4,squat,Action: throwing
+videos/session_0420_lunge.mp4,lunge,Action: Standing
+videos/session_0421_turn.mp4,turn,Action: turning
+videos/session_0422_legraise.mp4,legraise,Action: dance
+videos/session_0423_airdrum.mp4,airdrum,Action: clapping
+videos/session_0424_boxing.mp4,boxing,Action: throwing
+videos/session_0425_shakehead.mp4,shakehead,Action: standing
+videos/session_0426_answerphone.mp4,answerphone,Action: drinking
+videos/session_0427_eat.mp4,eat,Action: using a mobile device
+videos/session_0428_drink.mp4,drink,Action: drinking
+videos/session_0429_wipeface.mp4,wipeface,Action: drinking
+videos/session_0430_pickup.mp4,pickup,Action: picking up
+videos/session_0431_jumprope.mp4,jumprope,Action: dancing
+videos/session_0432_moppingfloor.mp4,moppingfloor,Action: bending down
+videos/session_0433_brushhair.mp4,brushhair,Action: salute
+videos/session_0434_bicepcurl.mp4,bicepcurl,Action: looking up
+videos/session_0435_playphone.mp4,playphone,Action: touching chest
+videos/session_0436_brushteeth.mp4,brushteeth,Action: salute
+videos/session_0437_type.mp4,type,Action: sitting
+videos/session_0438_thumbup.mp4,thumbup,Action: pointing
+videos/session_0439_thumbdown.mp4,thumbdown,Action: waving
+videos/session_0440_makeoksign.mp4,makeoksign,Action: talking on the phone
+videos/session_0441_makevictorysign.mp4,makevictorysign,Action: talking on the phone
+videos/session_0442_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0443_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0444_stopsign.mp4,stopsign,Action: touching face
+videos/session_0445_pullhandin.mp4,pullhandin,Action: drinking
+videos/session_0446_sit.mp4,sit,Action: Sitting
+videos/session_0447_walk.mp4,walk,Action: walking
+videos/session_0448_jog.mp4,jog,Action: dancing
+videos/session_0449_falldown.mp4,falldown,Action: lying down
+videos/session_0450_jump.mp4,jump,Action: wave
+videos/session_0451_jumpingjack.mp4,jumpingjack,Action: arm raise
+videos/session_0452_squat.mp4,squat,Action: throwing
+videos/session_0453_lunge.mp4,lunge,Action: lunge
+videos/session_0454_turn.mp4,turn,Action: turning
+videos/session_0455_pushup.mp4,pushup,Action: push_up
+videos/session_0456_legraise.mp4,legraise,Action: running
+videos/session_0457_airdrum.mp4,airdrum,Action: Clapping
+videos/session_0458_boxing.mp4,boxing,Action: Clapping
+videos/session_0459_shakehead.mp4,shakehead,Action: looking up
+videos/session_0460_answerphone.mp4,answerphone,Action: talking on the phone
+videos/session_0461_eat.mp4,eat,Action: eating
+videos/session_0462_drink.mp4,drink,Action: drinking
+videos/session_0463_wipeface.mp4,wipeface,Action: Drinking
+videos/session_0464_jumprope.mp4,jumprope,Action: Jumping
+videos/session_0465_moppingfloor.mp4,moppingfloor,Action: hockey_shooting
+videos/session_0466_brushhair.mp4,brushhair,Action: drinking
+videos/session_0467_bicepcurl.mp4,bicepcurl,Action: holding an object
+videos/session_0468_playphone.mp4,playphone,Action: using mobile device
+videos/session_0469_brushteeth.mp4,brushteeth,Action: Drinking
+videos/session_0470_type.mp4,type,Action: reading
+videos/session_0471_thumbup.mp4,thumbup,Action: waving
+videos/session_0472_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0473_makeoksign.mp4,makeoksign,Action: Clapping
+videos/session_0474_makevictorysign.mp4,makevictorysign,Action: Pointing
+videos/session_0475_drawcircleclockwise.mp4,drawcircleclockwise,Action: pointing
+videos/session_0476_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: Saluting
+videos/session_0477_stopsign.mp4,stopsign,Action: waving
+videos/session_0478_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0479_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0480_handwave.mp4,handwave,Action: pointing
+videos/session_0481_sweep.mp4,sweep,Action: waving
+videos/session_0482_clap.mp4,clap,Action: Clapping
+videos/session_0483_slide.mp4,slide,Action: Standing
+videos/session_0484_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0485_dodge.mp4,dodge,Action: turning
+videos/session_0486_bowling.mp4,bowling,Action: throwing
+videos/session_0487_liftupahand.mp4,liftupahand,Action: salute
+videos/session_0488_tap.mp4,tap,Action: pointing
+videos/session_0489_spreadandpinch.mp4,spreadandpinch,Action: waving
+videos/session_0490_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0491_sneeze.mp4,sneeze,Action: drinking
+videos/session_0492_cough.mp4,cough,Action: coughing
+videos/session_0493_stagger.mp4,stagger,Action: walk
+videos/session_0494_yawn.mp4,yawn,Action: drinking
+videos/session_0495_blownose.mp4,blownose,Action: drinking
+videos/session_0496_stretchoneself.mp4,stretchoneself,Action: wave
+videos/session_0497_touchface.mp4,touchface,Action: drinking
+videos/session_0498_sleep.mp4,sleep,Action: Lying down
+videos/session_0499_handshake.mp4,handshake,Action: handshake
+videos/session_0500_hug.mp4,hug,Action: Dancing
+videos/session_0501_pushsomeone.mp4,pushsomeone,Action: dancing
+videos/session_0502_kicksomeone.mp4,kicksomeone,Action: handing
+videos/session_0503_punchsomeone.mp4,punchsomeone,Action: waving
+videos/session_0504_conversation.mp4,conversation,Action: talking
+videos/session_0505_bow.mp4,bow,Action: bowing
+videos/session_0506_pickup.mp4,pickup,Action: Squatting
+videos/session_0507_pushhandaway.mp4,pushhandaway,Action: saluting
+videos/session_0508_handwave.mp4,handwave,Action: salute
+videos/session_0509_sweep.mp4,sweep,Action: waving
+videos/session_0510_clap.mp4,clap,Action: touching face
+videos/session_0511_slide.mp4,slide,Action: waving
+videos/session_0512_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0513_dodge.mp4,dodge,Action: waving
+videos/session_0514_bowling.mp4,bowling,Action: clap
+videos/session_0515_liftupahand.mp4,liftupahand,Action: waving
+videos/session_0516_tap.mp4,tap,Action: touching face
+videos/session_0517_spreadandpinch.mp4,spreadandpinch,Action: looking up
+videos/session_0518_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0519_sneeze.mp4,sneeze,Action: drinking
+videos/session_0520_cough.mp4,cough,Action: Standing
+videos/session_0521_stagger.mp4,stagger,Action: Walking
+videos/session_0522_yawn.mp4,yawn,Action: coughing
+videos/session_0523_blownose.mp4,blownose,Action: coughing
+videos/session_0524_stretchoneself.mp4,stretchoneself,Action: dancing
+videos/session_0525_touchface.mp4,touchface,Action: touching mouth
+videos/session_0526_pushup.mp4,pushup,Action: push-up
+videos/session_0527_handshake.mp4,handshake,Action: handshake
+videos/session_0528_hug.mp4,hug,Action: hug
+videos/session_0529_pushsomeone.mp4,pushsomeone,Action: greeting
+videos/session_0530_kicksomeone.mp4,kicksomeone,Action: handshake
+videos/session_0531_punchsomeone.mp4,punchsomeone,Action: standing
+videos/session_0532_conversation.mp4,conversation,Action: conversing
+videos/session_0533_sit.mp4,sit,Action: bowing
+videos/session_0534_walk.mp4,walk,Action: walk
+videos/session_0535_bow.mp4,bow,Action: bowing
+videos/session_0536_sleep.mp4,sleep,Action: lying down
+videos/session_0537_dance.mp4,dance,Action: stretching
+videos/session_0538_jog.mp4,jog,Action: walk
+videos/session_0539_falldown.mp4,falldown,Action: fall
+videos/session_0540_jump.mp4,jump,Action: Jumping
+videos/session_0541_jumpingjack.mp4,jumpingjack,Action: dancing
+videos/session_0542_squat.mp4,squat,Action: squat
+videos/session_0543_lunge.mp4,lunge,Action: jumping
+videos/session_0544_turn.mp4,turn,Action: looking
+videos/session_0545_pushup.mp4,pushup,Action: push-up
+videos/session_0546_legraise.mp4,legraise,Action: Walking
+videos/session_0547_airdrum.mp4,airdrum,Action: drinking
+videos/session_0548_boxing.mp4,boxing,Action: waving
+videos/session_0549_shakehead.mp4,shakehead,Action: looking down
+videos/session_0550_answerphone.mp4,answerphone,Action: wave
+videos/session_0551_eat.mp4,eat,Action: using a mobile device
+videos/session_0552_drink.mp4,drink,Action: Drinking
+videos/session_0553_wipeface.mp4,wipeface,Action: drinking
+videos/session_0554_pickup.mp4,pickup,Action: bow
+videos/session_0555_jumprope.mp4,jumprope,Action: dancing
+videos/session_0556_moppingfloor.mp4,moppingfloor,Action: pick up
+videos/session_0557_brushhair.mp4,brushhair,Action: salute
+videos/session_0558_bicepcurl.mp4,bicepcurl,Action: lifting
+videos/session_0559_playphone.mp4,playphone,Action: Drinking
+videos/session_0560_brushteeth.mp4,brushteeth,Action: Drinking
+videos/session_0561_type.mp4,type,Action: typing
+videos/session_0562_thumbup.mp4,thumbup,Action: pointing
+videos/session_0563_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0564_makeoksign.mp4,makeoksign,Action: pointing
+videos/session_0565_makevictorysign.mp4,makevictorysign,Action: counting
+videos/session_0566_drawcircleclockwise.mp4,drawcircleclockwise,Action: pointing
+videos/session_0567_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0568_stopsign.mp4,stopsign,Action: pointing
+videos/session_0569_pullhandin.mp4,pullhandin,Action: waving
+videos/session_0570_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0571_handwave.mp4,handwave,Action: pointing
+videos/session_0572_sweep.mp4,sweep,Action: pointing
+videos/session_0573_clap.mp4,clap,Action: Clapping
+videos/session_0574_slide.mp4,slide,Action: pointing
+videos/session_0575_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0576_dodge.mp4,dodge,Action: head turn
+videos/session_0577_bowling.mp4,bowling,Action: bowing
+videos/session_0578_liftupahand.mp4,liftupahand,Action: Pointing
+videos/session_0579_tap.mp4,tap,Action: waving
+videos/session_0580_spreadandpinch.mp4,spreadandpinch,Action: waving
+videos/session_0581_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0582_sneeze.mp4,sneeze,Action: talking on the phone
+videos/session_0583_cough.mp4,cough,Action: standing
+videos/session_0584_stagger.mp4,stagger,Action: walking
+videos/session_0585_yawn.mp4,yawn,Action: standing
+videos/session_0586_blownose.mp4,blownose,Action: phone call
+videos/session_0587_stretchoneself.mp4,stretchoneself,Action: salute
+videos/session_0588_touchface.mp4,touchface,Action: drinking
+videos/session_0589_handshake.mp4,handshake,Action: Handshake
+videos/session_0590_hug.mp4,hug,Action: Hugging
+videos/session_0591_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0592_kicksomeone.mp4,kicksomeone,Action: walking
+videos/session_0593_punchsomeone.mp4,punchsomeone,Action: handshake
+videos/session_0594_conversation.mp4,conversation,Action: walking
+videos/session_0595_gym.mp4,gym,Action: dancing
+videos/session_0596_freestyle.mp4,freestyle,Action: Walking
+videos/session_0597_gym.mp4,gym,Action: walking
+videos/session_0598_freestyle.mp4,freestyle,Action: dancing
+videos/session_0599_gym.mp4,gym,Action: Dancing
+videos/session_0600_freestyle.mp4,freestyle,Action: stretching
+videos/session_0601_gym.mp4,gym,Action: dance
+videos/session_0602_freestyle.mp4,freestyle,Action: answering a phone
+videos/session_0603_gym.mp4,gym,Action: Walking
+videos/session_0604_freestyle.mp4,freestyle,Action: walking
+videos/session_0605_gym.mp4,gym,Action: dancing
+videos/session_0606_freestyle.mp4,freestyle,Action: walking
+videos/session_0607_gym.mp4,gym,Action: walking
+videos/session_0608_freestyle.mp4,freestyle,Action: throwing
+videos/session_0609_gym.mp4,gym,Action: walking
+videos/session_0610_freestyle.mp4,freestyle,Action: squat
+videos/session_0611_gym.mp4,gym,Action: dancing
+videos/session_0612_freestyle.mp4,freestyle,Action: nodding
+videos/session_0613_gym.mp4,gym,Action: walking
+videos/session_0614_freestyle.mp4,freestyle,Action: Dancing
+videos/session_0615_gym.mp4,gym,Action: dancing
+videos/session_0616_freestyle.mp4,freestyle,Action: throwing
+videos/session_0617_gym.mp4,gym,Action: walking
+videos/session_0618_freestyle.mp4,freestyle,Action: waving
+videos/session_0619_gym.mp4,gym,Action: walking
+videos/session_0620_freestyle.mp4,freestyle,Action: standing
+videos/session_0621_gym.mp4,gym,Action: walking
+videos/session_0622_freestyle.mp4,freestyle,Action: dancing
+videos/session_0623_gym.mp4,gym,Action: Walking
+videos/session_0624_freestyle.mp4,freestyle,Action: Dancing
+videos/session_0625_gym.mp4,gym,Action: waving
+videos/session_0626_freestyle.mp4,freestyle,Action: gesturing
+videos/session_0627_gym.mp4,gym,Action: walking
+videos/session_0628_freestyle.mp4,freestyle,Action: dancing
+videos/session_0629_gym.mp4,gym,Action: dancing
+videos/session_0630_freestyle.mp4,freestyle,Action: waving
+videos/session_0631_gym.mp4,gym,Action: Walking
+videos/session_0632_freestyle.mp4,freestyle,Action: dancing
+videos/session_0633_gym.mp4,gym,Action: dancing
+videos/session_0634_freestyle.mp4,freestyle,Action: Walking
+videos/session_0635_gym.mp4,gym,Action: waving
+videos/session_0636_freestyle.mp4,freestyle,Action: stretching
+videos/session_0637_gym.mp4,gym,Action: Walking
+videos/session_0638_freestyle.mp4,freestyle,Action: dancing
+videos/session_0639_gym.mp4,gym,Action: dancing
+videos/session_0640_freestyle.mp4,freestyle,Action: falling
+videos/session_0641_gym.mp4,gym,Action: dance
+videos/session_0642_freestyle.mp4,freestyle,Action: arm_raise
+videos/session_0643_gym.mp4,gym,Action: Walking
+videos/session_0644_freestyle.mp4,freestyle,Action: Drinking
+videos/session_0645_gym.mp4,gym,Action: dancing
+videos/session_0646_freestyle.mp4,freestyle,Action: walking
+videos/session_0647_gym.mp4,gym,Action: dancing
+videos/session_0648_freestyle.mp4,freestyle,Action: singing
+videos/session_0649_gym.mp4,gym,Action: dancing
+videos/session_0650_freestyle.mp4,freestyle,Action: Jump
+videos/session_0651_gym.mp4,gym,Action: dancing
+videos/session_0652_freestyle.mp4,freestyle,Action: Clapping
+videos/session_0653_gym.mp4,gym,Action: Walking
+videos/session_0654_freestyle.mp4,freestyle,Action: dancing
+videos/session_0655_gym.mp4,gym,Action: Walk
+videos/session_0656_freestyle.mp4,freestyle,Action: speaking
+videos/session_0657_gym.mp4,gym,Action: walking
+videos/session_0658_freestyle.mp4,freestyle,Action: dancing
+videos/session_0659_gym.mp4,gym,Action: waving
+videos/session_0660_freestyle.mp4,freestyle,Action: looking up and down
+videos/session_0661_gym.mp4,gym,Action: walking
+videos/session_0662_freestyle.mp4,freestyle,Action: dancing
+videos/session_0663_gym.mp4,gym,Action: Walking
+videos/session_0664_freestyle.mp4,freestyle,Action: waving
+videos/session_0665_gym.mp4,gym,Action: dancing
+videos/session_0666_freestyle.mp4,freestyle,Action: dancing
+videos/session_0667_gym.mp4,gym,Action: dancing
+videos/session_0668_freestyle.mp4,freestyle,Action: dancing
+videos/session_0669_handwave.mp4,handwave,Action: waving
+videos/session_0670_sweep.mp4,sweep,Action: using a mobile phone
+videos/session_0671_clap.mp4,clap,Action: waving
+videos/session_0672_slide.mp4,slide,Action: waving
+videos/session_0673_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0674_dodge.mp4,dodge,Action: turning
+videos/session_0675_bowling.mp4,bowling,Action: bow
+videos/session_0676_liftupahand.mp4,liftupahand,Action: raising arm
+videos/session_0677_tap.mp4,tap,Action: drinking
+videos/session_0678_spreadandpinch.mp4,spreadandpinch,Action: wave
+videos/session_0679_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0680_sneeze.mp4,sneeze,Action: drinking
+videos/session_0681_cough.mp4,cough,Action: waving
+videos/session_0682_stagger.mp4,stagger,Action: Walking
+videos/session_0683_yawn.mp4,yawn,Action: drinking
+videos/session_0684_blownose.mp4,blownose,Action: touching face
+videos/session_0685_stretchoneself.mp4,stretchoneself,Action: stretching
+videos/session_0686_touchface.mp4,touchface,Action: drinking
+videos/session_0687_handshake.mp4,handshake,Action: handshake
+videos/session_0688_hug.mp4,hug,Action: Hugging
+videos/session_0689_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0690_kicksomeone.mp4,kicksomeone,Action: handshake
+videos/session_0691_punchsomeone.mp4,punchsomeone,Action: waving
+videos/session_0692_conversation.mp4,conversation,Action: Standing
+videos/session_0693_gym.mp4,gym,Action: walking
+videos/session_0694_freestyle.mp4,freestyle,Action: dancing
+videos/session_0695_sit.mp4,sit,Action: sitting
+videos/session_0696_walk.mp4,walk,Action: Walking
+videos/session_0697_bow.mp4,bow,Action: bow
+videos/session_0698_sleep.mp4,sleep,Action: lying
+videos/session_0699_dance.mp4,dance,Action: walking
+videos/session_0700_jog.mp4,jog,Action: dancing
+videos/session_0701_falldown.mp4,falldown,Action: push-up
+videos/session_0702_jump.mp4,jump,Action: bow
+videos/session_0703_gym.mp4,gym,Action: dancing
+videos/session_0704_freestyle.mp4,freestyle,Action: No Action
+videos/session_0705_jumpingjack.mp4,jumpingjack,Action: jumping
+videos/session_0706_squat.mp4,squat,Action: squatting
+videos/session_0707_lunge.mp4,lunge,Action: dancing
+videos/session_0708_turn.mp4,turn,Action: walk
+videos/session_0709_pushup.mp4,pushup,Action: placing
+videos/session_0710_legraise.mp4,legraise,Action: Kick
+videos/session_0711_airdrum.mp4,airdrum,Action: waving
+videos/session_0712_boxing.mp4,boxing,Action: Singing
+videos/session_0713_shakehead.mp4,shakehead,Action: Standing
+videos/session_0714_answerphone.mp4,answerphone,Action: singing
+videos/session_0715_eat.mp4,eat,Action: Drinking
+videos/session_0716_drink.mp4,drink,Action: Drinking
+videos/session_0717_wipeface.mp4,wipeface,Action: drumming
+videos/session_0718_pickup.mp4,pickup,Action: bending
+videos/session_0719_jumprope.mp4,jumprope,Action: juggling
+videos/session_0720_moppingfloor.mp4,moppingfloor,Action: Drumming
+videos/session_0721_brushhair.mp4,brushhair,Action: touch head
+videos/session_0722_bicepcurl.mp4,bicepcurl,Action: putting on hat
+videos/session_0723_playphone.mp4,playphone,Action: texting
+videos/session_0724_brushteeth.mp4,brushteeth,Action: Singing
+videos/session_0725_type.mp4,type,Action: typing
+videos/session_0726_thumbup.mp4,thumbup,Action: pointing
+videos/session_0727_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0728_makeoksign.mp4,makeoksign,Action: pointing
+videos/session_0729_makevictorysign.mp4,makevictorysign,Action: hand signal
+videos/session_0730_drawcircleclockwise.mp4,drawcircleclockwise,Action: pointing
+videos/session_0731_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0732_stopsign.mp4,stopsign,Action: conducting
+videos/session_0733_pullhandin.mp4,pullhandin,Action: No Human Activity
+videos/session_0734_pushhandaway.mp4,pushhandaway,Action: Drumming
+videos/session_0735_handwave.mp4,handwave,Action: drinking
+videos/session_0736_sweep.mp4,sweep,Action: Pointing
+videos/session_0737_clap.mp4,clap,Action: singing
+videos/session_0738_slide.mp4,slide,Action: Drumming
+videos/session_0739_drawzigzag.mp4,drawzigzag,Action: waving
+videos/session_0740_dodge.mp4,dodge,Action: Walking
+videos/session_0741_bowling.mp4,bowling,Action: drumming
+videos/session_0742_liftupahand.mp4,liftupahand,Action: playing drums
+videos/session_0743_tap.mp4,tap,Action: drumming
+videos/session_0744_spreadandpinch.mp4,spreadandpinch,Action: Drinking
+videos/session_0745_drawtriangle.mp4,drawtriangle,Action: waving
+videos/session_0746_sneeze.mp4,sneeze,Action: drinking
+videos/session_0747_cough.mp4,cough,Action: drinking
+videos/session_0748_stagger.mp4,stagger,Action: Clapping
+videos/session_0749_yawn.mp4,yawn,Action: drinking
+videos/session_0750_blownose.mp4,blownose,Action: drinking
+videos/session_0751_stretchoneself.mp4,stretchoneself,Action: Dancing
+videos/session_0752_touchface.mp4,touchface,Action: singing
+videos/session_0753_sit.mp4,sit,Action: sitting
+videos/session_0754_walk.mp4,walk,Action: walking
+videos/session_0755_bow.mp4,bow,Action: bowing
+videos/session_0756_sleep.mp4,sleep,Action: lying
+videos/session_0757_dance.mp4,dance,Action: dancing
+videos/session_0758_jog.mp4,jog,Action: clapping
+videos/session_0759_falldown.mp4,falldown,Action: Falling
+videos/session_0760_handshake.mp4,handshake,Action: handshake
+videos/session_0761_hug.mp4,hug,Action: Dancing
+videos/session_0762_pushsomeone.mp4,pushsomeone,Action: handshake
+videos/session_0763_kicksomeone.mp4,kicksomeone,Action: kicking
+videos/session_0764_punchsomeone.mp4,punchsomeone,Action: bowing
+videos/session_0765_conversation.mp4,conversation,Action: pointing
+videos/session_0766_jump.mp4,jump,Action: drumming
+videos/session_0767_jumpingjack.mp4,jumpingjack,Action: dancing
+videos/session_0768_squat.mp4,squat,Action: Squatting
+videos/session_0769_lunge.mp4,lunge,Action: lunge
+videos/session_0770_turn.mp4,turn,Action: Dancing
+videos/session_0771_pushup.mp4,pushup,Action: push-up
+videos/session_0772_legraise.mp4,legraise,Action: dancing
+videos/session_0773_airdrum.mp4,airdrum,Action: drumming
+videos/session_0774_boxing.mp4,boxing,Action: pointing
+videos/session_0775_shakehead.mp4,shakehead,Action: waving
+videos/session_0776_answerphone.mp4,answerphone,Action: drinking
+videos/session_0777_eat.mp4,eat,Action: singing
+videos/session_0778_drink.mp4,drink,Action: Singing
+videos/session_0779_wipeface.mp4,wipeface,Action: drinking
+videos/session_0780_pickup.mp4,pickup,Action: bending
+videos/session_0781_jumprope.mp4,jumprope,Action: Juggling
+videos/session_0782_moppingfloor.mp4,moppingfloor,Action: drumming
+videos/session_0783_brushhair.mp4,brushhair,Action: salute
+videos/session_0784_bicepcurl.mp4,bicepcurl,Action: drumming
+videos/session_0785_playphone.mp4,playphone,Action: drinking
+videos/session_0786_brushteeth.mp4,brushteeth,Action: drinking
+videos/session_0787_type.mp4,type,Action: drumming
+videos/session_0788_thumbup.mp4,thumbup,Action: thumbs-up
+videos/session_0789_thumbdown.mp4,thumbdown,Action: salute
+videos/session_0790_makeoksign.mp4,makeoksign,Action: Drinking
+videos/session_0791_makevictorysign.mp4,makevictorysign,Action: waving
+videos/session_0792_drawcircleclockwise.mp4,drawcircleclockwise,Action: pointing
+videos/session_0793_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0794_stopsign.mp4,stopsign,Action: waving
+videos/session_0795_pullhandin.mp4,pullhandin,Action: Singing
+videos/session_0796_pushhandaway.mp4,pushhandaway,Action: Clapping
+videos/session_0797_handwave.mp4,handwave,Action: drinking
+videos/session_0798_sweep.mp4,sweep,Action: dancing
+videos/session_0799_clap.mp4,clap,Action: dancing
+videos/session_0800_slide.mp4,slide,Action: waving
+videos/session_0801_drawzigzag.mp4,drawzigzag,Action: throwing a ball
+videos/session_0802_dodge.mp4,dodge,Action: stretching
+videos/session_0803_bowling.mp4,bowling,Action: playing piano
+videos/session_0804_liftupahand.mp4,liftupahand,Action: pointing
+videos/session_0805_tap.mp4,tap,Action: salute
+videos/session_0806_spreadandpinch.mp4,spreadandpinch,Action: Clapping
+videos/session_0807_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0808_sneeze.mp4,sneeze,Action: clapping
+videos/session_0809_cough.mp4,cough,Action: drinking
+videos/session_0810_stagger.mp4,stagger,Action: walking
+videos/session_0811_yawn.mp4,yawn,Action: Drinking
+videos/session_0812_blownose.mp4,blownose,Action: Drinking
+videos/session_0813_stretchoneself.mp4,stretchoneself,Action: dancing
+videos/session_0814_touchface.mp4,touchface,Action: drinking
+videos/session_0815_handshake.mp4,handshake,Action: handshake
+videos/session_0816_hug.mp4,hug,Action: Hugging
+videos/session_0817_pushsomeone.mp4,pushsomeone,Action: greet
+videos/session_0818_kicksomeone.mp4,kicksomeone,Action: dancing
+videos/session_0819_punchsomeone.mp4,punchsomeone,Action: handshake
+videos/session_0820_conversation.mp4,conversation,Action: handshake
+videos/session_0821_gym.mp4,gym,Action: walking
+videos/session_0822_freestyle.mp4,freestyle,Action: pointing
+videos/session_0823_gym.mp4,gym,Action: walking
+videos/session_0824_freestyle.mp4,freestyle,Action: walking
+videos/session_0825_gym.mp4,gym,Action: dancing
+videos/session_0826_freestyle.mp4,freestyle,Action: walking
+videos/session_0827_gym.mp4,gym,Action: walking
+videos/session_0828_freestyle.mp4,freestyle,Action: wave
+videos/session_0829_gym.mp4,gym,Action: walking
+videos/session_0830_freestyle.mp4,freestyle,Action: greeting
+videos/session_0831_gym.mp4,gym,Action: Walking
+videos/session_0832_freestyle.mp4,freestyle,Action: walking
+videos/session_0833_gym.mp4,gym,Action: Walking
+videos/session_0834_freestyle.mp4,freestyle,Action: walking
+videos/session_0835_gym.mp4,gym,Action: walking
+videos/session_0836_freestyle.mp4,freestyle,Action: dancing
+videos/session_0837_gym.mp4,gym,Action: Walking
+videos/session_0838_freestyle.mp4,freestyle,Action: Walking
+videos/session_0839_sit.mp4,sit,Action: Sitting
+videos/session_0840_walk.mp4,walk,Action: walking
+videos/session_0841_bow.mp4,bow,Action: bowing
+videos/session_0842_sleep.mp4,sleep,Action: Lying down
+videos/session_0843_dance.mp4,dance,Action: clapping
+videos/session_0844_jog.mp4,jog,Action: walking
+videos/session_0845_falldown.mp4,falldown,Action: sitting
+videos/session_0846_jump.mp4,jump,Action: waving
+videos/session_0847_gym.mp4,gym,Action: Standing
+videos/session_0848_freestyle.mp4,freestyle,Action: sitting
+videos/session_0849_gym.mp4,gym,Action: walking
+videos/session_0850_freestyle.mp4,freestyle,Action: walking
+videos/session_0851_gym.mp4,gym,Action: walking
+videos/session_0852_freestyle.mp4,freestyle,Action: sitting
+videos/session_0853_gym.mp4,gym,Action: walking
+videos/session_0854_freestyle.mp4,freestyle,Action: walking
+videos/session_0855_jumpingjack.mp4,jumpingjack,Action: raising arms
+videos/session_0856_squat.mp4,squat,Action: crouching
+videos/session_0857_lunge.mp4,lunge,Action: walking
+videos/session_0858_turn.mp4,turn,Action: turning around
+videos/session_0859_pushup.mp4,pushup,Action: push-up
+videos/session_0860_legraise.mp4,legraise,Action: dancing
+videos/session_0861_airdrum.mp4,airdrum,Action: Punch
+videos/session_0862_boxing.mp4,boxing,Action: Throwing
+videos/session_0863_shakehead.mp4,shakehead,Action: Standing
+videos/session_0864_answerphone.mp4,answerphone,Action: Talking on phone
+videos/session_0865_eat.mp4,eat,Action: eating
+videos/session_0866_drink.mp4,drink,Action: drinking
+videos/session_0867_wipeface.mp4,wipeface,Action: drinking
+videos/session_0868_pickup.mp4,pickup,Action: walking
+videos/session_0869_jumprope.mp4,jumprope,Action: Dancing
+videos/session_0870_moppingfloor.mp4,moppingfloor,Action: sweeping
+videos/session_0871_brushhair.mp4,brushhair,Action: dancing
+videos/session_0872_bicepcurl.mp4,bicepcurl,Action: throwing
+videos/session_0873_playphone.mp4,playphone,Action: using mobile phone
+videos/session_0874_brushteeth.mp4,brushteeth,Action: drinking
+videos/session_0875_type.mp4,type,Action: reading
+videos/session_0876_thumbup.mp4,thumbup,Action: waving
+videos/session_0877_thumbdown.mp4,thumbdown,Action: pointing
+videos/session_0878_makeoksign.mp4,makeoksign,Action: waving
+videos/session_0879_makevictorysign.mp4,makevictorysign,Action: pointing
+videos/session_0880_drawcircleclockwise.mp4,drawcircleclockwise,Action: waving
+videos/session_0881_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: pointing
+videos/session_0882_stopsign.mp4,stopsign,Action: taking a selfie
+videos/session_0883_pullhandin.mp4,pullhandin,Action: pointing
+videos/session_0884_pushhandaway.mp4,pushhandaway,Action: waving
+videos/session_0885_handwave.mp4,handwave,Action: waving
+videos/session_0886_sweep.mp4,sweep,Action: waving
+videos/session_0887_clap.mp4,clap,Action: Clapping
+videos/session_0888_slide.mp4,slide,Action: waving
+videos/session_0889_drawzigzag.mp4,drawzigzag,Action: salute
+videos/session_0890_dodge.mp4,dodge,Action: turning
+videos/session_0891_bowling.mp4,bowling,Action: throwing
+videos/session_0892_liftupahand.mp4,liftupahand,Action: pointing
+videos/session_0893_tap.mp4,tap,Action: waving
+videos/session_0894_spreadandpinch.mp4,spreadandpinch,Action: throw
+videos/session_0895_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0896_sneeze.mp4,sneeze,Action: drinking
+videos/session_0897_cough.mp4,cough,Action: drinking
+videos/session_0898_stagger.mp4,stagger,Action: bending down
+videos/session_0899_yawn.mp4,yawn,Action: dancing
+videos/session_0900_blownose.mp4,blownose,Action: Drinking
+videos/session_0901_stretchoneself.mp4,stretchoneself,Action: dancing
+videos/session_0902_touchface.mp4,touchface,Action: drinking
+videos/session_0903_moppingfloor.mp4,moppingfloor,Action: sweeping
+videos/session_0904_brushhair.mp4,brushhair,Action: touching head
+videos/session_0905_bicepcurl.mp4,bicepcurl,Action: picking up
+videos/session_0906_playphone.mp4,playphone,Action: using a mobile device
+videos/session_0907_brushteeth.mp4,brushteeth,Action: salute
+videos/session_0908_type.mp4,type,Action: eating
+videos/session_0909_thumbup.mp4,thumbup,Action: thumbs up
+videos/session_0910_thumbdown.mp4,thumbdown,Action: Pointing
+videos/session_0911_makeoksign.mp4,makeoksign,Action: Drinking
+videos/session_0912_makevictorysign.mp4,makevictorysign,Action: Clapping
+videos/session_0913_drawcircleclockwise.mp4,drawcircleclockwise,Action: Salute
+videos/session_0914_drawcirclecounterclockwise.mp4,drawcirclecounterclockwise,Action: waving
+videos/session_0915_stopsign.mp4,stopsign,Action: waving
+videos/session_0916_pullhandin.mp4,pullhandin,Action: taking a photo
+videos/session_0917_pushhandaway.mp4,pushhandaway,Action: pointing
+videos/session_0918_handwave.mp4,handwave,Action: raise arm
+videos/session_0919_sweep.mp4,sweep,Action: waving
+videos/session_0920_clap.mp4,clap,Action: waving
+videos/session_0921_slide.mp4,slide,Action: pointing
+videos/session_0922_drawzigzag.mp4,drawzigzag,Action: pointing
+videos/session_0923_dodge.mp4,dodge,Action: standing
+videos/session_0924_bowling.mp4,bowling,Action: Pointing
+videos/session_0925_liftupahand.mp4,liftupahand,Action: pointing
+videos/session_0926_tap.mp4,tap,Action: waving
+videos/session_0927_spreadandpinch.mp4,spreadandpinch,Action: pointing
+videos/session_0928_drawtriangle.mp4,drawtriangle,Action: pointing
+videos/session_0929_sneeze.mp4,sneeze,Action: Salute
+videos/session_0930_cough.mp4,cough,Action: drinking
+videos/session_0931_stagger.mp4,stagger,Action: walking
+videos/session_0932_yawn.mp4,yawn,Action: Drinking
+videos/session_0933_blownose.mp4,blownose,Action: talking
+videos/session_0934_stretchoneself.mp4,stretchoneself,Action: throwing
+videos/session_0935_touchface.mp4,touchface,Action: looking up
+videos/session_0936_handshake.mp4,handshake,Action: handshake
+videos/session_0937_hug.mp4,hug,Action: Dancing
+videos/session_0938_pushsomeone.mp4,pushsomeone,Action: patting the shoulder
+videos/session_0939_kicksomeone.mp4,kicksomeone,Action: handshake
+videos/session_0940_punchsomeone.mp4,punchsomeone,Action: pointing
+videos/session_0941_conversation.mp4,conversation,Action: handshake
+videos/session_0942_sit.mp4,sit,Action: sitting
+videos/session_0943_walk.mp4,walk,Action: walking
+videos/session_0944_bow.mp4,bow,Action: bowing
+videos/session_0945_sleep.mp4,sleep,Action: lying down
+videos/session_0946_dance.mp4,dance,Action: walking
+videos/session_0947_jog.mp4,jog,Action: Drinking
+videos/session_0948_falldown.mp4,falldown,Action: fall
+videos/session_0949_jump.mp4,jump,Action: dancing
+videos/session_0950_jumpingjack.mp4,jumpingjack,Action: Raising arms
+videos/session_0951_squat.mp4,squat,Action: squat
+videos/session_0952_lunge.mp4,lunge,Action: Walking
+videos/session_0953_turn.mp4,turn,Action: turning around
+videos/session_0954_pushup.mp4,pushup,Action: bending
+videos/session_0955_legraise.mp4,legraise,Action: Dancing
+videos/session_0956_airdrum.mp4,airdrum,Action: Saluting
+videos/session_0957_boxing.mp4,boxing,Action: pointing
+videos/session_0958_shakehead.mp4,shakehead,Action: looking around
+videos/session_0959_answerphone.mp4,answerphone,Action: drinking
+videos/session_0960_eat.mp4,eat,Action: Drinking
+videos/session_0961_drink.mp4,drink,Action: drinking
+videos/session_0962_wipeface.mp4,wipeface,Action: touching face
+videos/session_0963_pickup.mp4,pickup,Action: bending
+videos/session_0964_jumprope.mp4,jumprope,Action: waving
+videos/session_0965_handshake.mp4,handshake,Action: handshake
+videos/session_0966_hug.mp4,hug,Action: Dance
+videos/session_0967_pushsomeone.mp4,pushsomeone,Action: standing
+videos/session_0968_kicksomeone.mp4,kicksomeone,Action: greeting
+videos/session_0969_punchsomeone.mp4,punchsomeone,Action: pointing
+videos/session_0970_conversation.mp4,conversation,Action: handshake
+videos/session_0971_gym.mp4,gym,Action: walking
+videos/session_0972_gym.mp4,gym,Action: dancing
+videos/session_0973_freestyle.mp4,freestyle,Action: squat
+videos/session_0974_gym.mp4,gym,Action: Dancing
+videos/session_0975_freestyle.mp4,freestyle,Action: walking

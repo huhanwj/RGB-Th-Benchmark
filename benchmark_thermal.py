@@ -49,15 +49,19 @@ MODELS_TO_TEST = [
     #     "provider": "gemini",
     #     "model_name": "gemini-2.5-flash",
     # },
-    # {
-    #    "provider": "gemini",
-    #     "model_name": "gemini-2.5-pro",
-    # },
     {
-        "provider": "openai",
-        "model_name": "gpt-5", # Assuming this is gpt-4o or similar
-        "base_url": "https://api.openai.com/v1",
+       "provider": "gemini",
+        "model_name": "gemini-3-pro-preview-high-thinking",
     },
+    {
+       "provider": "gemini",
+        "model_name": "gemini-3-pro-preview-low-thinking",
+    },
+    # {
+    #     "provider": "openai",
+    #     "model_name": "gpt-5", # Assuming this is gpt-4o or similar
+    #     "base_url": "https://api.openai.com/v1",
+    # },
     # {
     #     "provider": "ark",
     #     "model_name": "doubao-seed-1-6-vision-250815",
@@ -108,15 +112,31 @@ def call_gemini_api(api_key, model_name, prompt, pil_images):
         try:
             client = genai.Client()
             
-            # Use 0.0 temp for reproducible results, disable thinking for Yes/No
-            gen_config = genai.types.GenerateContentConfig(
-                temperature=0.0, 
-                # thinking_config=types.ThinkingConfig(thinking_budget=0)
-            )
+            # Handle Thinking Modes for Gemini 3
+            actual_model_name = model_name
+            thinking_config_obj = None
+
+            if "gemini-3-pro" in model_name:
+                if "-low-thinking" in model_name:
+                    actual_model_name = model_name.replace("-low-thinking", "")
+                    thinking_config_obj = types.ThinkingConfig(thinking_level="low")
+                elif "-high-thinking" in model_name:
+                    actual_model_name = model_name.replace("-high-thinking", "")
+                    # Default is high/dynamic
+                    pass
+            
+            gen_config_args = {
+                "temperature": 0.5,
+            }
+            
+            if thinking_config_obj:
+                gen_config_args["thinking_config"] = thinking_config_obj
+
+            gen_config = genai.types.GenerateContentConfig(**gen_config_args)
             
             content = pil_images + [prompt] # Use simple PIL list
             response = client.models.generate_content(
-                model=model_name,
+                model=actual_model_name,
                 contents = content,
                 config = gen_config
             )
