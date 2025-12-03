@@ -2,6 +2,7 @@ import pandas as pd
 import os
 import argparse
 from openai import OpenAI
+from zai import ZhipuAiClient
 from tqdm import tqdm
 import time
 import glob
@@ -14,6 +15,10 @@ JUDGE_MODEL_LOCAL = "local-model"
 DASHSCOPE_BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
 DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
 JUDGE_MODEL_DASHSCOPE = "qwen3-max"
+
+# ZAI_BASE_URL = "https://api.zhipuai.com/v1"
+ZAI_API_KEY = os.getenv("ZAI_API_KEY", "")
+JUDGE_MODEL_ZAI = "glm-4.6"
 
 def get_judge_response(client, ground_truth, prediction, model_name):
     prompt = f"""
@@ -65,7 +70,11 @@ Example Output:
                 {"role": "system", "content": "You are a helpful assistant that outputs JSON."},
                 {"role": "user", "content": prompt}
             ],
-            temperature=0.1,
+            thinking={
+                "type": "disabled"  # 启用深度思考模式
+            },
+            # extra_body={"enable_thinking":False},
+            # temperature=0.05,
             response_format={"type": "json_object"}
         )
         return response.choices[0].message.content
@@ -133,7 +142,7 @@ def process_file(input_path, client, model_name):
 def main():
     parser = argparse.ArgumentParser(description="Evaluate VLM benchmark results using a local LLM judge.")
     parser.add_argument("--input_path", help="Path to a specific CSV file or directory. Defaults to current directory.", default=".")
-    parser.add_argument("--backend", choices=["local", "dashscope"], default="local", help="Choose the judge backend: 'local' (llama.cpp) or 'dashscope' (Aliyun Qwen).")
+    parser.add_argument("--backend", choices=["local", "dashscope", "zai"], default="local", help="Choose the judge backend: 'local' (llama.cpp) or 'dashscope' (Aliyun Qwen).")
     parser.add_argument("--model", help="Specific model name to use. Defaults to 'local-model' for local or 'qwen-plus' for dashscope.", default=None)
     
     args = parser.parse_args()
@@ -193,7 +202,22 @@ def main():
         except Exception as e:
             print(f"Error connecting to DashScope: {e}")
             return
-
+    elif args.backend == "zai":
+        print(f"Using Zai Backend")
+        if not ZAI_API_KEY:
+            print("Error: ZAI_API_KEY environment variable not set.")
+            return
+        try:
+            client = ZhipuAiClient(api_key=ZAI_API_KEY)
+            if not model_name:
+                model_name = JUDGE_MODEL_ZAI
+            print(f"Connected to Zai. Model: {model_name}")
+        except Exception as e:
+            print(f"Error connecting to Zai: {e}")
+            return
+    else:
+        print(f"Error: Invalid backend: {args.backend}")
+        return
     for file_path in files_to_process:
         process_file(file_path, client, model_name)
         
