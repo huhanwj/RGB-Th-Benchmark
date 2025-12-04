@@ -11,8 +11,8 @@ from abc import ABC, abstractmethod
 # ==========================================
 
 # 输入输出文件配置
-INPUT_JSON = r'F:\OctoNet\node_3\seekThermal_v2\video_qa_set.json'
-OUTPUT_CSV = 'benchmark_results_unified.csv'
+INPUT_JSON = r'F:\OctoNet\node_3\seekThermal_v2\high\video_qa_set.json'
+OUTPUT_CSV = 'benchmark_results_unified_highfps.csv'
 
 # API KEYS
 DASHSCOPE_API_KEY = os.getenv("DASHSCOPE_API_KEY", "")
@@ -277,7 +277,7 @@ def main():
     # runner = QwenVLM(model_name="qwen3-vl-plus", api_key=DASHSCOPE_API_KEY)
     
     # --- Gemini ---
-    runner = GeminiVLM(model_name="gemini-3-pro-preview", api_key=GEMINI_API_KEY)
+    # runner = GeminiVLM(model_name="gemini-3-pro-preview", api_key=GEMINI_API_KEY)
     
     # --- GPT ---
     # runner = GPTVLM(model_name="gpt-5.1", api_key=OPENAI_API_KEY)
@@ -287,11 +287,11 @@ def main():
     
     # --- Local Llama.cpp ---
     # 假设你本地启动了 llama-server，端口 8000
-    # runner = LlamaCppVLM(
-    #     model_name="unsloth/Qwen3-VL-4B-Thinking-GGUF:Q8_0", # 这里的名字通常不重要，取决于server加载的模型
-    #     base_url=LOCAL_LLAMA_URL, 
-    #     api_key=LOCAL_LLAMA_API_KEY
-    # )
+    runner = LlamaCppVLM(
+        model_name="unsloth/Qwen3-VL-4B-Thinking-GGUF:Q8_0", # 这里的名字通常不重要，取决于server加载的模型
+        base_url=LOCAL_LLAMA_URL, 
+        api_key=LOCAL_LLAMA_API_KEY
+    )
 
     # ==========================================
     

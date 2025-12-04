@@ -11,7 +11,7 @@ from datetime import datetime
 INPUT_BASE_PATH = r"D:\OctoNet-upload\node_3\seekThermal"
 
 # 输出：一个新的、干净的、处理后的数据集文件夹
-OUTPUT_BASE_PATH = r"F:\OctoNet\node_3\seekThermal_v2"
+OUTPUT_BASE_PATH = r"F:\OctoNet\node_3\seekThermal_v2\high"
 OUTPUT_VIDEO_DIR = os.path.join(OUTPUT_BASE_PATH, "videos")
 OUTPUT_SAMPLED_FRAMES_DIR = os.path.join(OUTPUT_BASE_PATH, "sampled_frames")
 OUTPUT_JSON_FILE = os.path.join(OUTPUT_BASE_PATH, "video_qa_set.json")
@@ -19,7 +19,7 @@ OUTPUT_JSON_FILE = os.path.join(OUTPUT_BASE_PATH, "video_qa_set.json")
 # 视频设置
 FPS = 24  # 采样率翻倍 (原8.8Hz -> ~24fps)
 SAMPLE_DURATION_SEC = 3 # 采样前3秒
-SAMPLE_FPS = 3 # 采样帧率 (3fps)
+SAMPLE_FPS = 10 # 采样帧率 (3fps)
 
 # --- 2. [复用] 时间戳解析函数 ---
 

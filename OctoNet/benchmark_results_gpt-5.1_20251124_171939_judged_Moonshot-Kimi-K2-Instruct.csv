@@ -849,9 +849,7 @@ videos/session_0847_gym.mp4,gym,Action: Standing still,0.2,"The ground truth 'gy
 videos/session_0848_freestyle.mp4,freestyle,Action: Sitting down,0.7,"'Sitting down' is a specific, dynamic action that falls within the broad scope of 'freestyle' (the subject was free to do anything). While not the most varied or creative interpretation of 'freestyle', it is still a valid, intentional movement rather than a static pose, so it receives a medium-high score."
 videos/session_0849_gym.mp4,gym,Action: Walking,0.8,"Walking is a common gym activity (e.g., treadmill walking), so it falls within the broad 'gym' category."
 videos/session_0850_freestyle.mp4,freestyle,Action: Walking,0.9,"'Walking' is a specific, dynamic action that clearly falls within the broad scope of 'freestyle' (do whatever you want), so it is semantically correct."
-videos/session_0851_gym.mp4,gym,Action: Walking,0.0,"JSON Parse Error. Raw: {"": 0.8,
-  "":"": "",""
-}"
+videos/session_0851_gym.mp4,gym,Action: Walking,0.8,""
 videos/session_0852_freestyle.mp4,freestyle,Action: Sitting down on a chair/sofa,0.8,"The label 'freestyle' allows any action the subject chooses; 'sitting down on a chair/sofa' is a specific, valid action that falls within this open-ended category, so it is considered correct."
 videos/session_0853_gym.mp4,gym,Action: Walking,0.8,"Walking is a common gym activity (e.g., treadmill walking), so it falls within the broad 'gym' category."
 videos/session_0854_freestyle.mp4,freestyle,Action: Walking,0.9,"'Walking' is a specific, dynamic action that clearly falls within the broad scope of 'freestyle' (do whatever you want), so it is semantically correct."

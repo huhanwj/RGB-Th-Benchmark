@@ -155,7 +155,7 @@ def main():
     elif os.path.isdir(target_path):
         print(f"Scanning directory: {os.path.abspath(target_path)}")
         # Find all csvs
-        all_csvs = glob.glob(os.path.join(target_path, "*.csv"))
+        all_csvs = glob.glob(os.path.join(target_path, "benchmark_results_unsloth_Qwen3-VL-4B-Thinking-GGUF_Q8_0_20251204_190151.csv"))
         for f in all_csvs:
             # Filter logic:
             # 1. Must be a csv (glob handled this)
